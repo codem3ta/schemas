@@ -1,0 +1,25 @@
+{
+  "$id": "https://codemeta.de/schemas/asset",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "ownedBy": {
+      "type": "string"
+    },
+    "value": {
+      "type": "number"
+    }
+  },
+  "required": ["identifier", "ownedBy", "name"]
+}

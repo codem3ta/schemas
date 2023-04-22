@@ -1,0 +1,13 @@
+{
+  "$id": "https://codemeta.de/schemas/party",
+  "title": "Party",
+  "collection": "parties",
+  "description": "A person or organization",
+  "type": "object",
+  "properties": {
+    "company": { "description": "The company name", "type": "string" },
+    "email": { "description": "The email of the party", "type": "string" }
+  },
+  "required": ["email"],
+  "name": "party"
+}

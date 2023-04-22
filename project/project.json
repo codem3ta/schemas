@@ -1,0 +1,23 @@
+{
+  "$id": "https://codemeta.de/schemas/project",
+  "title": "Project",
+  "collection": "projects",
+  "description": "A project",
+  "type": "object",
+  "properties": {
+    "title": { "description": "The title of the project", "type": "string" },
+    "linkedParty": {
+      "description": "The party linked to the project",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "party"
+    },
+    "writeMe": { "description": "A field that can only be written", "type": "string", "writeOnly": true },
+    "readMe": { "description": "A field that can only be read", "type": "string", "readOnly": true },
+    "internalMemo": { "description": "A field that is meant for internal use (e.g. processes)", "type": "string", "internal": true }
+  },
+  "required": ["title"],
+  "name": "project",
+  "unevaluatedProperties": false,
+  "inheritPermissionsFrom": "linkedParty"
+}

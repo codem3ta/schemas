@@ -1,0 +1,15 @@
+{
+  "$id": "https://codemeta.de/schemas/asset/pc",
+  "type": "object",
+  "$allOf": [
+    {
+      "$ref": "/asset"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "pc",
+      "default": "pc"
+    }
+  }
+}
