@@ -1,0 +1,15 @@
+{
+  "$id": "https://codemeta.de/schemas/task",
+  "title": "Task",
+  "collection": "tasks",
+  "description": "A task",
+  "type": "object",
+  "properties": {
+    "title": { "description": "The title of the task", "type": "string" },
+    "description": { "description": "The description of the task", "type": "string", "minLength": 500 },
+    "dueDate": { "description": "The due date for the task", "type": "string", "format": "date-time" }
+  },
+  "required": ["title"],
+  "name": "task",
+  "unevaluatedProperties": false
+}

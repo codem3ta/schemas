@@ -1,0 +1,72 @@
+{
+  "$id": "https://codemeta.de/schemas/travelRecord",
+  "title": "Travel Record",
+  "collection": "travelRecords",
+  "description": "A record of travel for a user. It can be associated with a timeRecord and a customer.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/activity"
+    }
+  ],
+  "properties": {
+    "timeRecord": {
+      "description": "The timeRecord to which the travelRecord belongs",
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/timeRecord.json"
+    },
+    "transport": {
+      "description": "The transport used for the travel",
+      "type": "string",
+      "enum": [
+        "car",
+        "train",
+        "plane",
+        "other"
+      ]
+    },
+    "car": {
+      "description": "The car used for the travel",
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/asset/car.json"
+    },
+    "distance": {
+      "description": "The distance traveled in km for one way",
+      "type": "number",
+      "minimum": 0
+    },
+    "duration": {
+      "description": "The duration of the travel in minutes for one way",
+      "type": "number",
+      "minimum": 0
+    },
+    "return": {
+      "description": "If true the distance and duration will be multiplied by 2",
+      "type": "boolean"
+    },
+    "flatrate": {
+      "description": "The flatrate/zone used for the travel",
+      "type": "string"
+    },
+    "price": {
+      "description": "The price of the travel in EUR",
+      "type": "number",
+      "minimum": 0
+    },
+    "startAddress": {
+      "description": "The start location of the travel",
+      "$ref": "https://codemeta.de/schemas/address"
+    },
+    "destinationAddress": {
+      "description": "The end location of the travel",
+      "$ref": "https://codemeta.de/schemas/address"
+    }
+  },
+  "required": ["transport"],
+  "name": "travelRecord",
+  "unevaluatedProperties": false
+}

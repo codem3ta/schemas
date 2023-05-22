@@ -1,6 +1,7 @@
 {
   "$id": "https://codemeta.de/schemas/asset",
   "type": "object",
+  "collection": "assets",
   "properties": {
     "name": {
       "type": "string"
@@ -18,8 +19,10 @@
       "type": "string"
     },
     "value": {
+      "description": "The value of the asset in euro",
       "type": "number"
     }
   },
-  "required": ["identifier", "ownedBy", "name"]
+  "required": ["identifier", "name"],
+  "name": "asset"
 }

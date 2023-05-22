@@ -1,0 +1,16 @@
+{
+  "$id": "https://codemeta.de/schemas/address",
+  "title": "Address",
+  "collection": "addresss",
+  "description": "An address",
+  "type": "object",
+  "properties": {
+    "street": { "description": "The street and house number", "type": "string" },
+    "zipcode": { "description": "The zipcode", "type": "string" },
+    "city": { "description": "The city", "type": "string" },
+    "country": { "description": "The country", "type": "string", "maxLength": 2 }
+  },
+  "required": ["title"],
+  "name": "address",
+  "unevaluatedProperties": false
+}

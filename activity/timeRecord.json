@@ -1,0 +1,68 @@
+{
+  "$id": "https://codemeta.de/schemas/timeRecord",
+  "title": "Time Record",
+  "collection": "timeRecords",
+  "description": "A Time Record is a record of time spent on a task. It can be billable or non-billable.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/activity"
+    }
+  ],
+  "properties": {
+    "type": {
+      "description": "The type of the timeRecord", 
+      "type": "string" 
+    },
+    "duration": {
+      "description": "The duration of the timeRecord in minutes",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1440
+    },
+    "billable": {
+      "description": "The billable duration of the timeRecord in minutes",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1440
+    },
+    "unbillableShortReason": {
+      "description": "The reason why the timeRecord is not billable",
+      "type": "string"
+    },
+    "unbillableLongReason": {
+      "description": "The text that is shown on the invoice for the timeRecord",
+      "type": "string"
+    },
+    "billed": {
+      "description": "Whether the timeRecord has been billed",
+      "type": "boolean"
+    },
+    "breaks": {
+      "description": "The breaks of the timeRecord",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "description": "The beginning of the break",
+            "type": "string",
+            "format": "date-time"
+          },
+          "end": {
+            "description": "The end of the break",
+            "type": "string",
+            "format": "date-time"
+          },
+          "duration": {
+            "description": "The duration of the break",
+            "type": "integer"
+          }
+        }
+      }
+    }
+  },
+  "required": ["type", "start", "end", "duration", "billable"],
+  "name": "timeRecord",
+  "unevaluatedProperties": false
+}

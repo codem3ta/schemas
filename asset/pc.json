@@ -1,6 +1,7 @@
 {
   "$id": "https://codemeta.de/schemas/asset/pc",
   "type": "object",
+  "collection": "assets",
   "$allOf": [
     {
       "$ref": "/asset"

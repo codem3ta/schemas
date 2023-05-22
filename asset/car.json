@@ -1,0 +1,38 @@
+{
+  "$id": "https://codemeta.de/schemas/asset/car",
+  "type": "object",
+  "collection": "assets",
+  "name": "car",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "car",
+      "default": "car"
+    },
+    "licensePlate": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "mileage": {
+      "type": "integer"
+    },
+    "fuelType": {
+      "type": "string"
+    }
+  }
+}

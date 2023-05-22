@@ -12,9 +12,8 @@
       "relation": "manyToOne",
       "target": "party"
     },
-    "writeMe": { "description": "A field that can only be written", "type": "string", "writeOnly": true },
-    "readMe": { "description": "A field that can only be read", "type": "string", "readOnly": true },
-    "internalMemo": { "description": "A field that is meant for internal use (e.g. processes)", "type": "string", "internal": true }
+    "description": { "description": "The description of the project", "type": "string", "minLength": 500 },
+    "deadline": { "description": "The deadline of the project", "type": "string", "format": "date-time" }
   },
   "required": ["title"],
   "name": "project",
