@@ -1,0 +1,35 @@
+{
+  "$id": "https://codemeta.de/schemas/step",
+  "title": "Process",
+  "collection": "steps",
+  "description": "A step is part of a process. It describes a trigger or a concrete action.",
+  "type": "object",
+  "properties": {
+    "title": { "description": "The title of the step", "type": "string" },
+    "description": {
+      "description": "The description of the step",
+      "type": "string"
+    },
+    "type": {
+      "description": "The type of the step",
+      "type": "string"
+    },
+    "next": {
+      "description": "The next step",
+      "type": "string",
+      "objectId": true,
+      "relation": "oneToOne",
+      "target": "steps"
+    },
+    "process": {
+      "description": "The process this step belongs to",
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "processes"
+    }
+  },
+  "required": ["title", "type"],
+  "name": "step",
+  "unevaluatedProperties": false
+}

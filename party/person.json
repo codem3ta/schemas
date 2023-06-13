@@ -1,0 +1,27 @@
+{
+  "$id": "https://codemeta.de/schemas/party/person",
+  "type": "object",
+  "collection": "parties",
+  "name": "person",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/party"
+    }
+  ],
+  "properties": {
+    "partyType": {
+      "const": "PERSON",
+      "default": "PERSON"
+    },
+    "salutation": {
+      "description": "The salutation",
+      "type": "string",
+      "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION"]
+    },
+    "firstName": { "description": "The first name", "type": "string" },
+    "lastName": { "description": "The last name", "type": "string" },
+    "title": { "description": "The title", "type": "string" },
+    "initials": { "description": "The initials of the party", "type": "string" },
+    "birthDate": { "description": "The birth date of the party", "type": "integer" }
+  }
+}

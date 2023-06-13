@@ -1,0 +1,22 @@
+{
+  "$id": "https://codemeta.de/schemas/step/interval",
+  "type": "object",
+  "collection": "steps",
+  "name": "intervalStep",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/step"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "interval",
+      "default": "interval"
+    },
+    "cron": {
+      "type": "string",
+      "description": "A cron expression that defines the interval of the step."
+    }
+  },
+  "unevaluatedProperties": false
+}

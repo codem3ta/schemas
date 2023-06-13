@@ -4,9 +4,12 @@ module.exports = {
   car: require('./asset/car.json'),
   project: require('./project.json'),
   party: require('./party/party.json'),
+  person: require('./party/person.json'),
+  organization: require('./party/organization.json'),
   secret: require('./secret.json'),
   task: require('./task.json'),
   activity: require('./activity/activity.json'),
   timeRecord: require('./activity/timeRecord.json'),
   travelRecord: require('./activity/travelRecord.json'),
+  shipment: require('./shipment.json'),
 }

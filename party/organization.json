@@ -1,0 +1,17 @@
+{
+  "$id": "https://codemeta.de/schemas/party/organization",
+  "type": "object",
+  "collection": "parties",
+  "name": "organization",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/party"
+    }
+  ],
+  "properties": {
+    "partyType": {
+      "const": "ORGANIZATION",
+      "default": "ORGANIZATION"
+    }
+  }
+}

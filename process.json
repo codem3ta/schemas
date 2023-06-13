@@ -1,0 +1,24 @@
+{
+  "$id": "https://codemeta.de/schemas/process",
+  "title": "Process",
+  "collection": "process",
+  "description": "A process consists of different steps that will be executed in order. It is triggered by a database action or by cron-like intervals. Running processes are called instances.",
+  "type": "object",
+  "properties": {
+    "title": { "description": "The title of the process", "type": "string" },
+    "description": {
+      "description": "The description of the process",
+      "type": "string"
+    },
+    "responsibleUser": {
+      "description": "The responsible person for the process. Responsible users for instances can be overwritten by steps.",
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "party"
+    }
+  },
+  "required": ["title", "description", "responsibleUser"],
+  "name": "process",
+  "unevaluatedProperties": false
+}
