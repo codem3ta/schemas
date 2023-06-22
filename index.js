@@ -12,4 +12,5 @@ module.exports = {
   timeRecord: require('./activity/timeRecord.json'),
   travelRecord: require('./activity/travelRecord.json'),
   shipment: require('./shipment.json'),
+  instance: require('./instance.json'),
 }

@@ -1,0 +1,20 @@
+{
+  "$id": "https://codemeta.de/schemas/instance",
+  "title": "Instance",
+  "name": "instance",
+  "collection": "instances",
+  "description": "An instance of a process with info on the execution",
+  "type": "object",
+  "properties": {
+    "process": { "description": "The running process", "type": "string", "objectId": true },
+    "status": { "description": "The status of the process", "type": "string", "enum": ["running", "ready", "completed", "error", "waiting"] },
+    "data": { "description": "The data produced by the process", "type": "object" },
+    "steps": { "description": "The steps of the process", "type": "array", "items": { "type": "object" } },
+    "createdAt": { "description": "The creation date of the instance", "type": "string", "format": "date-time" },
+    "lastChecked": { "description": "The last time the instance was checked", "type": "string", "format": "date-time" },
+    "linkedTo": { "description": "The objects linked to this instance", "type": "array", "items": { "type": "string", "objectId": true } },
+    "tenant": { "description": "The tenant that owns the instance", "type": "string" },
+    "runner": { "description": "The runner that is running the instance", "type": "string" }
+  },
+  "readOnce": true
+}
