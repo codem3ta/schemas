@@ -1,0 +1,59 @@
+{
+  "$id": "https://codemeta.de/schemas/user",
+  "title": "User",
+  "name": "user",
+  "collection": "users",
+  "description": "A user",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "The user's email address"
+    },
+    "password": {
+      "type": "string",
+      "description": "The user's password hash (argon2id)"
+    },
+    "secret": {
+      "type": "string",
+      "description": "The user's TOTP secret"
+    },
+    "confirmed": {
+      "type": "boolean",
+      "description": "Whether the user has confirmed their email address"
+    },
+    "token": {
+      "type": "string",
+      "description": "A token generated for email validation or password reset"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "The user's first name"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "The user's last name"
+    },
+    "mobilePhone": {
+      "type": "string",
+      "description": "The user's mobile phone number"
+    },
+    "company": {
+      "type": "string",
+      "description": "The user's company"
+    },
+    "role": {
+      "type": "string",
+      "description": "The user's role",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/role"
+    },
+    "tenant": {
+      "type": "string",
+      "description": "The user's tenant slug (NOT THE ID)"
+    }
+  },
+  "config": true,
+  "unevaluatedProperties": false
+}

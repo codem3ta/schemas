@@ -6,6 +6,8 @@
   "description": "An instance of a process with info on the execution",
   "type": "object",
   "properties": {
+    "title": { "description": "The title of the process", "type": "string" },
+    "description": { "description": "The description of the process", "type": "string" },
     "process": { "description": "The running process", "type": "string", "objectId": true },
     "status": { "description": "The status of the process", "type": "string", "enum": ["running", "ready", "completed", "error", "waiting"] },
     "data": { "description": "The data produced by the process", "type": "object" },
@@ -16,5 +18,5 @@
     "tenant": { "description": "The tenant that owns the instance", "type": "string" },
     "runner": { "description": "The runner that is running the instance", "type": "string" }
   },
-  "readOnce": true
+  "config": true
 }

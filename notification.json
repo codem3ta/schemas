@@ -1,0 +1,16 @@
+{
+  "$id": "https://codemeta.de/schemas/notification",
+  "title": "Notification",
+  "name": "notification",
+  "collection": "notifications",
+  "description": "A push notification that is sent to a user",
+  "type": "object",
+  "properties": {
+    "title": { "description": "The title of the notification", "type": "string" },
+    "body": { "description": "The body of the notification", "type": "string" },
+    "image": { "description": "An url to an image for the notification", "type": "string" },
+    "status": { "description": "The status of the notification", "type": "string", "enum": ["new", "delivering", "delivered", "seen"] },
+    "user": { "description": "The user that the notification is sent to", "type": "string", "objectId": true, "target": "users" }
+  },
+  "config": true
+}

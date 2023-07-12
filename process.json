@@ -20,5 +20,6 @@
   },
   "required": ["title", "description", "responsibleUser"],
   "name": "process",
-  "unevaluatedProperties": false
+  "unevaluatedProperties": false,
+  "config": true
 }
