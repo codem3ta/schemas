@@ -17,6 +17,5 @@
     "linkedTo": { "description": "The objects linked to this instance", "type": "array", "items": { "type": "string", "objectId": true } },
     "tenant": { "description": "The tenant that owns the instance", "type": "string" },
     "runner": { "description": "The runner that is running the instance", "type": "string" }
-  },
-  "config": true
+  }
 }

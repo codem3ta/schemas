@@ -6,11 +6,53 @@
   "description": "A push notification that is sent to a user",
   "type": "object",
   "properties": {
-    "title": { "description": "The title of the notification", "type": "string" },
+    "title": {
+      "description": "The title of the notification",
+      "type": "string"
+    },
     "body": { "description": "The body of the notification", "type": "string" },
-    "image": { "description": "An url to an image for the notification", "type": "string" },
-    "status": { "description": "The status of the notification", "type": "string", "enum": ["new", "delivering", "delivered", "seen"] },
-    "user": { "description": "The user that the notification is sent to", "type": "string", "objectId": true, "target": "users" }
+    "image": {
+      "description": "An url to an image for the notification",
+      "type": "string"
+    },
+    "status": {
+      "description": "The status of the notification",
+      "type": "string",
+      "enum": ["new", "delivering", "delivered", "seen"]
+    },
+    "user": {
+      "description": "The user that the notification is sent to",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/user",
+      "database": "config"
+    },
+    "requireInteraction": {
+      "description": "Whether the notification requires interaction",
+      "type": "boolean"
+    },
+    "actions": {
+      "description": "The actions that the notification can have",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "description": "A string identifier for the action",
+            "type": "string"
+          },
+          "title": {
+            "description": "The title of the action",
+            "type": "string"
+          },
+          "icon": {
+            "description": "An icon url for the action",
+            "type": "string"
+          }
+        }
+      }
+    }
   },
+  "required": ["title", "user"],
   "config": true
 }
