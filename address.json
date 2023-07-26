@@ -5,12 +5,15 @@
   "description": "An address",
   "type": "object",
   "properties": {
-    "street": { "description": "The street and house number", "type": "string" },
+    "street1": { "description": "The street and house number", "type": "string" },
+    "street2": { "description": "The street and house number", "type": "string" },
     "zipcode": { "description": "The zipcode", "type": "string" },
     "city": { "description": "The city", "type": "string" },
-    "country": { "description": "The country", "type": "string", "maxLength": 2 }
+    "countryCode": { "description": "The country", "type": "string", "maxLength": 2 },
+    "company": { "description": "The company", "type": "string" },
+    "company2": { "description": "The company", "type": "string" }
   },
-  "required": ["title"],
+  "required": [],
   "name": "address",
   "unevaluatedProperties": false
 }

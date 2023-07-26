@@ -15,4 +15,7 @@ module.exports = {
   instance: require('./instance.json'),
   notification: require('./notification.json'),
   user: require('./user.json'),
+  file: require('./file.json'),
+  article: require('./article.json'),
+  address: require('./address.json'),
 }

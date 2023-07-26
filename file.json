@@ -1,0 +1,20 @@
+{
+  "$id": "https://codemeta.de/schemas/file",
+  "title": "File",
+  "collection": "file",
+  "description": "A file document in the database. The corresponding file is in S3.",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "A description of the file."
+    },
+    "filename": {
+      "type": "string",
+      "description": "The name of the file. It can include slashes for the path in S3."
+    }
+  },
+  "name": "file",
+  "unevaluatedProperties": false,
+  "config": true
+}

@@ -3,6 +3,7 @@
   "title": "Shipment",
   "description": "Information about a shipment",
   "type": "object",
+  "collection": "shipments",
   "properties": {
     "shipmentNumber": {
       "description": "The shipment number",
@@ -17,11 +18,11 @@
     },
     "description": {
       "description": "A description of the shipment",
-      "type": "string"
+      "type": ["string", "null"]
     },
-    "shippingDate": {
-      "description": "The shipping date of the shipment",
-      "type": "integer"
+    "deliveryDate": {
+      "description": "The delivery date of the shipment",
+      "type": ["integer", "null"]
     },
     "recordEmailAddresses": {
       "title": "Record Email Addresses",
@@ -130,7 +131,7 @@
           },
           "quantity": {
             "description": "The quantity of the shipment item",
-            "type": "number"
+            "type": "string"
           },
           "title": {
             "description": "The title of the shipment item",
@@ -146,7 +147,6 @@
   },
   "required": [
     "shipmentNumber",
-    "customer",
     "description",
     "shippingDate",
     "recordEmailAddresses",

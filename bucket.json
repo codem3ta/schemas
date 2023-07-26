@@ -1,0 +1,36 @@
+{
+  "$id": "https://codemeta.de/schemas/bucket",
+  "title": "Bucket",
+  "collection": "buckets",
+  "description": "A bucket for items taken to a customer",
+  "type": "object",
+  "properties": {
+    "description": { "description": "The description of the bucket", "type": "string" },
+    "customer": {
+      "description": "The customer to which the items are taken",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "items": {
+      "description": "The items in the bucket",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "article": {
+            "description": "The article in the bucket",
+            "type": "string",
+            "objectId": true,
+            "relation": "manyToOne",
+            "target": "https://codemeta.de/schemas/article"
+          },
+          "quantity": { "description": "The quantity of the article", "type": "number", "minimum": 1 }
+        }
+      }
+    }
+  },
+  "required": ["title"],
+  "name": "bucket",
+  "unevaluatedProperties": false
+}
