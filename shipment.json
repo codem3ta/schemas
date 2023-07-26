@@ -143,6 +143,10 @@
           }
         }
       }
+    },
+    "paperless": {
+      "description": "The id of the paperless confirmation of arrival",
+      "type": ["integer", "null"]
     }
   },
   "required": [
