@@ -1,0 +1,37 @@
+{
+  "$id": "https://codemeta.de/schemas/team",
+  "title": "Team",
+  "name": "team",
+  "collection": "teams",
+  "description": "A team",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "objectId": true,
+        "description": "The user's member ID",
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/user",
+        "database": "config"
+      }
+    },
+    "tenant": {
+      "type": "string",
+      "description": "The team's tenant slug (NOT THE ID)"
+    }
+  },
+  "config": true,
+  "unevaluatedProperties": false
+}

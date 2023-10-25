@@ -11,47 +11,122 @@
       "enum": ["ORGANIZATION", "PERSON"]
     },
     "company": { "description": "The company name", "type": "string" },
-    "company2": { "description": "Additional company information", "type": "string" },
-    "customer": { "description": "Indicates if the party is a customer", "type": "boolean" },
-    "supplier": { "description": "Indicates if the party is a supplier", "type": "boolean" },
+    "company2": {
+      "description": "Additional company information",
+      "type": "string"
+    },
+    "customer": {
+      "description": "Indicates if the party is a customer",
+      "type": "boolean"
+    },
+    "supplier": {
+      "description": "Indicates if the party is a supplier",
+      "type": "boolean"
+    },
     "leadStatus": {
       "description": "The lead status of the party",
       "type": "string",
       "enum": ["CONVERTED", "DISQUALIFIED", "NEW", "PREQUALIFIED", "QUALIFIED"]
     },
-    "customerBlocked": { "description": "Indicates if the customer is blocked", "type": "boolean" },
-    "customerNumber": { "description": "The customer number", "type": "string" },
-    "supplierNumber": { "description": "The supplier number", "type": "string" },
+    "customerBlocked": {
+      "description": "Indicates if the customer is blocked",
+      "type": "boolean"
+    },
+    "customerNumber": {
+      "description": "The customer number",
+      "type": "string"
+    },
+    "supplierNumber": {
+      "description": "The supplier number",
+      "type": "string"
+    },
     "phone": { "description": "The phone number", "type": "string" },
     "fax": { "description": "The fax number", "type": "string" },
-    "website": { "description": "The website URL", "type": "string", "format": "uri" },
-    "mobilePhone1": { "description": "The primary mobile phone number", "type": "string" },
-    "mobilePhone2": { "description": "The secondary mobile phone number", "type": "string" },
+    "website": {
+      "description": "The website URL",
+      "type": "string",
+      "format": "uri"
+    },
+    "mobilePhone1": {
+      "description": "The primary mobile phone number",
+      "type": "string"
+    },
+    "mobilePhone2": {
+      "description": "The secondary mobile phone number",
+      "type": "string"
+    },
     "phoneHome": { "description": "The home phone number", "type": "string" },
-    "optInLetter": { "description": "Indicates if the party has opted in for letters", "type": "boolean" },
-    "optInPhone": { "description": "Indicates if the party has opted in for phone calls", "type": "boolean" },
-    "optInSms": { "description": "Indicates if the party has opted in for SMS", "type": "boolean" },
-    "supplierOrderBlock": { "description": "Indicates if the supplier is order-blocked", "type": "boolean" },
-    "purchaseViaPlafond": { "description": "Indicates if the purchase is made via plafond", "type": "boolean" },
-    "email": { "description": "The email of the party", "type": "string", "format": "email" },
-    "categories": { "description": "Categories associated with the party", "type": "array", "items": { "type": "string" } },
+    "optInLetter": {
+      "description": "Indicates if the party has opted in for letters",
+      "type": "boolean"
+    },
+    "optInPhone": {
+      "description": "Indicates if the party has opted in for phone calls",
+      "type": "boolean"
+    },
+    "optInSms": {
+      "description": "Indicates if the party has opted in for SMS",
+      "type": "boolean"
+    },
+    "supplierOrderBlock": {
+      "description": "Indicates if the supplier is order-blocked",
+      "type": "boolean"
+    },
+    "purchaseViaPlafond": {
+      "description": "Indicates if the purchase is made via plafond",
+      "type": "boolean"
+    },
+    "email": {
+      "description": "The email of the party",
+      "type": "string",
+      "format": "email"
+    },
+    "categories": {
+      "description": "Categories associated with the party",
+      "type": "array",
+      "items": { "type": "string" }
+    },
     "addresses": {
       "description": "The addresses of the party",
       "type": "array",
       "items": {
         "type": "object",
-        "properties": {
-          "id": { "description": "The ID of the address", "type": "string" },
-          "version": { "description": "The version of the address", "type": "string" },
-          "city": { "description": "The city of the address", "type": "string" },
-          "countryCode": { "description": "The country code of the address", "type": "string" },
-          "postalCode": { "description": "The postal code of the address", "type": "string" },
-          "street": { "description": "The street of the address", "type": "string" }
-        },
-        "required": ["city", "countryCode", "postalCode", "street"]
+        "$ref": "https://codemeta.de/schemas/address"
+      }
+    },
+    "weclapp": {
+      "type": "string",
+      "description": "The weclapp ID of the party"
+    },
+    "salutation": {
+      "description": "The salutation",
+      "type": "string",
+      "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION"]
+    },
+    "firstName": { "description": "The first name", "type": "string" },
+    "lastName": { "description": "The last name", "type": "string" },
+    "title": { "description": "The title", "type": "string" },
+    "initials": {
+      "description": "The initials of the party",
+      "type": "string"
+    },
+    "birthDate": {
+      "description": "The birth date of the party",
+      "type": "integer"
+    },
+    "partyEmailAddresses": {
+      "description": "The email addresses of the party",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "objectId": true,
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/emailAddresses"
       }
     }
   },
   "required": ["partyType"],
-  "name": "party"
+  "name": "party",
+  "searchable": true,
+  "searchFields": ["company", "company2", "firstName", "lastName", "email"]
 }

@@ -1,0 +1,36 @@
+{
+  "$id": "https://codemeta.de/schemas/vacationRequest",
+  "title": "Vacation Request",
+  "collection": "vacationRequests",
+  "description": "A vacation request by a user",
+  "type": "object",
+  "properties": {
+    "description": {
+      "description": "A comment by the requesting user",
+      "type": ["string", "null"]
+    },
+    "startDate": {
+      "description": "The start date of the vacation",
+      "type": "string",
+      "format": "date"
+    },
+    "endDate": {
+      "description": "The end date of the vacation",
+      "type": "string",
+      "format": "date"
+    },
+    "status": {
+      "description": "The status of the request",
+      "type": "string",
+      "enum": ["pending", "approved", "rejected"],
+      "default": "pending"
+    },
+    "feedback": {
+      "description": "Feedback from the manager",
+      "type": ["string", "null"]
+    }
+  },
+  "required": [],
+  "name": "vacationRequest",
+  "unevaluatedProperties": false
+}

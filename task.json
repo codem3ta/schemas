@@ -8,7 +8,7 @@
     "title": { "description": "The title of the task", "type": "string" },
     "description": { "description": "The description of the task", "type": "string", "minLength": 500 },
     "dueDate": { "description": "The due date for the task", "type": "string", "format": "date-time" },
-    "user": { "description": "The user who created the task", "type": "string", "objectId": true, "target": "https://codemeta.de/schemas/user", "database": "config" }
+    "user": { "description": "The user the task is for", "type": "string", "objectId": true, "target": "https://codemeta.de/schemas/user", "database": "config" }
   },
   "required": ["title"],
   "name": "task",

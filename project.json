@@ -13,10 +13,23 @@
       "target": "https://codemeta.de/schemas/party"
     },
     "description": { "description": "The description of the project", "type": "string" },
-    "deadline": { "description": "The deadline of the project", "type": "string", "format": "date-time" }
+    "deadline": { "description": "The deadline of the project", "type": "string", "format": "date-time" },
+    "team": {
+      "description": "The team of the project",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/team"
+    },
+    "timeEstimation": { "description": "The time estimation of the project in milliseconds", "type": "number", "minimum": 0 },
+    "status": {
+      "description": "The status of the project",
+      "type": "string"
+    }
   },
   "required": ["title"],
   "name": "project",
   "unevaluatedProperties": false,
-  "inheritPermissionsFrom": "linkedParty"
+  "inheritPermissionsFrom": "linkedParty",
+  "searchable": true,
+  "searchFields": ["title", "description"]
 }

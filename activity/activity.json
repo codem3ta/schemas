@@ -70,7 +70,6 @@
       "target": "https://codemeta.de/schemas/party"
     }
   },
-  "required": ["start", "end"],
-  "name": "activity",
-  "unevaluatedProperties": false
+  "required": [],
+  "name": "activity"
 }

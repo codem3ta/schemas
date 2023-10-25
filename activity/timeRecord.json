@@ -14,11 +14,14 @@
       "description": "The type of the timeRecord", 
       "type": "string" 
     },
+    "description": {
+      "description": "The description of the timeRecord",
+      "type": "string"
+    },
     "duration": {
-      "description": "The duration of the timeRecord in minutes",
+      "description": "The duration of the timeRecord in milliseconds",
       "type": "integer",
-      "minimum": 0,
-      "maximum": 1440
+      "minimum": 0
     },
     "billable": {
       "description": "The billable duration of the timeRecord in minutes",
@@ -60,9 +63,13 @@
           }
         }
       }
+    },
+    "tanss": {
+      "type": "number",
+      "description": "The timeRecord's TANSS support ID"
     }
   },
-  "required": ["type", "start", "end", "duration", "billable"],
+  "required": [],
   "name": "timeRecord",
   "unevaluatedProperties": false
 }

@@ -18,4 +18,7 @@ module.exports = {
   file: require('./file.json'),
   article: require('./article.json'),
   address: require('./address.json'),
+  store: require('./store.json'),
+  vacationRequest: require('./vacationRequest.json'),
+  request: require('./request.json'),
 }

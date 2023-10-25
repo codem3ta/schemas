@@ -5,8 +5,8 @@
   "description": "A store where a tenant can offer services to another tenant",
   "type": "object",
   "properties": {
-    "name": {
-      "description": "The name of the store",
+    "title": {
+      "description": "The title of the store",
       "type": ["string", "null"]
     },
     "description": {
@@ -29,6 +29,12 @@
           }
         }
       }
+    },
+    "linkedParty": {
+      "description": "The party that the store is for",
+      "type": ["string", "null"],
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
     }
   },
   "required": [],

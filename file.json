@@ -1,6 +1,7 @@
 {
   "$id": "https://codemeta.de/schemas/file",
   "title": "File",
+  "plural": "files",
   "collection": "file",
   "description": "A file document in the database. The corresponding file is in S3.",
   "type": "object",

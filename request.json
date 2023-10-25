@@ -1,0 +1,35 @@
+{
+  "$id": "https://codemeta.de/schemas/request",
+  "title": "Request",
+  "collection": "requests",
+  "description": "A support request",
+  "type": "object",
+  "properties": {
+    "title": { "description": "The subject of the request", "type": "string" },
+    "description": { "description": "The content of the request", "type": "string" },
+    "linkedParty": {
+      "description": "The party linked to the request",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "team": {
+      "description": "The team of the request",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/team"
+    },
+    "status": {
+      "description": "The status of the request",
+      "type": "string"
+    },
+    "tanss": {
+      "description": "The tanss ID of the request",
+      "type": "number"
+    }
+  },
+  "required": ["title", "content"],
+  "name": "request",
+  "unevaluatedProperties": false,
+  "inheritPermissionsFrom": "linkedParty"
+}

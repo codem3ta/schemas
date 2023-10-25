@@ -1,0 +1,20 @@
+{
+  "$id": "https://codemeta.de/schemas/emailAddresses",
+  "title": "Email Addresses",
+  "collection": "emailAddresses",
+  "description": "A collection of email addresses",
+  "type": "object",
+  "properties": {
+    "toAddresses": {
+      "type": "string"
+    },
+    "ccAddresses": {
+      "type": "string"
+    },
+    "bccAddresses": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "emailAddresses"
+}
