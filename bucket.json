@@ -5,7 +5,46 @@
   "description": "A bucket for items taken to a customer",
   "type": "object",
   "properties": {
-    "description": { "description": "The description of the bucket", "type": "string" },
+    "bucketId": {
+      "description": "The unique identifier of the bucket",
+      "type": "string",
+      "format": "uuid"
+    },
+    "version": {
+      "description": "The version of the bucket",
+      "type": "integer",
+      "minimum": 1
+    },
+    "description": {
+      "description": "The description of the bucket",
+      "type": "string"
+    },
+    "user": {
+      "description": "The user who created the bucket",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user"
+    },
+    "salesOrder": {
+      "description": "The sales order to which the bucket belongs",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/salesOrder",
+      "relation": "manyToOne"
+    },
+    "status": {
+      "description": "The status of the bucket",
+      "type": "string",
+      "enum": [
+        "OPEN",
+        "CLOSED"
+      ],
+      "default": "OPEN"
+    },
+    "comment": {
+      "description": "The comment of the bucket",
+      "type": "string"
+    },
     "customer": {
       "description": "The customer to which the items are taken",
       "type": "string",
@@ -25,12 +64,20 @@
             "relation": "manyToOne",
             "target": "https://codemeta.de/schemas/article"
           },
-          "quantity": { "description": "The quantity of the article", "type": "number", "minimum": 1 }
+          "quantity": {
+            "description": "The quantity of the article",
+            "type": "number",
+            "minimum": 1
+          }
         }
       }
     }
   },
-  "required": ["title"],
+  "required": [
+    "bucketId",
+    "version",
+    "user"
+  ],
   "name": "bucket",
   "unevaluatedProperties": false
 }

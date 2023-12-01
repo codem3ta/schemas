@@ -1,0 +1,34 @@
+{
+  "$id": "https://codemeta.de/schemas/stock",
+  "title": "Stock",
+  "collection": "stocks",
+  "description": "The stock of an article",
+  "type": "object",
+  "properties": {
+    "articleNumber": {
+      "description": "The number of the article to which the stock belongs",
+      "type": "string"
+    },
+    "quantity": {
+      "description": "The quantity of the article",
+      "type": "integer"
+    },
+    "serialNumbers": {
+      "description": "The serialNumbers of the article",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "articleNumber"
+  ],
+  "name": "stock",
+  "unevaluatedProperties": false
+}
