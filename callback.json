@@ -1,0 +1,77 @@
+{
+  "$id": "https://codemeta.de/schemas/callback",
+  "title": "Callback",
+  "collection": "callbacks",
+  "description": "A callback",
+  "type": "object",
+  "properties": {
+    "caller": {
+      "description": "The caller",
+      "type": "string"
+    },
+    "phoneNumber": {
+      "description": "The phone number",
+      "type": "string"
+    },
+    "company": {
+      "description": "The company",
+      "type": "string"
+    },
+    "orderReference": {
+      "description": "The order reference",
+      "type": "string"
+    },
+    "availableFrom": {
+      "description": "The date-time from which the caller is available",
+      "type": "string",
+      "format": "date-time"
+    },
+    "availableUntil": {
+      "description": "The date-time from which the caller is no longer available",
+      "type": "string",
+      "format": "date-time"
+    },
+    "toBeHandledBy": {
+      "description": "To be handled by",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user"
+    },
+    "spectators": {
+      "description": "Spectators",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/user"
+      }
+    },
+    "description": {
+      "description": "The description",
+      "type": "string"
+    },
+    "priority": {
+      "description": "The priority",
+      "type": "string"
+    },
+    "status": {
+      "description": "The status",
+      "type": "enum",
+      "enum": [
+        "pending",
+        "completed"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "caller",
+    "phoneNumber",
+    "startDate",
+    "startTime",
+    "endDate",
+    "endTime",
+    "priority"
+  ],
+  "additionalProperties": false
+}
