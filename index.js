@@ -21,4 +21,5 @@ module.exports = {
   store: require('./store.json'),
   vacationRequest: require('./vacationRequest.json'),
   request: require('./request.json'),
+  callback: require('./callback.json'),
 }
