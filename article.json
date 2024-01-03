@@ -5,13 +5,39 @@
   "description": "An article",
   "type": "object",
   "properties": {
-    "articleNumber": { "description": "The articleNumber of the article", "type": "string" },
-    "name": { "description": "The name of the article", "type": ["string", "null"] },
-    "description": { "description": "The description of the article", "type": ["string", "null"] },
-    "longText": { "description": "The longText of the article", "type": ["string", "null"] },
-    "unitName": { "description": "The unitName of the article", "type": "string" }
+    "articleNumber": {
+      "description": "The articleNumber of the article",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the article",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "description": "The description of the article",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
   },
-  "required": ["articleNumber"],
+  "longText": {
+    "description": "The longText of the article",
+    "type": [
+      "string",
+      "null"
+    ]
+  },
+  "unitName": {
+    "description": "The unitName of the article",
+    "type": "string"
+  },
+  "required": [
+    "articleNumber"
+  ],
   "name": "article",
   "unevaluatedProperties": false
 }

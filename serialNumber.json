@@ -1,0 +1,28 @@
+{
+  "$id": "https://codemeta.de/schemas/serialNumber",
+  "title": "Serial Number",
+  "collection": "serialNumbers",
+  "description": "A serial number of an article",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The weclapp id of the article",
+      "type": "string"
+    },
+    "article": {
+      "description": "The article of the serial number",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/article"
+    },
+    "serialNumber": {
+      "description": "The serial number",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id","article", "serialNumber"
+  ],
+  "name": "serialNumber",
+  "unevaluatedProperties": false
+}
