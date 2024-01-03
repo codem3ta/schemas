@@ -68,10 +68,6 @@
   "required": [
     "caller",
     "phoneNumber",
-    "startDate",
-    "startTime",
-    "endDate",
-    "endTime",
     "priority"
   ],
   "additionalProperties": false
