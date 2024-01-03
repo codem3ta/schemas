@@ -2,6 +2,7 @@
   "$id": "https://codemeta.de/schemas/callback",
   "title": "Callback",
   "collection": "callbacks",
+  "name": "callback",
   "description": "A callback",
   "type": "object",
   "properties": {
