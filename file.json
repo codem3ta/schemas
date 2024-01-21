@@ -2,7 +2,7 @@
   "$id": "https://codemeta.de/schemas/file",
   "title": "File",
   "plural": "files",
-  "collection": "file",
+  "collection": "files",
   "description": "A file document in the database. The corresponding file is in S3.",
   "type": "object",
   "properties": {
@@ -13,9 +13,31 @@
     "filename": {
       "type": "string",
       "description": "The name of the file. It can include slashes for the path in S3."
+    },
+    "size": {
+      "type": "integer",
+      "description": "The size of the file in bytes."
+    },
+    "type": {
+      "type": "string",
+      "description": "The MIME type of the file."
+    },
+    "maxSize": {
+      "type": "integer",
+      "description": "The maximum size of the file in bytes.",
+      "default": 10000000000,
+      "minimum": 0,
+      "maximum": 10000000000
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date at which the file expires."
     }
   },
   "name": "file",
-  "unevaluatedProperties": false,
-  "config": true
+  "required": [
+    "filename"
+  ],
+  "unevaluatedProperties": false
 }
