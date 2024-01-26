@@ -55,7 +55,8 @@
     },
     "priority": {
       "description": "The priority",
-      "type": "string"
+      "type": "string",
+      "enum": ["A", "B", "C", "D", "E"]
     },
     "status": {
       "description": "The status",
@@ -65,6 +66,10 @@
         "completed"
       ],
       "default": "pending"
+    },
+    "feedback": {
+      "description": "User feedback after the callback",
+      "type": "string"
     }
   },
   "required": [
