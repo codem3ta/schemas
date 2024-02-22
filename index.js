@@ -22,4 +22,5 @@ module.exports = {
   vacationRequest: require('./vacationRequest.json'),
   request: require('./request.json'),
   callback: require('./callback.json'),
+  bookmark: require('./bookmark.json'),
 }
