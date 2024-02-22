@@ -1,0 +1,28 @@
+{
+  "$id": "https://codemeta.de/schemas/bookmark",
+  "title": "Bookmark",
+  "collection": "bookmarks",
+  "description": "A bookmark",
+  "type": "object",
+  "properties": {
+    "url": {
+      "description": "The url of the bookmark",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title of the bookmark",
+      "type": "string"
+    },
+    "group": {
+      "description": "The group of the bookmark",
+      "type": "string"
+    }
+  },
+  "required": [
+    "url",
+    "title",
+    "group"
+  ],
+  "name": "bucket",
+  "unevaluatedProperties": false
+}
