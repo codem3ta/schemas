@@ -23,8 +23,9 @@
     "user": {
       "description": "The user that the notification is sent to",
       "type": "string",
+      "target": "https://codemeta.de/schemas/user",
       "objectId": true,
-      "target": "https://codemeta.de/schemas/user"
+      "database": "config"
     },
     "requireInteraction": {
       "description": "Whether the notification requires interaction",
