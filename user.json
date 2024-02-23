@@ -49,6 +49,10 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/role"
     },
+    "jobTitle": {
+      "type": "string",
+      "description": "The user's job title"
+    },
     "tenant": {
       "type": "string",
       "description": "The user's tenant slug (NOT THE ID)"
