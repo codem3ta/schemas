@@ -2,19 +2,10 @@
   "$id": "https://codemeta.de/schemas/bucket",
   "title": "Bucket",
   "collection": "buckets",
+  "name": "bucket",
   "description": "A bucket for items taken to a customer",
   "type": "object",
   "properties": {
-    "bucketId": {
-      "description": "The unique identifier of the bucket",
-      "type": "string",
-      "format": "uuid"
-    },
-    "version": {
-      "description": "The version of the bucket",
-      "type": "integer",
-      "minimum": 1
-    },
     "description": {
       "description": "The description of the bucket",
       "type": "string"
@@ -74,10 +65,8 @@
     }
   },
   "required": [
-    "bucketId",
-    "version",
-    "user"
+    "user",
+    "customer"
   ],
-  "name": "bucket",
   "unevaluatedProperties": false
 }
