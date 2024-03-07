@@ -1,6 +1,6 @@
 module.exports = {
   asset: require('./asset/asset.json'),
-  bucket: require('./asset/bucket.json'),
+  bucket: require('./bucket.json'),
   pc: require('./asset/pc.json'),
   car: require('./asset/car.json'),
   project: require('./project.json'),
