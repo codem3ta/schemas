@@ -63,10 +63,11 @@
       "description": "The status",
       "type": "string",
       "enum": [
+        "new",
         "pending",
         "completed"
       ],
-      "default": "pending"
+      "default": "new"
     },
     "feedback": {
       "description": "User feedback after the callback",
