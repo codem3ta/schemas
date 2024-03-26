@@ -72,6 +72,11 @@
     "feedback": {
       "description": "User feedback after the callback",
       "type": "string"
+    },
+    "completedAt": {
+      "description": "The date-time when the callback was completed",
+      "type": "string",
+      "format": "date-time"
     }
   },
   "required": [
