@@ -1,0 +1,38 @@
+stages:
+  - install
+  - test
+  - build
+  - deploy
+
+deploy_test:
+  stage: deploy
+  tags:
+    - docker
+  before_script:
+    - apk add --no-cache aws-cli
+  script:
+    - aws s3 cp ./ s3://$S3_TEST_BUCKET --recursive
+  only:
+    - dev
+
+deploy_staging:
+  stage: deploy
+  tags:
+    - docker
+  before_script:
+    - apk add --no-cache aws-cli
+  script:
+    - aws s3 cp ./ s3://$S3_STAGING_BUCKET --recursive
+  only:
+    - main
+
+deploy_production:
+  stage: deploy
+  tags:
+    - docker
+  before_script:
+    - apk add --no-cache aws-cli
+  script:
+    - aws s3 cp ./ s3://$S3_PRODUCTION_BUCKET --recursive
+  only:
+    - stable

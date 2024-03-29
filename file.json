@@ -1,9 +1,17 @@
 {
   "$id": "https://codemeta.de/schemas/file",
+  "name": "file",
   "title": "File",
   "plural": "files",
   "collection": "files",
   "description": "A file document in the database. The corresponding file is in S3.",
+  "i18n": {
+    "de": {
+      "singular": "Datei",
+      "plural": "Dateien",
+      "description": "Dateien wie Profilbilder, Anhänge, etc."
+    }
+  },
   "type": "object",
   "properties": {
     "description": {
@@ -35,7 +43,6 @@
       "description": "The date at which the file expires."
     }
   },
-  "name": "file",
   "required": [
     "filename"
   ],

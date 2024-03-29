@@ -4,6 +4,13 @@
   "name": "user",
   "collection": "users",
   "description": "A user",
+  "i18n": {
+    "de": {
+      "singular": "Profil",
+      "plural": "Profile",
+      "description": "Benutzerprofile mit Kontaktdaten"
+    }
+  },
   "type": "object",
   "properties": {
     "email": {

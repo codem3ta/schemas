@@ -5,6 +5,13 @@
   "name": "callback",
   "description": "A callback",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Rückruf",
+      "plural": "Rückrufe",
+      "description": "Ein Rückruf repräsentiert einen Rückrufwunsch eines Kunden."
+    }
+  },
   "properties": {
     "caller": {
       "description": "The caller",
