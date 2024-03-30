@@ -1,0 +1,51 @@
+{
+  "$id": "https://codemeta.de/schemas/app",
+  "name": "app",
+  "title": "App",
+  "plural": "apps",
+  "collection": "apps",
+  "description": "A app (OAuth client) that uses the TOAST API.",
+  "i18n": {
+    "de": {
+      "singular": "App",
+      "plural": "Apps",
+      "description": "Eine App, die die Codemeta API verwendet."
+    }
+  },
+  "type": "object",
+  "properties": {
+    "clientId": {
+      "type": "string",
+      "description": "A uuid v4 string that uniquely identifies the app. (OAuth client_id)"
+    },
+    "scopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The OAuth scopes that the app is allowed to request."
+    },
+    "redirectUris": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": "The OAuth redirect URIs that the app is allowed to use."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the app."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description for the app."
+    }
+  },
+  "required": [
+    "clientId",
+    "scopes",
+    "redirectUris"
+  ],
+  "unevaluatedProperties": false
+}

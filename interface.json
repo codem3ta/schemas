@@ -1,0 +1,16 @@
+{
+  "$id": "https://codemeta.de/schemas/interface",
+  "title": "Interface",
+  "name": "interface",
+  "config": true,
+  "database": "config",
+  "collection": "interfaces",
+  "description": "An interface is a contract between two software components. It defines the access keys and  operations that the components can use to communicate with each other.",
+  "i18n": {
+    "de": {
+      "singular": "Schnittstelle",
+      "plural": "Schnittstellen",
+      "description": "Schnittstellen definieren den Zugriff auf externe Software und enthalten vertrauliche Informationen wie Zugangstoken"
+    }
+  }
+}

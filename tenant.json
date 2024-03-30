@@ -1,0 +1,16 @@
+{
+  "$id": "https://codemeta.de/schemas/tenant",
+  "title": "Tenant",
+  "name": "tenant",
+  "config": true,
+  "database": "config",
+  "collection": "tenants",
+  "description": "A tenant is a customer/organization in the database that shares billing and resources",
+  "i18n": {
+    "de": {
+      "singular": "Tenant",
+      "plural": "Tenant",
+      "description": "Der eigene Tenant enthält Einstellungen und Abrechnungsinformationen"
+    }
+  }
+}

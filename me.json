@@ -1,0 +1,60 @@
+{
+  "$id": "https://codemeta.de/schemas/me",
+  "title": "Me",
+  "name": "me",
+  "config": true,
+  "database": "config",
+  "collection": "users",
+  "description": "The currently logged in user's profile",
+  "i18n": {
+    "de": {
+      "singular": "Eigenes Profil",
+      "plural": "Eigenes Profil",
+      "description": "Eigenes Benutzerprofil"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "The user's email address"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "The user's first name"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "The user's last name"
+    },
+    "mobilePhone": {
+      "type": "string",
+      "description": "The user's mobile phone number"
+    },
+    "role": {
+      "type": "string",
+      "description": "The user's role",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/role"
+    },
+    "tenant": {
+      "type": "string",
+      "description": "The user's tenant slug (NOT THE ID)"
+    },
+    "confirmed": {
+      "type": "boolean",
+      "description": "Whether the user has confirmed their email address"
+    },
+    "profilePicture": {
+      "type": "string",
+      "description": "The user's profile picture file id",
+      "objectId": true
+    },
+    "microsoftId": {
+      "type": "string",
+      "description": "The user's Microsoft ID"
+    }
+  },
+  "unevaluatedProperties": false
+}
