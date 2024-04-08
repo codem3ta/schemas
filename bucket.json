@@ -5,6 +5,13 @@
   "name": "bucket",
   "description": "A bucket for items taken to a customer",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Bucket",
+      "plural": "Buckets",
+      "description": "Ein Bucket repräsentiert Waren, die mit zum Kunden genommen wurden."
+    }
+  },
   "properties": {
     "description": {
       "description": "The description of the bucket",
