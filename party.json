@@ -4,6 +4,13 @@
   "collection": "parties",
   "description": "A person or organization",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Party",
+      "plural": "Parties",
+      "description": "Ein Party repräsentiert Organisationen oder Personen."
+    }
+  },
   "properties": {
     "partyType": {
       "description": "The type of the party",
