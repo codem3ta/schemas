@@ -4,7 +4,7 @@ module.exports = {
   pc: require('./asset/pc.json'),
   car: require('./asset/car.json'),
   project: require('./project.json'),
-  party: require('./party/party.json'),
+  party: require('./party.json'),
   person: require('./party/person.json'),
   organization: require('./party/organization.json'),
   secret: require('./secret.json'),
