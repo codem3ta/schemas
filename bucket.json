@@ -21,6 +21,7 @@
       "description": "The user who created the bucket",
       "type": "string",
       "relation": "manyToOne",
+      "objectId": true,
       "target": "https://codemeta.de/schemas/user"
     },
     "salesOrder": {
@@ -46,6 +47,7 @@
     "customer": {
       "description": "The customer to which the items are taken",
       "type": "string",
+      "objectId": true,
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/party"
     },
