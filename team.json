@@ -27,6 +27,14 @@
         "database": "config"
       }
     },
+    "manager": {
+      "type": "string",
+      "objectId": true,
+      "description": "The manager's user ID",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
+      "database": "config"
+    },
     "tenant": {
       "type": "string",
       "description": "The team's tenant slug (NOT THE ID)"

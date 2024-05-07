@@ -24,4 +24,5 @@ module.exports = {
   request: require('./request.json'),
   callback: require('./callback.json'),
   bookmark: require('./bookmark.json'),
+  team: require('./team.json'),
 }
