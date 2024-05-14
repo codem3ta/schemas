@@ -53,6 +53,10 @@
       "description": "The customer number to which the items are taken",
       "type": "string"
     },
+    "worth": {
+      "description": "Total value of items in the bucket",
+      "type": "string"
+    },
     "items": {
       "description": "The items in the bucket",
       "type": "array",
