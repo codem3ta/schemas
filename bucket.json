@@ -37,8 +37,9 @@
       ],
       "default": "OPEN"
     },
-    "kind": {
-      "description": "The kind of the bucket",
+    "type": {
+      "description": "The type of the bucket",
+      "type": "string",
       "enum": [
         "RECEIVED",
         "DELIVERY"
@@ -74,7 +75,7 @@
   "required": [
     "user",
     "customerNumber",
-    "kind"
+    "type"
   ],
   "unevaluatedProperties": false
 }
