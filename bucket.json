@@ -73,7 +73,8 @@
   },
   "required": [
     "user",
-    "customerNumber"
+    "customerNumber",
+    "kind"
   ],
   "unevaluatedProperties": false
 }
