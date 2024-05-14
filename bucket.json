@@ -37,6 +37,13 @@
       ],
       "default": "OPEN"
     },
+    "kind": {
+      "description": "The kind of the bucket",
+      "enum": [
+        "RECEIVED",
+        "DELIVERY"
+      ]
+    },
     "comment": {
       "description": "The comment of the bucket",
       "type": "string"
