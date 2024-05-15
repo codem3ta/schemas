@@ -24,12 +24,9 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/user"
     },
-    "salesOrder": {
-      "description": "The sales order to which the bucket belongs",
-      "type": "string",
-      "objectId": true,
-      "target": "https://codemeta.de/schemas/salesOrder",
-      "relation": "manyToOne"
+    "orderNumber": {
+      "description": "The sales order number to which the bucket belongs",
+      "type": "string"
     },
     "status": {
       "description": "The status of the bucket",
@@ -40,16 +37,29 @@
       ],
       "default": "OPEN"
     },
+    "type": {
+      "description": "The type of the bucket",
+      "type": "string",
+      "enum": [
+        "RECEIVED",
+        "DELIVERY"
+      ]
+    },
     "comment": {
       "description": "The comment of the bucket",
       "type": "string"
     },
-    "customer": {
-      "description": "The customer to which the items are taken",
-      "type": "string",
-      "objectId": true,
-      "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/party"
+    "customerNumber": {
+      "description": "The customer number to which the items are taken",
+      "type": "string"
+    },
+    "contact": {
+      "description": "The contact person of the company that brought the items",
+      "type": "string"
+    },
+    "worth": {
+      "description": "Total value of items in the bucket",
+      "type": "string"
     },
     "items": {
       "description": "The items in the bucket",
@@ -57,12 +67,9 @@
       "items": {
         "type": "object",
         "properties": {
-          "article": {
+          "articleNumber": {
             "description": "The article in the bucket",
-            "type": "string",
-            "objectId": true,
-            "relation": "manyToOne",
-            "target": "https://codemeta.de/schemas/article"
+            "type": "string"
           },
           "quantity": {
             "description": "The quantity of the article",
@@ -75,7 +82,8 @@
   },
   "required": [
     "user",
-    "customer"
+    "customerNumber",
+    "type"
   ],
   "unevaluatedProperties": false
 }
