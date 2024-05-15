@@ -1,0 +1,44 @@
+{
+  "$id": "https://codemeta.de/schemas/student",
+  "title": "Student",
+  "collection": "students",
+  "name": "student",
+  "description": "A student for items taken to a customer",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Student",
+      "plural": "Studenten",
+      "description": "Ein an der Uni eingeschriebener Student."
+    }
+  },
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "description": "The first name of the student."
+    },
+    "lastName": {
+      "type": "string",
+      "description": "The last name of the student."
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "The email address of the student."
+    },
+    "phone": {
+      "type": "string",
+      "description": "The phone number of the student."
+    },
+    "matriculationNumber": {
+      "type": "string",
+      "description": "The matriculation number of the student."
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "matriculationNumber"
+  ],
+  "unevaluatedProperties": false
+}

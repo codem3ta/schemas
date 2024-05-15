@@ -1,0 +1,33 @@
+{
+  "$id": "https://codemeta.de/schemas/course",
+  "title": "Course",
+  "collection": "courses",
+  "name": "course",
+  "description": "A course for items taken to a customer",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Kurs",
+      "plural": "Kurse",
+      "description": "Ein Kurs an der Uni."
+    }
+  },
+  "properties": {
+    "title": {
+      "description": "The title of the course",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of the course",
+      "type": "string"
+    },
+    "teacher": {
+      "description": "The teacher of the course",
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "unevaluatedProperties": false
+}
