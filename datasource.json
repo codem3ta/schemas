@@ -1,0 +1,49 @@
+{
+  "$id": "https://codemeta.de/schemas/datasource",
+  "title": "Datasource",
+  "name": "datasource",
+  "collection": "datasources",
+  "description": "A datasource",
+  "type": "object",
+  "properties": {
+    "source": {
+      "description": "The origin source of the datasource",
+      "type": "string"
+    },
+    "sourceId": {
+      "description": "The id in the source's system",
+      "type": "string"
+    },
+    "recordId": {
+      "description": "Object Id of the record in our database",
+      "type": "string",
+      "objectId": true
+    },
+    "collection": {
+      "description": "The collection of the data inside the toast database",
+      "type": "string"
+    },
+    "schema": {
+      "description": "The schema of the data",
+      "type": "string"
+    },
+    "queryInterval": {
+      "description": "The interval at which the datasource should be queried",
+      "type": "string"
+    },
+    "queriedAt": {
+      "description": "The last time the datasource was queried",
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastQueryResult": {
+      "description": "The result of the last query",
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "source"
+  ],
+  "unevaluatedProperties": false
+}

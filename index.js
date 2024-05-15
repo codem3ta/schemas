@@ -25,4 +25,5 @@ module.exports = {
   callback: require('./callback.json'),
   bookmark: require('./bookmark.json'),
   team: require('./team.json'),
+  datasource: require('./datasource.json'),
 }

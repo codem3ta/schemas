@@ -130,8 +130,15 @@
         "relation": "manyToOne",
         "target": "https://codemeta.de/schemas/emailAddresses"
       }
-    }
-  },
+    },
+    "headquarter": {
+      "description": "The headquarter of the party",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party",
+      "relation": "manyToOne"
+  }
+},
   "required": ["partyType"],
   "name": "party",
   "searchable": true,
