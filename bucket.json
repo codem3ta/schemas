@@ -53,6 +53,10 @@
       "description": "The customer number to which the items are taken",
       "type": "string"
     },
+    "contact": {
+      "description": "The contact person of the company that brought the items",
+      "type": "string"
+    },
     "worth": {
       "description": "Total value of items in the bucket",
       "type": "string"
