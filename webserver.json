@@ -1,0 +1,33 @@
+{
+  "$id": "https://codemeta.de/schemas/webserver",
+  "title": "Webserver",
+  "collection": "webservers",
+  "name": "webserver",
+  "description": "A webserver container on web.codemeta.de",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Webserver",
+      "plural": "Webserver",
+      "description": "Ein Webserver, der im Codemeta-Web-Dienst konfiguriert wurde."
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "A title for the webserver."
+    },
+    "image": {
+      "type": "string",
+      "description": "The Docker image of the webserver."
+    },
+    "customer": {
+      "type": "string",
+      "description": "The customer of the webserver.",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
+    }
+  },
+  "required": [ ],
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,53 @@
+{
+  "$id": "https://codemeta.de/schemas/webspace",
+  "title": "Webspace",
+  "collection": "webspaces",
+  "name": "webspace",
+  "description": "A webspace container on web.codemeta.de",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Webspace",
+      "plural": "Webspace",
+      "description": "Ein Webspace, der im Codemeta-Web-Dienst konfiguriert wurde."
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "A title for the webspace."
+    },
+    "webserver": {
+      "type": "string",
+      "description": "The webserver to which this folder is mounted.",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/webserver"
+    },
+    "customer": {
+      "type": "string",
+      "description": "The customer of the webspace.",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "usage": {
+      "type": "array",
+      "description": "An array of usage parameters with timestamps",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The timestamp of the measurement."
+          },
+          "disk": {
+            "type": "number",
+            "description": "The disk usage in bytes."
+          }
+        }
+      }
+    }
+  },
+  "required": [ ],
+  "unevaluatedProperties": false
+}

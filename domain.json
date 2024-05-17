@@ -1,0 +1,29 @@
+{
+  "$id": "https://codemeta.de/schemas/domain",
+  "title": "Domain",
+  "collection": "domains",
+  "name": "domain",
+  "description": "A domain registered at INWX",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Domain",
+      "plural": "Domains",
+      "description": "Domains, die über Codemeta registriert wurden"
+    }
+  },
+  "properties": {
+    "domain": {
+      "type": "string",
+      "description": "The domain name"
+    },
+    "customer": {
+      "type": "string",
+      "description": "The customer of the domain.",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
+    }
+  },
+  "required": [ ],
+  "unevaluatedProperties": false
+}

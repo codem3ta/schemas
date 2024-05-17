@@ -1,0 +1,47 @@
+{
+  "$id": "https://codemeta.de/schemas/database",
+  "title": "Database",
+  "collection": "databases",
+  "name": "database",
+  "description": "A database registered at INWX",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Datenbank",
+      "plural": "Datenbanken",
+      "description": "Datenbanken, die bei Codemeta angelegt wurden"
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The database name"
+    },
+    "customer": {
+      "type": "string",
+      "description": "The customer of the database.",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "usage": {
+      "type": "array",
+      "description": "An array of database sizes with timestamps",
+      "items": {
+        "type": "object",
+        "properties": {
+          "size": {
+            "type": "number",
+            "description": "The size of the database in bytes"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The timestamp of the size measurement"
+          }
+        }
+      }
+    }
+  },
+  "required": [ ],
+  "unevaluatedProperties": false
+}
