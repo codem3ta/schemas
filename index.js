@@ -26,4 +26,8 @@ module.exports = {
   bookmark: require('./bookmark.json'),
   team: require('./team.json'),
   datasource: require('./datasource.json'),
+  printjob: require('./printjob.json'),
+  database: require('./database.json'),
+  webserver: require('./webserver.json'),
+  webspace: require('./webspace.json'),
 }

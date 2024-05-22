@@ -26,6 +26,10 @@
       "description": "The customer of the webserver.",
       "objectId": true,
       "target": "https://codemeta.de/schemas/party"
+    },
+    "name": {
+      "type": "string",
+      "description": "The docker container name (without -1). e.g. codemeta-www"
     }
   },
   "required": [ ],

@@ -33,7 +33,7 @@
             "type": "number",
             "description": "The size of the database in bytes"
           },
-          "timestamp": {
+          "date": {
             "type": "string",
             "format": "date-time",
             "description": "The timestamp of the size measurement"

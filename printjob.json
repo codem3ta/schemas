@@ -1,0 +1,29 @@
+{
+  "$id": "https://codemeta.de/schemas/printjob",
+  "title": "Printjob",
+  "collection": "printjobs",
+  "name": "printjob",
+  "description": "A printjob",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Printjob",
+      "plural": "Printjob",
+      "description": "Ein Druckauftrag für einen angebundenen Drucker."
+    }
+  },
+  "properties": {
+    "file": {
+      "type": "string",
+      "description": "The file to be printed.",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/file"
+    },
+    "printer": {
+      "type": "string",
+      "description": "The token of the printer to print on."
+    }
+  },
+  "required": [ ],
+  "unevaluatedProperties": false
+}

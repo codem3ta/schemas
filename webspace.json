@@ -35,17 +35,21 @@
       "items": {
         "type": "object",
         "properties": {
-          "timestamp": {
+          "date": {
             "type": "string",
             "format": "date-time",
             "description": "The timestamp of the measurement."
           },
-          "disk": {
+          "size": {
             "type": "number",
             "description": "The disk usage in bytes."
           }
         }
       }
+    },
+    "path": {
+      "type": "string",
+      "description": "The path of the webspace on the webserver."
     }
   },
   "required": [ ],
