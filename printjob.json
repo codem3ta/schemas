@@ -22,6 +22,10 @@
     "printer": {
       "type": "string",
       "description": "The token of the printer to print on."
+    },
+    "quantity": {
+      "type": "string",
+      "description": "The quantity of documents to print."
     }
   },
   "required": [ ],
