@@ -79,6 +79,16 @@
             "description": "Tanss article id",
             "type": "string"
           },
+          "tanssType": {
+            "description": "Tanss article id",
+            "type": "string",
+            "enum": [
+              null,
+              "PC",
+              "PERIPHERY"
+            ],
+            "default": null
+          },
           "description": {
             "description": "Description of the article",
             "type": "string"
