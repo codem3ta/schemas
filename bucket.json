@@ -68,7 +68,15 @@
         "type": "object",
         "properties": {
           "articleNumber": {
-            "description": "The article in the bucket",
+            "description": "Weclapp article number",
+            "type": "string"
+          },
+          "tanssId": {
+            "description": "Tanss article id",
+            "type": "string"
+          },
+          "description": {
+            "description": "Description of the article",
             "type": "string"
           },
           "quantity": {
