@@ -26,6 +26,16 @@
     "quantity": {
       "type": "number",
       "description": "The quantity of documents to print."
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of the printjob.",
+      "enum": [
+        "pending",
+        "printing",
+        "printed",
+        "failed"
+      ]
     }
   },
   "required": [ ],
