@@ -24,7 +24,7 @@
       "description": "The token of the printer to print on."
     },
     "quantity": {
-      "type": "string",
+      "type": "number",
       "description": "The quantity of documents to print."
     }
   },
