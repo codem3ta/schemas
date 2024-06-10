@@ -59,7 +59,8 @@
     },
     "value": {
       "description": "Value of items in the bucket in cents",
-      "type": "number"
+      "type": "number",
+      "default": 0
     },
     "items": {
       "description": "The items in the bucket",
@@ -100,7 +101,8 @@
           },
           "value": {
             "description": "Value of item in cents",
-            "type": "number"
+            "type": "number",
+            "default": 0
           }
         }
       }
