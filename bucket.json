@@ -59,7 +59,7 @@
     },
     "value": {
       "description": "Value of items in the bucket in cents",
-      "type": "string"
+      "type": "number"
     },
     "items": {
       "description": "The items in the bucket",
@@ -97,6 +97,10 @@
             "description": "The quantity of the article",
             "type": "number",
             "minimum": 1
+          },
+          "value": {
+            "description": "Value of item in cents",
+            "type": "number"
           }
         }
       }
