@@ -1,0 +1,33 @@
+{
+  "$id": "https://codemeta.de/schemas/webhook",
+  "title": "webhook",
+  "collection": "webhooks",
+  "name": "webhook",
+  "description": "A webhook",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Webhook",
+      "plural": "Webhooks",
+      "description": "Ein Objekt, das von einem externen System an Codemeta übermittelt wurde."
+    }
+  },
+  "properties": {
+    "body": {
+      "type": "object",
+      "description": "The body of the webhook"
+    },
+    "webserver": {
+      "type": "string",
+      "description": "The webserver to which this folder is mounted.",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/webserver"
+    },
+    "path": {
+      "type": "string",
+      "description": "The path which the webhook used"
+    }
+  },
+  "required": [ ],
+  "unevaluatedProperties": false
+}

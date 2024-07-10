@@ -5,6 +5,13 @@
   "collection": "instances",
   "description": "An instance of a process with info on the execution",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Prozess-Instanz",
+      "plural": "Prozess-Instanzen",
+      "description": "Eine Instanz eines Prozesses enthält Informationen zu konkreten Ereignissen und Aktionen."
+    }
+  },
   "properties": {
     "title": { "description": "The title of the process", "type": "string" },
     "description": { "description": "The description of the process", "type": "string" },
