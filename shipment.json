@@ -17,43 +17,37 @@
       "description": "The customer associated with the shipment",
       "type": "string",
       "objectId": true,
-      "target": "https://codemeta.de/schemas/party",
-      "relation": "manyToOne"
+      "target": "https://codemeta.de/schemas/party"
     },
     "responsibleUserId": {
       "description": "The responsible contact person associated with the shipment",
       "type": "string",
       "objectId": true,
-      "target": "https://codemeta.de/schemas/party",
-      "relation": "manyToOne"
+      "target": "https://codemeta.de/schemas/party"
     },
     "callbackContact": {
       "description": "The contact person fors callbacks",
       "type": "string",
       "objectId": true,
-      "target": "https://codemeta.de/schemas/party",
-      "relation": "manyToOne"
+      "target": "https://codemeta.de/schemas/party"
     },
     "onSiteContact_1": {
       "description": "The responsible contact person on the delivery side.",
       "type": "string",
       "objectId": true,
-      "target": "https://codemeta.de/schemas/party",
-      "relation": "manyToOne"
+      "target": "https://codemeta.de/schemas/party"
     },
     "onSiteContact_2": {
       "description": "The responsible contact person on the delivery side.",
       "type": "string",
       "objectId": true,
-      "target": "https://codemeta.de/schemas/party",
-      "relation": "manyToOne"
+      "target": "https://codemeta.de/schemas/party"
     },
     "shipmentManager": {
       "description": "The employee associated with the shipment",
       "type": "string",
       "objectId": true,
-      "target": "https://codemeta.de/schemas/party",
-      "relation": "manyToOne"
+      "target": "https://codemeta.de/schemas/party"
     },
     "isCallbackDesired": {
       "description": "Indicates whether a callback is desired.",
