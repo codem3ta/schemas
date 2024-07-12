@@ -19,35 +19,119 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/party"
     },
-    "responsibleUserId": {
+    "shortCustomer": {
+      "title": "Short customer contact",
       "description": "The responsible contact person associated with the shipment",
-      "type": "string",
-      "objectId": true,
-      "target": "https://codemeta.de/schemas/party"
+      "type": "object",
+      "properties": {
+        "customerNumber": {
+          "description": "The customer number",
+          "type": "string"
+        },
+        "customerName": {
+          "description": "The customer name",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "description": "The phone number",
+          "type": "string"
+        },
+        "email": {
+          "description": "The email of the customer",
+          "type": "string",
+          "format": "email"
+        },
+        "firstName": {
+          "description": "The first name",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "The last name",
+          "type": "string"
+        }
+      }
     },
     "callbackContact": {
-      "description": "The contact person fors callbacks",
-      "type": "string",
-      "objectId": true,
-      "target": "https://codemeta.de/schemas/party"
+      "title": "Callback contact",
+      "type": "object",
+      "description": "The contact person for callbacks",
+      "properties": {
+        "firstName": {
+          "description": "The first name",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "The last name",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "description": "The phone number",
+          "type": "string"
+        }
+      }
     },
     "onSiteContact_1": {
-      "description": "The responsible contact person on the delivery side.",
-      "type": "string",
-      "objectId": true,
-      "target": "https://codemeta.de/schemas/party"
+      "title": "First contact on site",
+      "type": "object",
+      "description": "The first responsible contact person on the delivery side.",
+      "properties": {
+        "firstName": {
+          "description": "The first name",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "The last name",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "description": "The phone number",
+          "type": "string"
+        },
+        "email": {
+          "description": "The email",
+          "type": "string",
+          "format": "email"
+        }
+      }
     },
     "onSiteContact_2": {
-      "description": "The responsible contact person on the delivery side.",
-      "type": "string",
-      "objectId": true,
-      "target": "https://codemeta.de/schemas/party"
+      "title": "Second contact on site",
+      "type": "object",
+      "description": "The second responsible contact person on the delivery side.",
+      "properties": {
+        "firstName": {
+          "description": "The first name",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "The last name",
+          "type": "string"
+        },
+        "phoneNumber": {
+          "description": "The phone number",
+          "type": "string"
+        },
+        "email": {
+          "description": "The email",
+          "type": "string",
+          "format": "email"
+        }
+      }
     },
     "shipmentManager": {
+      "title": "Shipment Manager",
+      "type": "object",
       "description": "The employee associated with the shipment",
-      "type": "string",
-      "objectId": true,
-      "target": "https://codemeta.de/schemas/party"
+      "properties": {
+        "firstName": {
+          "description": "The first name",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "The last name",
+          "type": "string"
+        }
+      }
     },
     "isCallbackDesired": {
       "description": "Indicates whether a callback is desired.",
@@ -121,15 +205,15 @@
         "null"
       ]
     },
-    "shippingDate": {
-      "description": "The shipping date of the shipment",
+    "deliveryDate": {
+      "description": "The delivery date of the shipment",
       "type": [
         "integer",
         "null"
       ]
     },
-    "deliveryDate": {
-      "description": "The delivery date of the shipment",
+    "shippingDate": {
+      "description": "The shipping date of the shipment",
       "type": [
         "integer",
         "null"
