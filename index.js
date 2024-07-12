@@ -30,4 +30,5 @@ module.exports = {
   database: require('./database.json'),
   webserver: require('./webserver.json'),
   webspace: require('./webspace.json'),
+  webhook: require('./webhook.json'),
 }

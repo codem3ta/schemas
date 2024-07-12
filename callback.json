@@ -69,16 +69,44 @@
     "status": {
       "description": "The status",
       "type": "string",
-      "enum": [
-        "new",
-        "pending",
-        "completed"
-      ],
+      "enum": ["new", "pending", "completed"],
       "default": "new"
     },
     "feedback": {
-      "description": "User feedback after the callback",
-      "type": "string"
+      "anyOf": [
+        {
+          "type": "string",
+          "description": "User feedback after the callback"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "user": {
+                "type": "string",
+                "relation": "manyToOne",
+                "target": "https://codemeta.de/schemas/user",
+                "objectId": true
+              },
+              "feedback": {
+                "type": "string",
+                "description": "User feedback after the callback"
+              },
+              "createdAt": {
+                "description": "The date-time when the feedback was created",
+                "type": "string",
+                "format": "date-time"
+              },
+              "status": {
+                "description": "The new status",
+                "type": "string",
+                "enum": ["pending", "completed"]
+              }
+            }
+          }
+        }
+      ]
     },
     "completedAt": {
       "description": "The date-time when the callback was completed",
@@ -86,10 +114,6 @@
       "format": "date-time"
     }
   },
-  "required": [
-    "caller",
-    "phoneNumber",
-    "priority"
-  ],
+  "required": ["caller", "phoneNumber", "priority"],
   "additionalProperties": false
 }
