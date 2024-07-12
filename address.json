@@ -5,29 +5,90 @@
   "description": "An address",
   "type": "object",
   "properties": {
-    "street1": { "description": "The street and house number", "type": "string" },
-    "street2": { "description": "The street and house number", "type": "string" },
-    "zipcode": { "description": "The zipcode", "type": "string" },
-    "city": { "description": "The city", "type": "string" },
-    "countryCode": { "description": "The country", "type": "string", "maxLength": 2 },
-    "company": { "description": "The company", "type": "string" },
-    "company2": { "description": "The company", "type": "string" },
-    "firstName": { "description": "The first name", "type": "string" },
-    "globalLocationNumber": { "description": "The global location number", "type": "string" },
-    "lastName": { "description": "The last name", "type": "string" },
-    "middleName": { "description": "The middle name", "type": "string" },
-    "phoneNumber": { "description": "The phone number", "type": "string" },
-    "postOfficeBoxCity": { "description": "The post office box city", "type": "string" },
-    "postOfficeBoxNumber": { "description": "The post office box number", "type": "string" },
-    "postOfficeBoxZipCode": { "description": "The post office box zip code", "type": "string" },
+    "street1": {
+      "description": "The street and house number",
+      "type": "string"
+    },
+    "street2": {
+      "description": "The street and house number",
+      "type": "string"
+    },
+    "zipcode": {
+      "description": "The zipcode",
+      "type": "string"
+    },
+    "city": {
+      "description": "The city",
+      "type": "string"
+    },
+    "countryCode": {
+      "description": "The country",
+      "type": "string",
+      "maxLength": 2
+    },
+    "company": {
+      "description": "The company",
+      "type": "string"
+    },
+    "company2": {
+      "description": "The company",
+      "type": "string"
+    },
+    "firstName": {
+      "description": "The first name",
+      "type": "string"
+    },
+    "globalLocationNumber": {
+      "description": "The global location number",
+      "type": "string"
+    },
+    "lastName": {
+      "description": "The last name",
+      "type": "string"
+    },
+    "middleName": {
+      "description": "The middle name",
+      "type": "string"
+    },
+    "phoneNumber": {
+      "description": "The phone number",
+      "type": "string"
+    },
+    "postOfficeBoxCity": {
+      "description": "The post office box city",
+      "type": "string"
+    },
+    "postOfficeBoxNumber": {
+      "description": "The post office box number",
+      "type": "string"
+    },
+    "postOfficeBoxZipCode": {
+      "description": "The post office box zip code",
+      "type": "string"
+    },
     "salutation": {
       "description": "The salutation",
       "type": "string",
-      "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION"]
+      "enum": [
+        "COMPANY",
+        "FAMILY",
+        "MR",
+        "MRS",
+        "NO_SALUTATION"
+      ]
     },
-    "state": { "description": "The state", "type": "string" },
-    "title": { "description": "The title", "type": "string" },
-    "titleId": { "description": "The title ID", "type": "string" }
+    "state": {
+      "description": "The state",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title",
+      "type": "string"
+    },
+    "titleId": {
+      "description": "The title ID",
+      "type": "string"
+    }
   },
   "required": [],
   "name": "address",

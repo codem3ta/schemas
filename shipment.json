@@ -9,6 +9,10 @@
       "description": "The shipment number",
       "type": "string"
     },
+    "customerPurchaseOrderNumber": {
+      "description": "The customer order number",
+      "type": "string"
+    },
     "customer": {
       "description": "The customer associated with the shipment",
       "type": "string",
@@ -16,13 +20,126 @@
       "target": "https://codemeta.de/schemas/party",
       "relation": "manyToOne"
     },
+    "responsibleUserId": {
+      "description": "The responsible contact person associated with the shipment",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party",
+      "relation": "manyToOne"
+    },
+    "callbackContact": {
+      "description": "The contact person fors callbacks",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party",
+      "relation": "manyToOne"
+    },
+    "onSiteContact_1": {
+      "description": "The responsible contact person on the delivery side.",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party",
+      "relation": "manyToOne"
+    },
+    "onSiteContact_2": {
+      "description": "The responsible contact person on the delivery side.",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party",
+      "relation": "manyToOne"
+    },
+    "shipmentManager": {
+      "description": "The employee associated with the shipment",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party",
+      "relation": "manyToOne"
+    },
+    "isCallbackDesired": {
+      "description": "Indicates whether a callback is desired.",
+      "type": "boolean"
+    },
+    "additionalDeliveryInformation": {
+      "title": "Additional delivery information",
+      "description": "The additional remark information for the delivery",
+      "type": "object",
+      "properties": {
+        "comment": {
+          "description": "The additional comment information for the delivery",
+          "type": "string"
+        },
+        "isAccessableWithSemiTrailerTruck": {
+          "description": "Is accessible with a semi-trailer truck.",
+          "type": "boolean"
+        },
+        "isAccessableWithMotorTruckWithTrailer": {
+          "description": "Is accessible with a motor truck with a trailer.",
+          "type": "boolean"
+        },
+        "isAccessableWithMotorTruck": {
+          "description": "Is accessible with a motor truck.",
+          "type": "boolean"
+        },
+        "deliveryDischargeOptions": {
+          "description": "Discharge option for delivery",
+          "enum": [
+            "REAR_DISCHARGE_ONLY",
+            "SIDE_DISCHARGE"
+          ]
+        },
+        "isForkliftAvailable": {
+          "description": "Indicates whether a forklift is needed.",
+          "type": "boolean"
+        },
+        "isPalletTruckAvailable": {
+          "description": "Indicates whether a pallet truck is needed.",
+          "type": "boolean"
+        },
+        "isForkliftDesired": {
+          "description": "Is a forklift desired.",
+          "type": "boolean"
+        },
+        "sufficientManeuveringSpace": {
+          "description": "Indicates whether the Maneuvering Space is sufficient.",
+          "type": "boolean"
+        },
+        "alternativManeuveringSpace": {
+          "description": "Describes the alternative discharge option",
+          "type": "string"
+        },
+        "isHandDischargeNecessary": {
+          "description": "Is hand unloading necessary",
+          "type": "boolean"
+        }
+      }
+    },
     "description": {
       "description": "A description of the shipment",
-      "type": ["string", "null"]
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scheduledDeliveryDate": {
+      "description": "The schedueld delivery date of the shipment",
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "shippingDate": {
+      "description": "The shipping date of the shipment",
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "deliveryDate": {
       "description": "The delivery date of the shipment",
-      "type": ["integer", "null"]
+      "type": [
+        "integer",
+        "null"
+      ]
     },
     "recordEmailAddresses": {
       "title": "Record Email Addresses",
@@ -146,7 +263,10 @@
     },
     "paperless": {
       "description": "The id of the paperless confirmation of arrival",
-      "type": ["integer", "null"]
+      "type": [
+        "integer",
+        "null"
+      ]
     }
   },
   "required": [

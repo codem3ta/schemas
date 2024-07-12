@@ -15,9 +15,15 @@
     "partyType": {
       "description": "The type of the party",
       "type": "string",
-      "enum": ["ORGANIZATION", "PERSON"]
+      "enum": [
+        "ORGANIZATION",
+        "PERSON"
+      ]
     },
-    "company": { "description": "The company name", "type": "string" },
+    "company": {
+      "description": "The company name",
+      "type": "string"
+    },
     "company2": {
       "description": "Additional company information",
       "type": "string"
@@ -33,7 +39,13 @@
     "leadStatus": {
       "description": "The lead status of the party",
       "type": "string",
-      "enum": ["CONVERTED", "DISQUALIFIED", "NEW", "PREQUALIFIED", "QUALIFIED"]
+      "enum": [
+        "CONVERTED",
+        "DISQUALIFIED",
+        "NEW",
+        "PREQUALIFIED",
+        "QUALIFIED"
+      ]
     },
     "customerBlocked": {
       "description": "Indicates if the customer is blocked",
@@ -47,8 +59,14 @@
       "description": "The supplier number",
       "type": "string"
     },
-    "phone": { "description": "The phone number", "type": "string" },
-    "fax": { "description": "The fax number", "type": "string" },
+    "phone": {
+      "description": "The phone number",
+      "type": "string"
+    },
+    "fax": {
+      "description": "The fax number",
+      "type": "string"
+    },
     "website": {
       "description": "The website URL",
       "type": "string",
@@ -62,7 +80,10 @@
       "description": "The secondary mobile phone number",
       "type": "string"
     },
-    "phoneHome": { "description": "The home phone number", "type": "string" },
+    "phoneHome": {
+      "description": "The home phone number",
+      "type": "string"
+    },
     "optInLetter": {
       "description": "Indicates if the party has opted in for letters",
       "type": "boolean"
@@ -91,7 +112,9 @@
     "categories": {
       "description": "Categories associated with the party",
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "addresses": {
       "description": "The addresses of the party",
@@ -108,11 +131,26 @@
     "salutation": {
       "description": "The salutation",
       "type": "string",
-      "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION"]
+      "enum": [
+        "COMPANY",
+        "FAMILY",
+        "MR",
+        "MRS",
+        "NO_SALUTATION"
+      ]
     },
-    "firstName": { "description": "The first name", "type": "string" },
-    "lastName": { "description": "The last name", "type": "string" },
-    "title": { "description": "The title", "type": "string" },
+    "firstName": {
+      "description": "The first name",
+      "type": "string"
+    },
+    "lastName": {
+      "description": "The last name",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title",
+      "type": "string"
+    },
     "initials": {
       "description": "The initials of the party",
       "type": "string"
@@ -137,14 +175,22 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/party",
       "relation": "manyToOne"
+    },
+    "slug": {
+      "description": "The slug of the party",
+      "type": "string"
+    }
   },
-  "slug": {
-    "description": "The slug of the party",
-    "type": "string"
-  }
-},
-  "required": ["partyType"],
+  "required": [
+    "partyType"
+  ],
   "name": "party",
   "searchable": true,
-  "searchFields": ["company", "company2", "firstName", "lastName", "email"]
+  "searchFields": [
+    "company",
+    "company2",
+    "firstName",
+    "lastName",
+    "email"
+  ]
 }
