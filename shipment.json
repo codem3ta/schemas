@@ -160,10 +160,7 @@
         },
         "deliveryDischargeOptions": {
           "description": "Discharge option for delivery",
-          "enum": [
-            "REAR_DISCHARGE_ONLY",
-            "SIDE_DISCHARGE"
-          ]
+          "enum": ["REAR_DISCHARGE_ONLY", "SIDE_DISCHARGE"]
         },
         "isForkliftAvailable": {
           "description": "Indicates whether a forklift is needed.",
@@ -193,31 +190,15 @@
     },
     "description": {
       "description": "A description of the shipment",
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "scheduledDeliveryDate": {
-      "description": "The schedueld delivery date of the shipment",
-      "type": [
-        "integer",
-        "null"
-      ]
+      "type": ["string", "null"]
     },
     "deliveryDate": {
       "description": "The delivery date of the shipment",
-      "type": [
-        "integer",
-        "null"
-      ]
+      "type": ["integer", "null"]
     },
     "shippingDate": {
       "description": "The shipping date of the shipment",
-      "type": [
-        "integer",
-        "null"
-      ]
+      "type": ["integer", "null"]
     },
     "recordEmailAddresses": {
       "title": "Record Email Addresses",
@@ -341,10 +322,7 @@
     },
     "paperless": {
       "description": "The id of the paperless confirmation of arrival",
-      "type": [
-        "integer",
-        "null"
-      ]
+      "type": ["integer", "null"]
     }
   },
   "required": [
