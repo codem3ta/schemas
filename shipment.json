@@ -4,6 +4,13 @@
   "description": "Information about a shipment",
   "type": "object",
   "collection": "shipments",
+  "i18n": {
+    "de": {
+      "singular": "Lieferung",
+      "plural": "Lieferungen",
+      "description": "Lieferungen sind der Transport und die Übergabe von Waren oder Gütern an einen Empfänger."
+    }
+  },
   "properties": {
     "shipmentNumber": {
       "description": "The shipment number",
