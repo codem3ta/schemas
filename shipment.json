@@ -203,6 +203,10 @@
       "description": "The delivery date of the shipment",
       "type": ["integer", "null"]
     },
+    "replyDeadline": {
+      "description": "The deadline date for the customer to answer",
+      "type": ["integer", "null"]
+    },
     "shippingDate": {
       "description": "The shipping date of the shipment",
       "type": ["integer", "null"]
