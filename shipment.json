@@ -45,8 +45,7 @@
         },
         "email": {
           "description": "The email of the customer",
-          "type": "string",
-          "format": "email"
+          "type": "string"
         },
         "firstName": {
           "description": "The first name",
@@ -96,8 +95,7 @@
         },
         "email": {
           "description": "The email",
-          "type": "string",
-          "format": "email"
+          "type": "string"
         }
       }
     },
@@ -120,8 +118,7 @@
         },
         "email": {
           "description": "The email",
-          "type": "string",
-          "format": "email"
+          "type": "string"
         }
       }
     },
