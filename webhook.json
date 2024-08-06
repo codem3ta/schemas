@@ -26,6 +26,10 @@
     "path": {
       "type": "string",
       "description": "The path which the webhook used"
+    },
+    "authenticated": {
+      "type": "boolean",
+      "description": "Whether the webhook was authenticated"
     }
   },
   "required": [ ],
