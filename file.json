@@ -30,6 +30,23 @@
       "type": "string",
       "description": "The MIME type of the file."
     },
+    "linkedDocuments": {
+      "type": "array",
+      "description": "The documents that are linked to this file.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The ID of the linked document."
+          },
+          "collection": {
+            "type": "string",
+            "description": "The collection of the linked document."
+          }
+        },
+      }
+    },
     "maxSize": {
       "type": "integer",
       "description": "The maximum size of the file in bytes.",
