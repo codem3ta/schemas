@@ -27,11 +27,8 @@
       "database": "config"
     },
     "customerId": {
-      "description": "The customer to which the activity belongs",
-      "type": "string",
-      "objectId": true,
-      "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/party"
+      "description": "The wecalpp customerId",
+      "type": "string"
     }
   },
   "required": ["title"],
