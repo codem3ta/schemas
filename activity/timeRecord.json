@@ -11,7 +11,11 @@
       "description": "Eine App, die die Codemeta API verwendet."
     }
   },
-
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/activity"
+    }
+  ],
   "properties": {
     "type": {
       "description": "The type of the timeRecord",
