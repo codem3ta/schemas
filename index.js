@@ -31,4 +31,4 @@ module.exports = {
   webserver: require('./webserver.json'),
   webspace: require('./webspace.json'),
   webhook: require('./webhook.json'),
-}
+};
