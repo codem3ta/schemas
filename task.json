@@ -27,7 +27,11 @@
       "database": "config"
     },
     "customerId": {
-      "description": "The wecalpp customerId",
+      "description": "The wecalpp customer id",
+      "type": "string"
+    },
+    "weclappTaskId": {
+      "description": "The wecalpp task id",
       "type": "string"
     }
   },
