@@ -4,6 +4,13 @@
   "collection": "timeRecords",
   "description": "A Time Record is a record of time spent on a task. It can be billable or non-billable.",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "App",
+      "plural": "Apps",
+      "description": "Eine App, die die Codemeta API verwendet."
+    }
+  },
   "allOf": [
     {
       "$ref": "https://codemeta.de/schemas/activity"
@@ -11,8 +18,8 @@
   ],
   "properties": {
     "type": {
-      "description": "The type of the timeRecord", 
-      "type": "string" 
+      "description": "The type of the timeRecord",
+      "type": "string"
     },
     "description": {
       "description": "The description of the timeRecord",

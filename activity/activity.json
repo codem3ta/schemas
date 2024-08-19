@@ -4,9 +4,16 @@
   "collection": "activities",
   "description": "A Time Record is a record of time spent on a task. It can be billable or non-billable.",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "App",
+      "plural": "Apps",
+      "description": "Eine App, die die Codemeta API verwendet."
+    }
+  },
   "properties": {
     "description": {
-      "description": "The description of the activity", 
+      "description": "The description of the activity",
       "type": "string"
     },
     "startDate": {
