@@ -4,11 +4,11 @@
   "collection": "travelRecords",
   "description": "A record of travel for a user. It can be associated with a timeRecord and a customer.",
   "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://codemeta.de/schemas/activity"
-    }
-  ],
+  // "allOf": [
+  //   {
+  //     "$ref": "https://codemeta.de/schemas/activity"
+  //   }
+  // ],
   "properties": {
     "timeRecord": {
       "description": "The timeRecord to which the travelRecord belongs",
@@ -20,12 +20,7 @@
     "transport": {
       "description": "The transport used for the travel",
       "type": "string",
-      "enum": [
-        "car",
-        "train",
-        "plane",
-        "other"
-      ]
+      "enum": ["car", "train", "plane", "other"]
     },
     "car": {
       "description": "The car used for the travel",
