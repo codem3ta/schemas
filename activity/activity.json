@@ -78,5 +78,6 @@
     }
   },
   "required": [],
-  "name": "activity"
+  "name": "activity",
+  "unevaluatedProperties": true
 }
