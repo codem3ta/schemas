@@ -12,7 +12,7 @@
     "description": {
       "description": "The description of the task",
       "type": "string",
-      "minLength": 500
+      "minLength": 10
     },
     "dueDate": {
       "description": "The due date for the task",
