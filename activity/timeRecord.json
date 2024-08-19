@@ -6,16 +6,11 @@
   "type": "object",
   "i18n": {
     "de": {
-      "singular": "App",
-      "plural": "Apps",
-      "description": "Eine App, die die Codemeta API verwendet."
+      "singular": "TimeRecord",
+      "plural": "TimeRecords",
+      "description": "Ein TimeRecord zum erfassen von einer Zeit"
     }
   },
-  "allOf": [
-    {
-      "$ref": "https://codemeta.de/schemas/activity"
-    }
-  ],
   "properties": {
     "type": {
       "description": "The type of the timeRecord",
@@ -25,10 +20,27 @@
       "description": "The description of the timeRecord",
       "type": "string"
     },
+    "task": {
+      "description": "The task to which the activity belongs",
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/task"
+    },
     "duration": {
       "description": "The duration of the timeRecord in milliseconds",
       "type": "integer",
       "minimum": 0
+    },
+    "startDate": {
+      "description": "The beginning of the activity",
+      "type": "string",
+      "format": "date-time"
+    },
+    "endDate": {
+      "description": "The end of the activity",
+      "type": "string",
+      "format": "date-time"
     },
     "billable": {
       "description": "The billable duration of the timeRecord in minutes",
@@ -74,9 +86,15 @@
     "tanss": {
       "type": "number",
       "description": "The timeRecord's TANSS support ID"
+    },
+    "user": {
+      "description": "The user to which the activity belongs",
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user"
     }
   },
   "required": [],
-  "name": "timeRecord",
-  "unevaluatedProperties": false
+  "name": "timeRecord"
 }
