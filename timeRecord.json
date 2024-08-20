@@ -20,13 +20,6 @@
       "description": "The description of the timeRecord",
       "type": "string"
     },
-    // "task": {
-    //   "description": "The task to which the activity belongs",
-    //   "type": "string",
-    //   "objectId": true,
-    //   "relation": "manyToOne",
-    //   "target": "https://codemeta.de/schemas/task"
-    // },
     "task": {
       "description": "The task of the timeRecord in weclapp",
       "type": "string"
@@ -98,10 +91,6 @@
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/user"
     }
-    // "weclappTimeRecordId": {
-    //   "description": "The wecalpp timeRecord id",
-    //   "type": "string"
-    // }
   },
   "required": [],
   "name": "timeRecord"
