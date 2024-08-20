@@ -10,7 +10,7 @@ module.exports = {
   secret: require('./secret.json'),
   task: require('./task.json'),
   activity: require('./activity/activity.json'),
-  timeRecord: require('./activity/timeRecord.json'),
+  timeRecord: require('./timeRecord.json'),
   travelRecord: require('./activity/travelRecord.json'),
   shipment: require('./shipment.json'),
   instance: require('./instance.json'),
