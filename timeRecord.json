@@ -90,6 +90,10 @@
       "objectId": true,
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/user"
+    },
+    "weclappUser": {
+      "description": "A weclapp userId of the selected task",
+      "type": "string"
     }
   },
   "required": [],
