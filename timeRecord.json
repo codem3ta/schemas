@@ -57,29 +57,6 @@
       "description": "Whether the timeRecord has been billed",
       "type": "boolean"
     },
-    "breaks": {
-      "description": "The breaks of the timeRecord",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "start": {
-            "description": "The beginning of the break",
-            "type": "string",
-            "format": "date-time"
-          },
-          "end": {
-            "description": "The end of the break",
-            "type": "string",
-            "format": "date-time"
-          },
-          "duration": {
-            "description": "The duration of the break",
-            "type": "integer"
-          }
-        }
-      }
-    },
     "tanss": {
       "type": "number",
       "description": "The timeRecord's TANSS support ID"
@@ -93,6 +70,10 @@
     },
     "weclappUser": {
       "description": "A weclapp userId of the selected task",
+      "type": "string"
+    },
+    "weclappTimeRecordId": {
+      "description": "A weclapp weclappTimeRecordId of the selected TimeRecordId",
       "type": "string"
     }
   },
