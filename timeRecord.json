@@ -75,6 +75,10 @@
     "weclappTimeRecordId": {
       "description": "A weclapp weclappTimeRecordId of the selected TimeRecordId",
       "type": "string"
+    },
+    "weclappTaskId": {
+      "description": "The wecalpp task id",
+      "type": "string"
     }
   },
   "required": [],
