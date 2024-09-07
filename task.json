@@ -4,6 +4,13 @@
   "collection": "tasks",
   "description": "A task",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Aufagbe",
+      "plural": "Aufgaben",
+      "description": "Eine Aufgabe auf die Zeiten erfasst werden können"
+    }
+  },
   "properties": {
     "title": {
       "description": "The title of the task",
