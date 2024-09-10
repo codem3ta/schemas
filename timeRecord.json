@@ -25,7 +25,7 @@
       "type": "string"
     },
     "duration": {
-      "description": "The duration of the timeRecord in milliseconds",
+      "description": "The duration of the timeRecord in seconds",
       "type": "integer",
       "minimum": 0
     },
@@ -39,11 +39,10 @@
       "type": "string",
       "format": "date-time"
     },
-    "billable": {
-      "description": "The billable duration of the timeRecord in minutes",
+    "billableDurationSeconds": {
+      "description": "The billable duration of the timeRecord in seconds",
       "type": "integer",
-      "minimum": 0,
-      "maximum": 1440
+      "minimum": 0
     },
     "unbillableShortReason": {
       "description": "The reason why the timeRecord is not billable",
@@ -53,8 +52,12 @@
       "description": "The text that is shown on the invoice for the timeRecord",
       "type": "string"
     },
+    "billable": {
+      "description": "Whether the timeRecord is billable",
+      "type": "boolean"
+    },
     "billed": {
-      "description": "Whether the timeRecord has been billed",
+      "description": "Whether the timeRecord is billed",
       "type": "boolean"
     },
     "tanss": {
@@ -68,16 +71,8 @@
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/user"
     },
-    "weclappUser": {
-      "description": "A weclapp userId of the selected task",
-      "type": "string"
-    },
     "weclappTimeRecordId": {
-      "description": "A weclapp weclappTimeRecordId of the selected TimeRecordId",
-      "type": "string"
-    },
-    "weclappTaskId": {
-      "description": "The wecalpp task id",
+      "description": "A weclapp timeRecordId of the connected timeRecordId",
       "type": "string"
     }
   },
