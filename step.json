@@ -1,0 +1,32 @@
+{
+  "$id": "https://codemeta.de/schemas/step",
+  "title": "Step",
+  "collection": "step",
+  "description": "Processes are built from linked steps.",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Prozess-Schritt",
+      "plural": "Prozess-Schritte",
+      "description": "Prozessschritte enthalten die Details zu Aktionen und Triggern in Prozessen."
+    }
+  },
+  "properties": {
+    "title": { "description": "The title of the step", "type": "string" },
+    "description": {
+      "description": "The description of the step",
+      "type": "string"
+    },
+    "process": {
+      "description": "The process this step belongs to",
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "process"
+    }
+  },
+  "required": ["title", "description", "responsibleUser"],
+  "name": "step",
+  "unevaluatedProperties": true,
+  "config": true
+}
