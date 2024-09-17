@@ -16,6 +16,10 @@
       "description": "The type of the timeRecord",
       "type": "string"
     },
+    "title": {
+      "description": "The title of the timeRecord",
+      "type": "string"
+    },
     "description": {
       "description": "The description of the timeRecord",
       "type": "string"
