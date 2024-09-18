@@ -64,6 +64,10 @@
       "description": "Whether the timeRecord is billed",
       "type": "boolean"
     },
+    "isFixedPricing": {
+      "description": "Whether the timeRecord is fixed pricing",
+      "type": "boolean"
+    },
     "tanss": {
       "type": "number",
       "description": "The timeRecord's TANSS support ID"
