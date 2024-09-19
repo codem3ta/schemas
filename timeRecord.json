@@ -94,6 +94,10 @@
     "customerId": {
       "description": "A customerId of the connected timeRecordId",
       "type": "string"
+    },
+    "performanceRecordedStatus": {
+      "description": "A performanceRecordedStatus of the connected timeRecordId",
+      "type": "string"
     }
   },
   "required": [],
