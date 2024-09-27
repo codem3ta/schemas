@@ -54,6 +54,10 @@
     "microsoftId": {
       "type": "string",
       "description": "The user's Microsoft ID"
+    },
+    "weclappId": {
+      "type": "string",
+      "description": "The user's Weclapp ID"
     }
   },
   "unevaluatedProperties": false
