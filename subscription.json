@@ -1,0 +1,50 @@
+{
+  "$id": "https://codemeta.de/schemas/subscription",
+  "title": "Subscription",
+  "description": "Information about a subscription",
+  "type": "object",
+  "collection": "subscriptions",
+  "i18n": {
+    "de": {
+      "singular": "Abonnement",
+      "plural": "Abonnement",
+      "description": "Ein Abonnement ist ein vertragliches Verhältnis, bei dem regelmäßige Leistungen oder Produkte gegen eine wiederkehrende Zahlung bereitgestellt werden."
+    }
+  },
+  "properties": {
+    "articleNumber": {
+      "description": "The article number",
+      "type": "string"
+    },
+    "customerId": {
+      "description": "The customer associated with the subscription",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "description": {
+      "description": "The description",
+      "type": "string"
+    },
+    "info": {
+      "description": "The information object",
+      "type": "object"
+    },
+    "lastBilledAt": {
+      "description": "The last billing date of the subscription",
+      "type": "string",
+      "format": "date"
+    },
+    "interval": {
+      "description": "The interval of the billing in miliseconds",
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "articleNumber",
+    "interval",
+    "customerId"
+  ],
+  "name": "shipment"
+}
