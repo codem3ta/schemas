@@ -39,10 +39,16 @@
       "description": "The interval of the billing in miliseconds",
       "type": "integer",
       "minimum": 0
+    },
+    "quantity": {
+        "description": "The quantity of the article",
+        "type": "number",
+        "default": 1
     }
   },
   "required": [
     "articleNumber",
+    "quantity",
     "interval",
     "customerId"
   ],
