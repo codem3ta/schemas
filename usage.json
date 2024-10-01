@@ -27,8 +27,8 @@
       "type": "string"
     },
     "info": {
-      "description": "The information object",
-      "type": "object"
+      "description": "The information array",
+      "type": "array"
     },
     "lastBilledAt": {
       "description": "The last billing date of the usag",
