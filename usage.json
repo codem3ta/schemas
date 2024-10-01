@@ -1,14 +1,14 @@
 {
-  "$id": "https://codemeta.de/schemas/subscription",
-  "title": "Subscription",
-  "description": "Information about a subscription",
+  "$id": "https://codemeta.de/schemas/usage",
+  "title": "Usage",
+  "description": "Information about a usage",
   "type": "object",
-  "collection": "subscriptions",
+  "collection": "usages",
   "i18n": {
     "de": {
-      "singular": "Abonnement",
-      "plural": "Abonnement",
-      "description": "Ein Abonnement ist ein vertragliches Verhältnis, bei dem regelmäßige Leistungen oder Produkte gegen eine wiederkehrende Zahlung bereitgestellt werden."
+      "singular": "Verbrauch",
+      "plural": "Verbrauch",
+      "description": "Der Verbrauch eines Artikels zu einem Kunden"
     }
   },
   "properties": {
@@ -17,7 +17,7 @@
       "type": "string"
     },
     "customerId": {
-      "description": "The customer associated with the subscription",
+      "description": "The customer associated with the usag",
       "type": "string",
       "objectId": true,
       "target": "https://codemeta.de/schemas/party"
@@ -31,7 +31,7 @@
       "type": "object"
     },
     "lastBilledAt": {
-      "description": "The last billing date of the subscription",
+      "description": "The last billing date of the usag",
       "type": "string",
       "format": "date"
     },
