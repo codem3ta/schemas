@@ -24,7 +24,7 @@
     },
     "info": {
       "description": "The information array",
-      "type": "array"
+      "type": "object"
     },
     "startDate": {
       "description": "The interval start date",
