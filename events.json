@@ -1,0 +1,65 @@
+{
+    "$id": "https://codemeta.de/schemas/events",
+    "title": "Events",
+    "description": "Simple Version of a Tanss Support/Outlook Event",
+    "type": "object",
+    "collection": "events",
+    "i18n": {
+      "de": {
+        "singular": "Termin",
+        "plural": "Termine",
+        "description": "Eine simple Version eines Tanss Supports/Outlook Events"
+      }
+    },
+    "properties": {
+        "title": { 
+            "description": "The Title of the event", 
+            "type": "string"
+            },
+        "description": { 
+            "description": "The Description of the event", 
+            "type": "string"
+            },
+        "start": {
+            "description": "The date and Time when the event starts",
+            "type": "string",
+            "format": "date-time"
+        },
+        "end": {
+            "description": "The date and Time when the event ends",
+            "type": "string",
+            "format": "date-time"
+        },
+        "type": {
+            "description": "State or Type of the Event",
+            "type": "string",
+            "emum": ["inScheduling", "singleInstance", "occurrence", "exception", "seriesMaster"]
+        },
+        "owner": { 
+            "description": "The Name of the Technician responsible for the event", 
+            "type": "string",
+            "objectId": true,
+            "target": "https://codemeta.de/schemas/user"
+            },
+        "linkgs":{
+            "description": "Eventids in Tanns and Outlook",
+            "type": "array",
+            "items":{
+                "tanssSupportId": {
+                    "description": "The Id of the Tanss Support",
+                    "type": "array"
+                },
+                "outlookEventId": {
+                    "description": "The Id of the Outlook Event",
+                    "type": "string"
+                }
+            }
+        } 
+    },
+    "required": [
+      "start",
+      "end"
+    ],
+    "name": "usage"
+  }
+  
