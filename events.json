@@ -41,20 +41,23 @@
             "objectId": true,
             "target": "https://codemeta.de/schemas/user"
             },
-        "linkgs":{
+        "links": {
             "description": "Eventids in Tanns and Outlook",
             "type": "array",
-            "items":{
-                "tanssSupportId": {
-                    "description": "The Id of the Tanss Support",
-                    "type": "array"
-                },
-                "outlookEventId": {
-                    "description": "The Id of the Outlook Event",
-                    "type": "string"
-                }
+            "items": {
+                "type": "object",
+                "properties": {
+                    "tanssSupportId": {
+                        "description": "The Id of the Tanss Support",
+                        "type": "string"
+                    },
+                    "outlookEventId": {
+                        "description": "The Id of the Outlook Event",
+                        "type": "string"
+                    }
+                }   
             }
-        } 
+        }
     },
     "required": [
       "start",
