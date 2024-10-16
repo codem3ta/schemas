@@ -29,6 +29,10 @@
       "description": "The description",
       "type": "string"
     },
+    "groupName": {
+      "description": "The group name",
+      "type": "string"
+    },
     "info": {
       "description": "The information array",
       "type": "object"
