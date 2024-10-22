@@ -31,7 +31,7 @@
             "format": "date-time"
         },
         "duration":{
-            "description": "The duration from Start to End of the Evenet",
+            "description": "The duration from Start to End of the Event",
             "type": "number"
         },
         "type": {
