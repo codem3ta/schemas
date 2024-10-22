@@ -32,4 +32,5 @@ module.exports = {
   webspace: require('./webspace.json'),
   webhook: require('./webhook.json'),
   usage: require('./usage.json'),
+  event: require('./event.json'),
 };
