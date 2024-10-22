@@ -30,6 +30,10 @@
             "type": "string",
             "format": "date-time"
         },
+        "duration":{
+            "description": "The duration from Start to End of the Evenet",
+            "type": "number"
+        },
         "type": {
             "description": "State or Type of the Event",
             "type": "string",
@@ -57,11 +61,16 @@
                     }
                 }   
             }
+        },
+        "availableSlots": {
+            "description": "Array containing all available TimeSlots for a proposed Event",
+            "type": "array",
+            "items": { 
+                "type": "object" 
+            }
         }
     },
     "required": [
-      "start",
-      "end"
     ],
     "name": "usage"
   }
