@@ -69,8 +69,8 @@
                 "type": "object" 
             }
         },
-        "buisinessHours": {
-            "description": "Array containing buisinessHours",
+        "businessHours": {
+            "description": "Array containing businessHours",
             "type": "array"
         }
     },
