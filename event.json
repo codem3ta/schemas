@@ -68,6 +68,10 @@
             "items": { 
                 "type": "object" 
             }
+        },
+        "buisinessHours": {
+            "description": "Array containing buisinessHours",
+            "type": "array"
         }
     },
     "required": [
