@@ -69,6 +69,13 @@
                 "type": "object" 
             }
         },
+        "busyHours": {
+            "description": "Array containing all busy time slots of the owner",
+            "type": "array",
+            "items": { 
+                "type": "object" 
+            }
+        },
         "businessHours": {
             "description": "Array containing businessHours",
             "type": "array"
