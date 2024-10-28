@@ -68,6 +68,13 @@
             "items": { 
                 "type": "object" 
             }
+        },
+        "availableSlots": {
+            "description": "Array containing all available TimeSlots for a proposed Event",
+            "type": "array",
+            "items": { 
+                "type": "object" 
+            }
         }
     },
     "required": [
