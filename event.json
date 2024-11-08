@@ -100,7 +100,31 @@
                 "properties": {
                     "emailAddress": {
                         "description": "The Email Address an Name of an Attendee",
-                        "type": "object"
+                        "type": "object",
+                        "properties": {
+                            "address": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": ["required", "optional", "resource"]
+                    },
+                    "status": {
+                        "type": "object",
+                        "properties": {
+                            "response": {
+                                "type": "string"
+                            },
+                            "time": {
+                                "type": "string",
+                                "format": "date-time"
+                            }
+                        }
                     }
                 }   
             }
