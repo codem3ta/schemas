@@ -79,6 +79,14 @@
         "businessHours": {
             "description": "Array containing businessHours",
             "type": "array"
+        },
+        "bookedTimeslot": {
+            "description": "Timeslot chosen by the customer; must be validated to appear as a valid event",
+            "type": "date-time"
+        },
+        "recipients": {
+            "description": "Recipient of event confirmation",
+            "type": "string"
         }
     },
     "required": [
