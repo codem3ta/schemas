@@ -82,7 +82,7 @@
         },
         "bookedTimeslot": {
             "description": "Timeslot chosen by the customer; must be validated to appear as a valid event",
-            "type": "date-time"
+            "type": "object"
         },
         "recipients": {
             "description": "Recipient of event confirmation",
