@@ -87,6 +87,10 @@
         "recipients": {
             "description": "Recipient of event confirmation",
             "type": "string"
+        },
+        "ownerFullName": {
+            "description": "The full Name of the Event Owner",
+            "type": "string"
         }
     },
     "required": [
