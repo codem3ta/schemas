@@ -58,6 +58,14 @@
                     "outlookEventId": {
                         "description": "The Id of the Outlook Event",
                         "type": "string"
+                    },
+                    "tanssCompanyId": {
+                        "description": "The Id of the Company in Tanss",
+                        "type": "string"
+                    },
+                    "tannsEmployeeId": {
+                        "description": "The Id of the Employee in Tanss",
+                        "type": "string"
                     }
                 }   
             }
@@ -84,9 +92,18 @@
             "description": "Timeslot chosen by the customer; must be validated to appear as a valid event",
             "type": "object"
         },
-        "recipients": {
+        "attendees": {
             "description": "Recipient of event confirmation",
-            "type": "string"
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "emailAddress": {
+                        "description": "The Email Address an Name of an Attendee",
+                        "type": "object"
+                    }
+                }   
+            }
         },
         "ownerFullName": {
             "description": "The full Name of the Event Owner",
