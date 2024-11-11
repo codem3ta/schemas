@@ -1,26 +1,34 @@
 {
   "$id": "https://codemeta.de/schemas/salesOrder",
-  "title": "Sales Order",
-  "description": "Information about a sales order",
+  "title": "SalesOrder",
+  "description": "Information about a salesOrder",
   "type": "object",
   "collection": "salesOrders",
-  "properties": {
-    "customer": {
-        "description": "The customer associated with the shipment",
-        "type": "string",
-        "objectId": true,
-        "target": "https://codemeta.de/schemas/party",
-        "relation": "manyToOne"
-    },
-    "orderNumber":{
-        "type": "string",
-        "description": "The order number of the sales order in weclapp"
-    },
-    "information":{
-        "type": "string",
-        "description": "Additional information about the sales order"
+  "i18n": {
+    "de": {
+      "singular": "Auftrag",
+      "plural": "Aufträge",
+      "description": "Aufträge."
     }
   },
-  "required": ["customer", "orderNumber"],
+  "properties": {
+    "customer": {
+      "description": "The customer associated with the shipment",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party",
+      "relation": "manyToOne"
+  },
+  "orderNumber":{
+      "type": "string",
+      "description": "The order number of the sales order in weclapp"
+  },
+  "information":{
+      "type": "string",
+      "description": "Additional information about the sales order"
+  }
+  },
+  "required": [
+  ],
   "name": "salesOrder"
 }
