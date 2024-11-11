@@ -33,4 +33,5 @@ module.exports = {
   webhook: require('./webhook.json'),
   usage: require('./usage.json'),
   event: require('./event.json'),
+  salesOrder: require('./salesOrder.json'),
 };
