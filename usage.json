@@ -29,12 +29,12 @@
     "startDate": {
       "description": "The interval start date",
       "type": "string",
-      "format": "date"
+      "format": "date-time"
     },
     "endDate": {
       "description": "The interval end date",
       "type": "string",
-      "format": "date"
+      "format": "date-time"
     },
     "quantity": {
         "description": "The quantity of the article",

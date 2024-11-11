@@ -1,10 +1,17 @@
 {
   "$id": "https://codemeta.de/schemas/salesOrder",
-  "title": "Sales Order",
-  "description": "Information about a sales order",
+  "title": "SalesOrder",
+  "description": "Information about a salesOrder",
   "type": "object",
   "name": "salesOrder",
   "collection": "salesOrders",
+  "i18n": {
+    "de": {
+      "singular": "Auftrag",
+      "plural": "Aufträge",
+      "description": "Aufträge."
+    }
+  },
   "properties": {
     "customer": {
       "description": "The customer associated with the shipment",
@@ -40,6 +47,5 @@
       "type": "boolean",
       "description": "Indicates if the sales order has been shipped"
     }
-  },
-  "required": ["customer"]
+  }
 }

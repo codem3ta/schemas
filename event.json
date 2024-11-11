@@ -58,6 +58,14 @@
                     "outlookEventId": {
                         "description": "The Id of the Outlook Event",
                         "type": "string"
+                    },
+                    "tanssCompanyId": {
+                        "description": "The Id of the Company in Tanss",
+                        "type": "string"
+                    },
+                    "tannsEmployeeId": {
+                        "description": "The Id of the Employee in Tanss",
+                        "type": "string"
                     }
                 }   
             }
@@ -68,6 +76,62 @@
             "items": { 
                 "type": "object" 
             }
+        },
+        "busyHours": {
+            "description": "Array containing all busy time slots of the owner",
+            "type": "array",
+            "items": { 
+                "type": "object" 
+            }
+        },
+        "businessHours": {
+            "description": "Array containing businessHours",
+            "type": "array"
+        },
+        "bookedTimeslot": {
+            "description": "Timeslot chosen by the customer; must be validated to appear as a valid event",
+            "type": "object"
+        },
+        "attendees": {
+            "description": "Recipient of event confirmation",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "emailAddress": {
+                        "description": "The Email Address an Name of an Attendee",
+                        "type": "object",
+                        "properties": {
+                            "address": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "type": {
+                        "type": "string",
+                        "enum": ["required", "optional", "resource"]
+                    },
+                    "status": {
+                        "type": "object",
+                        "properties": {
+                            "response": {
+                                "type": "string"
+                            },
+                            "time": {
+                                "type": "string",
+                                "format": "date-time"
+                            }
+                        }
+                    }
+                }   
+            }
+        },
+        "ownerFullName": {
+            "description": "The full Name of the Event Owner",
+            "type": "string"
         }
     },
     "required": [
