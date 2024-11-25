@@ -4,6 +4,13 @@
   "collection": "bookmarks",
   "description": "A bookmark",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Lesezeichen",
+      "plural": "Lesezeichen",
+      "description": "Lesezeichen sind Links zu anderen Websites und Dateien"
+    }
+  },
   "properties": {
     "url": {
       "description": "The url of the bookmark",
@@ -18,11 +25,7 @@
       "type": "string"
     }
   },
-  "required": [
-    "url",
-    "title",
-    "group"
-  ],
+  "required": ["url", "title", "group"],
   "name": "bookmark",
   "unevaluatedProperties": false
 }

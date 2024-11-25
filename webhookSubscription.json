@@ -1,0 +1,80 @@
+{
+  "$id": "https://codemeta.de/schemas/webhookSubscription",
+  "title": "webhookSubscription",
+  "description": "Information about a webhookSubscription",
+  "type": "object",
+  "collection": "webhookSubscriptions",
+  "i18n": {
+    "de": {
+      "singular": "Webhook Abonnement",
+      "plural": "Webhook Abonnements",
+      "description": "Regelmäßiges Zahlungsmodell für den Zugang zu einem Produkt oder einer Dienstleistung"
+    }
+  },
+  "properties": {
+    "microsoftId": {
+      "description": "The subscription ID of the Microsoft Subscription",
+      "type": "string"
+    },
+    "resource": {
+      "description": "The path to the internal microsoft ressource",
+      "type": "string"
+    },
+    "applicationId": {
+      "description": "The Microsoft Application ID",
+      "type": "string"
+    },
+    "changeType": {
+      "description": "Changes that trigger the webhook",
+      "type": "string"
+    },
+    "clientState": {
+      "description": "A Secret String to confirm the change Notification originates from Microsoft",
+      "type": "string"
+    },
+    "notificationUrl": {
+      "description": "The Url webhooks are sent to",
+      "type": "string"
+    },
+    "notificationQueryOptions": {
+      "description": "The Notification Query Options",
+      "type": "object"
+    },
+    "lifecycleNotificationUrl": {
+      "description": "The Url webhooks concerning the Subscription Lifecylce are sent to",
+      "type": "string"
+    },
+    "expirationDateTime": {
+        "description": "Date and Time when the subscription expires",
+        "type": "string"
+    },
+    "includeResourceData": {
+        "description": "Option to include Resource Data",
+        "type": "object"
+    },
+    "notificationUrlAppId": {
+        "description": "The Notification Url App ID",
+        "type": "object"
+    },
+    "user": {
+        "description": "Date and Time when the subscription expires",
+        "type": "string",
+        "objectId": true,
+        "target": "https://codemeta.de/schemas/user"
+    }
+  },
+  "required": [
+    "microsoftId",
+    "applicationId",
+    "changeType",
+    "clientState",
+    "notificationUrl",
+    "notificationQueryOptions",
+    "lifecycleNotificationUrl",
+    "expirationDateTime",
+    "includeResourceData",
+    "notificationUrlAppId",
+    "user"
+  ],
+  "name": "webhookSubscription"
+}

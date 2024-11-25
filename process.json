@@ -4,6 +4,13 @@
   "collection": "process",
   "description": "A process consists of different steps that will be executed in order. It is triggered by a database action or by cron-like intervals. Running processes are called instances.",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Prozess-Definition",
+      "plural": "Prozess-Definitionen",
+      "description": "Prozessdefinitionen enthalten Informationen und Konfigurationen zu Prozessen."
+    }
+  },
   "properties": {
     "title": { "description": "The title of the process", "type": "string" },
     "description": {

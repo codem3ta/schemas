@@ -20,6 +20,10 @@
       "description": "The type of the timeRecord",
       "type": "string"
     },
+    "title": {
+      "description": "The title of the timeRecord",
+      "type": "string"
+    },
     "description": {
       "description": "The description of the timeRecord",
       "type": "string"
@@ -64,6 +68,10 @@
       "description": "Whether the timeRecord is billed",
       "type": "boolean"
     },
+    "isFixedPricing": {
+      "description": "Whether the timeRecord is fixed pricing",
+      "type": "boolean"
+    },
     "tanss": {
       "type": "number",
       "description": "The timeRecord's TANSS support ID"
@@ -77,6 +85,26 @@
     },
     "weclappTimeRecordId": {
       "description": "A weclapp timeRecordId of the connected timeRecordId",
+      "type": "string"
+    },
+    "orderItemId": {
+      "description": "A orderItemId of the connected timeRecordId",
+      "type": "string"
+    },
+    "salesOrderId": {
+      "description": "A salesOrderId of the connected timeRecordId",
+      "type": "string"
+    },
+    "customerId": {
+      "description": "A customerId of the connected timeRecordId",
+      "type": "string"
+    },
+    "weclappUserId": {
+      "description": "A weclappUserId of the user who interacted withn the timeRecord",
+      "type": "string"
+    },
+    "performanceRecordedStatus": {
+      "description": "A performanceRecordedStatus of the connected timeRecordId",
       "type": "string"
     }
   },
