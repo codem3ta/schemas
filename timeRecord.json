@@ -12,10 +12,6 @@
     }
   },
   "properties": {
-    "title": {
-      "description": "The title of the timeRecord",
-      "type": "string"
-    },
     "type": {
       "description": "The type of the timeRecord",
       "type": "string"
