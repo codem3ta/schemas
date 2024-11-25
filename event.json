@@ -132,6 +132,10 @@
         "ownerFullName": {
             "description": "The full Name of the Event Owner",
             "type": "string"
+        },
+        "tenant": {
+            "description": "The tenant slug of the tenant",
+            "type": "string"
         }
     },
     "required": [

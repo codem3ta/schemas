@@ -6,7 +6,7 @@
   "type": "object",
   "i18n": {
     "de": {
-      "singular": "Aufagbe",
+      "singular": "Aufgabe",
       "plural": "Aufgaben",
       "description": "Eine Aufgabe auf die Zeiten erfasst werden können"
     }
