@@ -41,7 +41,8 @@
       "type": "string",
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/interface",
-      "objectId": true
+      "objectId": true,
+      "database": "config"
     }
   },
   "required": [

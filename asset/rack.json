@@ -1,7 +1,12 @@
 {
-  "$id": "https://codemeta.de/schemas/rack",
+  "$id": "https://codemeta.de/schemas/asset/rack",
   "title": "Rack",
-  "collection": "racks",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ],
   "description": "An rack",
   "type": "object",
   "properties": {

@@ -1,7 +1,12 @@
 {
-  "$id": "https://codemeta.de/schemas/room",
+  "$id": "https://codemeta.de/schemas/asset/room",
   "title": "Room",
-  "collection": "rooms",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ],
   "description": "An room",
   "type": "object",
   "properties": {
