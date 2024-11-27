@@ -23,7 +23,9 @@
     },
     "rack": {
       "description": "The rack of the host.",
-      "type": "string"
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/rack"
     },
     "cpus": {
       "description": "The cpu count of the host.",
@@ -41,7 +43,6 @@
     }
   },
   "required": [
-    "externalId",
     "name",
     "interface"
   ]

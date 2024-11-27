@@ -48,7 +48,6 @@
     }
   },
   "required": [
-    "externalId",
     "name",
     "interface"
   ]

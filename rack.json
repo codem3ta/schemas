@@ -1,0 +1,36 @@
+{
+  "$id": "https://codemeta.de/schemas/rack",
+  "title": "Rack",
+  "collection": "racks",
+  "description": "An rack",
+  "type": "object",
+  "properties": {
+    "height": {
+      "description": "The height of the rack.",
+      "type": "number"
+    },
+    "with": {
+      "description": "The with of the rack.",
+      "type": "number"
+    },
+    "depth": {
+      "description": "The depth of the rack.",
+      "type": "number"
+    },
+    "title": {
+      "description": "The title of the rack.",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of the rack.",
+      "type": "string"
+    },
+    "room": {
+      "description": "The room of the rack location.",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "rack",
+  "unevaluatedProperties": true
+}
