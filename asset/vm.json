@@ -25,7 +25,7 @@
       "description": "The host of the virtual maschine.",
       "type": "string",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/host",
+      "target": "https://codemeta.de/schemas/asset/host",
       "objectId": true
     },
     "state": {

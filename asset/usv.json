@@ -17,7 +17,7 @@
       "description": "The rack of the usv.",
       "type": "string",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/rack",
+      "target": "https://codemeta.de/schemas/asset/rack",
       "objectId": true
     },
     "hosts":{
@@ -26,7 +26,7 @@
       "items": {
         "type": "string",
         "relation": "manyToOne",
-        "target": "https://codemeta.de/schemas/host",
+        "target": "https://codemeta.de/schemas/asset/host",
         "objectId": true
       }
     },
