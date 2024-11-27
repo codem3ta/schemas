@@ -12,5 +12,8 @@
       "plural": "Schnittstellen",
       "description": "Schnittstellen definieren den Zugriff auf externe Software und enthalten vertrauliche Informationen wie Zugangstoken"
     }
-  }
+  },
+  "properties": {
+  },
+  "unevaluatedProperties": true
 }
