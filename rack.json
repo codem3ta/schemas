@@ -9,7 +9,7 @@
       "description": "The height of the rack.",
       "type": "number"
     },
-    "with": {
+    "width": {
       "description": "The with of the rack.",
       "type": "number"
     },
