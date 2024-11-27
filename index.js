@@ -1,9 +1,8 @@
 module.exports = {
   asset: require("./asset/asset.json"),
-  bucket: require("./bucket.json"),
   endpoint: require("./asset/endpoint.json"),
   vm: require("./asset/vm.json"),
-  car: require("./asset/car.json"),
+  bucket: require("./bucket.json"),
   project: require("./project.json"),
   party: require("./party.json"),
   person: require("./party/person.json"),
