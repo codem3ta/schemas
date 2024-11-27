@@ -29,7 +29,7 @@
             "type": "string"
           }
         },
-        "required": ["ip", "mac", "network"]
+        "required": ["ipv4", "mac", "network"]
       }
     },
     "os": {
