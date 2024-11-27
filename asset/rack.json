@@ -39,6 +39,5 @@
     }
   },
   "required": [],
-  "name": "rack",
-  "unevaluatedProperties": true
+  "name": "rack"
 }

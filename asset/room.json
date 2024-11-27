@@ -22,9 +22,7 @@
       "description": "The description of the room.",
       "type": "string"
     }
-    
   },
   "required": [],
-  "name": "room",
-  "unevaluatedProperties": true
+  "name": "room"
 }
