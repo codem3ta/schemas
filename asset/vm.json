@@ -1,0 +1,22 @@
+{
+  "$id": "https://codemeta.de/schemas/asset/vm",
+  "type": "object",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset/endpoint"
+    }
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "vm",
+      "default": "vm"
+    },
+    "state": {
+      "description": "The state of the virtual machine",
+      "type": "string",
+      "enum": ["running", "stopped", "paused"]
+    }
+  }
+}

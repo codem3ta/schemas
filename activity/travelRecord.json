@@ -1,7 +1,7 @@
 {
   "$id": "https://codemeta.de/schemas/travelRecord",
   "title": "Travel Record",
-  "collection": "travelRecords",
+  "collection": "activities",
   "description": "A record of travel for a user. It can be associated with a timeRecord and a customer.",
   "type": "object",
   "allOf": [

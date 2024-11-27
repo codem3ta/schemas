@@ -3,10 +3,10 @@
   "type": "object",
   "collection": "assets",
   "properties": {
-    "name": {
+    "identifier": {
       "type": "string"
     },
-    "identifier": {
+    "title": {
       "type": "string"
     },
     "description": {
@@ -16,13 +16,13 @@
       "type": "string"
     },
     "ownedBy": {
-      "type": "string"
-    },
-    "value": {
-      "description": "The value of the asset in euro",
-      "type": "number"
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party"
     }
   },
-  "required": ["identifier", "name"],
-  "name": "asset"
+  "required": ["identifier"],
+  "name": "asset",
+  "unevaluatedProperties": true
 }

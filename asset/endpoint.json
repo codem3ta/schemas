@@ -1,0 +1,17 @@
+{
+  "$id": "https://codemeta.de/schemas/asset/endpoint",
+  "type": "object",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ],
+  "properties": {
+    "os": {
+      "description": "The operating system of the endpoint",
+      "type": "string"
+    }
+  },
+  "unevaluatedProperties": true
+}
