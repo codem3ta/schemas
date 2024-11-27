@@ -17,7 +17,8 @@
       "description": "The rack of the usv.",
       "type": "string",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/rack"
+      "target": "https://codemeta.de/schemas/rack",
+      "objectId": true
     },
     "hosts":{
       "description": "An array of hosts for the usv.",
@@ -25,7 +26,8 @@
       "items": {
         "type": "string",
         "relation": "manyToOne",
-        "target": "https://codemeta.de/schemas/host"
+        "target": "https://codemeta.de/schemas/host",
+        "objectId": true
       }
     },
     "state": {
@@ -53,7 +55,8 @@
       "description": "The interface with the credentials.",
       "type": "string",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/interface"
+      "target": "https://codemeta.de/schemas/interface",
+      "objectId": true
     }
   },
   "required": [

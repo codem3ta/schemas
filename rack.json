@@ -29,7 +29,8 @@
       "description": "The room of the rack location.",
       "type": "string",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/room"
+      "target": "https://codemeta.de/schemas/room",
+      "objectId": true
     }
   },
   "required": [],
