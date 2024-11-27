@@ -8,15 +8,48 @@
     }
   ],
   "properties": {
+    "externalId": {
+      "description": "The external id of the virtual machine.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the virtual machine.",
+      "type": "string"
+    },
     "type": {
       "type": "string",
       "const": "vm",
       "default": "vm"
     },
+    "host": {
+      "description": "The host of the virtual maschine.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/host"
+    },
     "state": {
-      "description": "The state of the virtual machine",
+      "description": "The state of the virtual machine.",
       "type": "string",
       "enum": ["running", "stopped", "paused"]
+    },
+    "cpus": {
+      "description": "The cpu count of the virtual machine.",
+      "type": "number"
+    },
+    "memory": {
+      "description": "The memory amount of the virtual machine.",
+      "type": "number"
+    },
+    "interface": {
+      "description": "The interface with the credentials.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/interface"
     }
-  }
+  },
+  "required": [
+    "externalId",
+    "name",
+    "interface"
+  ]
 }
