@@ -63,6 +63,10 @@
     "tenant": {
       "type": "string",
       "description": "The user's tenant slug (NOT THE ID)"
+    },
+    "tanssEmployeeId": {
+      "type": "number",
+      "description": "The user's tanss employee id"
     }
   },
   "config": true,
