@@ -5,6 +5,7 @@ module.exports = {
   host: require("./asset/host.json"),
   usv: require("./asset/usv.json"),
   rack: require("./rack.json"),
+  room: require("./room.json"),
   bucket: require("./bucket.json"),
   project: require("./project.json"),
   party: require("./party.json"),
