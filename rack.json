@@ -27,7 +27,9 @@
     },
     "room": {
       "description": "The room of the rack location.",
-      "type": "string"
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/room"
     }
   },
   "required": [],
