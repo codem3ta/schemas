@@ -15,6 +15,9 @@
     "type": {
       "type": "string"
     },
+    "articleId": {
+      "type": "string"
+    },
     "ownedBy": {
       "type": "string",
       "objectId": true,

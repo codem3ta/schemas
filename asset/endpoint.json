@@ -8,8 +8,36 @@
     }
   ],
   "properties": {
+    "networkInterfaces": {
+      "description": "The network interfaces of the endpoint",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ipv4": {
+            "description": "The IP address of the network interface",
+            "type": "string",
+            "format": "ipv4"
+          },
+          "mac": {
+            "description": "The MAC address of the network interface",
+            "type": "string",
+            "pattern": "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$"
+          },
+          "network": {
+            "description": "The network name or identifier",
+            "type": "string"
+          }
+        },
+        "required": ["ipv4", "mac", "network"]
+      }
+    },
     "os": {
       "description": "The operating system of the endpoint",
+      "type": "string"
+    },
+    "osVersion": {
+      "description": "The version of the operating system",
       "type": "string"
     }
   },

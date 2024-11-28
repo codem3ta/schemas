@@ -1,0 +1,28 @@
+{
+  "$id": "https://codemeta.de/schemas/asset/room",
+  "title": "Room",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ],
+  "description": "An room",
+  "type": "object",
+  "properties": {
+    "building": {
+      "description": "The building where the room is located.",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title of the room.",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of the room.",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "room"
+}

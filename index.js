@@ -1,9 +1,12 @@
 module.exports = {
   asset: require("./asset/asset.json"),
-  bucket: require("./bucket.json"),
   endpoint: require("./asset/endpoint.json"),
   vm: require("./asset/vm.json"),
-  car: require("./asset/car.json"),
+  host: require("./asset/host.json"),
+  usv: require("./asset/usv.json"),
+  rack: require("./asset/rack.json"),
+  room: require("./asset/room.json"),
+  bucket: require("./bucket.json"),
   project: require("./project.json"),
   party: require("./party.json"),
   person: require("./party/person.json"),
@@ -35,4 +38,5 @@ module.exports = {
   usage: require("./usage.json"),
   event: require("./event.json"),
   salesOrder: require("./salesOrder.json"),
+  interface: require("./interface.json")
 };

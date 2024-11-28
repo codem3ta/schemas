@@ -1,0 +1,67 @@
+{
+  "$id": "https://codemeta.de/schemas/asset/usv",
+  "type": "object",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset/endpoint"
+    }
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "usv",
+      "default": "usv"
+    },
+    "rack": {
+      "description": "The rack of the usv.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/asset/rack",
+      "objectId": true
+    },
+    "hosts":{
+      "description": "An array of hosts for the usv.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/asset/host",
+        "objectId": true
+      }
+    },
+    "state": {
+      "description": "The state of the virtual machine.",
+      "type": "string",
+      "enum": ["running", "stopped", "paused"]
+    },
+    "remainingMinutes": {
+      "description": "The remaining minutes.",
+      "type": "number"
+    },
+    "title": {
+      "description": "The title of the usv.",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of the usv.",
+      "type": "string"
+    },
+    "manufacturer": {
+      "description": "The manufacturer of the usv.",
+      "type": "string"
+    },
+    "interface": {
+      "description": "The interface with the credentials.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/interface",
+      "objectId": true,
+      "database": "config"
+    }
+  },
+  "required": [
+    "title",
+    "interface"
+  ]
+}
