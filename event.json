@@ -5,21 +5,21 @@
     "type": "object",
     "collection": "events",
     "i18n": {
-      "de": {
-        "singular": "Termin",
-        "plural": "Termine",
-        "description": "Eine simple Version eines Tanss Supports/Outlook Events"
-      }
+        "de": {
+            "singular": "Termin",
+            "plural": "Termine",
+            "description": "Eine simple Version eines Tanss Supports/Outlook Events"
+        }
     },
     "properties": {
-        "title": { 
-            "description": "The Title of the event", 
+        "title": {
+            "description": "The Title of the event",
             "type": "string"
-            },
-        "description": { 
-            "description": "The Description of the event", 
+        },
+        "description": {
+            "description": "The Description of the event",
             "type": "string"
-            },
+        },
         "start": {
             "description": "The date and Time when the event starts",
             "type": "string",
@@ -30,27 +30,37 @@
             "type": "string",
             "format": "date-time"
         },
-        "plannedDuration":{
+        "plannedDuration": {
             "description": "The duration from Start to End of the Event",
             "type": "number"
         },
         "type": {
             "description": "State or Type of the Event",
             "type": "string",
-            "emum": ["inScheduling", "singleInstance", "occurrence", "exception", "seriesMaster"]
+            "emum": [
+                "inScheduling",
+                "singleInstance",
+                "occurrence",
+                "exception",
+                "seriesMaster"
+            ]
         },
-        "owner": { 
-            "description": "The Name of the Technician responsible for the event", 
+        "owner": {
+            "description": "The Name of the Technician responsible for the event",
             "type": "string",
             "objectId": true,
             "target": "https://codemeta.de/schemas/user"
-            },
+        },
         "links": {
             "description": "Eventids in Tanns and Outlook",
             "type": "array",
             "items": {
                 "type": "object",
                 "properties": {
+                    "tanssTicketId": {
+                        "description": "The Id of the Tanss Ticket",
+                        "type": "string"
+                    },
                     "tanssSupportId": {
                         "description": "The Id of the Tanss Support",
                         "type": "string"
@@ -67,21 +77,21 @@
                         "description": "The Id of the Employee in Tanss",
                         "type": "string"
                     }
-                }   
+                }
             }
         },
         "availableSlots": {
             "description": "Array containing all available TimeSlots for a proposed Event",
             "type": "array",
-            "items": { 
-                "type": "object" 
+            "items": {
+                "type": "object"
             }
         },
         "busyHours": {
             "description": "Array containing all busy time slots of the owner",
             "type": "array",
-            "items": { 
-                "type": "object" 
+            "items": {
+                "type": "object"
             }
         },
         "businessHours": {
@@ -112,7 +122,11 @@
                     },
                     "type": {
                         "type": "string",
-                        "enum": ["required", "optional", "resource"]
+                        "enum": [
+                            "required",
+                            "optional",
+                            "resource"
+                        ]
                     },
                     "status": {
                         "type": "object",
@@ -126,7 +140,7 @@
                             }
                         }
                     }
-                }   
+                }
             }
         },
         "ownerFullName": {
@@ -138,8 +152,6 @@
             "type": "string"
         }
     },
-    "required": [
-    ],
+    "required": [],
     "name": "event"
-  }
-  
+}
