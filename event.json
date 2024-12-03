@@ -1,157 +1,158 @@
 {
-    "$id": "https://codemeta.de/schemas/events",
-    "title": "Events",
-    "description": "Simple Version of a Tanss Support/Outlook Event",
-    "type": "object",
-    "collection": "events",
-    "i18n": {
-        "de": {
-            "singular": "Termin",
-            "plural": "Termine",
-            "description": "Eine simple Version eines Tanss Supports/Outlook Events"
-        }
+  "$id": "https://codemeta.de/schemas/events",
+  "title": "Events",
+  "description": "Simple Version of a Tanss Support/Outlook Event",
+  "type": "object",
+  "collection": "events",
+  "i18n": {
+    "de": {
+      "singular": "Termin",
+      "plural": "Termine",
+      "description": "Eine simple Version eines Tanss Supports/Outlook Events"
+    }
+  },
+  "properties": {
+    "title": {
+      "description": "The Title of the event",
+      "type": "string"
     },
-    "properties": {
-        "title": {
-            "description": "The Title of the event",
-            "type": "string"
-        },
-        "description": {
-            "description": "The Description of the event",
-            "type": "string"
-        },
-        "start": {
-            "description": "The date and Time when the event starts",
-            "type": "string",
-            "format": "date-time"
-        },
-        "end": {
-            "description": "The date and Time when the event ends",
-            "type": "string",
-            "format": "date-time"
-        },
-        "plannedDuration": {
-            "description": "The duration from Start to End of the Event",
-            "type": "number"
-        },
-        "type": {
-            "description": "State or Type of the Event",
-            "type": "string",
-            "emum": [
-                "inScheduling",
-                "singleInstance",
-                "occurrence",
-                "exception",
-                "seriesMaster"
-            ]
-        },
-        "owner": {
-            "description": "The Name of the Technician responsible for the event",
-            "type": "string",
-            "objectId": true,
-            "target": "https://codemeta.de/schemas/user"
-        },
-        "links": {
-            "description": "Eventids in Tanns and Outlook",
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "tanssTicketId": {
-                        "description": "The Id of the Tanss Ticket",
-                        "type": "string"
-                    },
-                    "tanssSupportId": {
-                        "description": "The Id of the Tanss Support",
-                        "type": "string"
-                    },
-                    "outlookEventId": {
-                        "description": "The Id of the Outlook Event",
-                        "type": "string"
-                    },
-                    "tanssCompanyId": {
-                        "description": "The Id of the Company in Tanss",
-                        "type": "string"
-                    },
-                    "tannsEmployeeId": {
-                        "description": "The Id of the Employee in Tanss",
-                        "type": "string"
-                    }
-                }
-            }
-        },
-        "availableSlots": {
-            "description": "Array containing all available TimeSlots for a proposed Event",
-            "type": "array",
-            "items": {
-                "type": "object"
-            }
-        },
-        "busyHours": {
-            "description": "Array containing all busy time slots of the owner",
-            "type": "array",
-            "items": {
-                "type": "object"
-            }
-        },
-        "businessHours": {
-            "description": "Array containing businessHours",
-            "type": "array"
-        },
-        "bookedTimeslot": {
-            "description": "Timeslot chosen by the customer; must be validated to appear as a valid event",
-            "type": "object"
-        },
-        "attendees": {
-            "description": "Recipient of event confirmation",
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "emailAddress": {
-                        "description": "The Email Address an Name of an Attendee",
-                        "type": "object",
-                        "properties": {
-                            "address": {
-                                "type": "string"
-                            },
-                            "name": {
-                                "type": "string"
-                            }
-                        }
-                    },
-                    "type": {
-                        "type": "string",
-                        "enum": [
-                            "required",
-                            "optional",
-                            "resource"
-                        ]
-                    },
-                    "status": {
-                        "type": "object",
-                        "properties": {
-                            "response": {
-                                "type": "string"
-                            },
-                            "time": {
-                                "type": "string",
-                                "format": "date-time"
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "ownerFullName": {
-            "description": "The full Name of the Event Owner",
-            "type": "string"
-        },
-        "tenant": {
-            "description": "The tenant slug of the tenant",
-            "type": "string"
-        }
+    "description": {
+      "description": "The Description of the event",
+      "type": "string"
     },
-    "required": [],
-    "name": "event"
+    "start": {
+      "description": "The date and Time when the event starts",
+      "type": "string",
+      "format": "date-time"
+    },
+    "end": {
+      "description": "The date and Time when the event ends",
+      "type": "string",
+      "format": "date-time"
+    },
+    "plannedDuration": {
+      "description": "The duration from Start to End of the Event",
+      "type": "number"
+    },
+    "type": {
+      "description": "State or Type of the Event",
+      "type": "string",
+      "emum": [
+        "inScheduling",
+        "singleInstance",
+        "occurrence",
+        "exception",
+        "seriesMaster"
+      ]
+    },
+    "location": {
+      "description": "State or Type of the Event",
+      "type": "string",
+      "emum": ["OFFICE", "CUSTOMER", "REMOTE"]
+    },
+    "owner": {
+      "description": "The Name of the Technician responsible for the event",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/user"
+    },
+    "links": {
+      "description": "Eventids in Tanns and Outlook",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tanssTicketId": {
+            "description": "The Id of the Tanss Ticket",
+            "type": "string"
+          },
+          "tanssSupportId": {
+            "description": "The Id of the Tanss Support",
+            "type": "string"
+          },
+          "outlookEventId": {
+            "description": "The Id of the Outlook Event",
+            "type": "string"
+          },
+          "tanssCompanyId": {
+            "description": "The Id of the Company in Tanss",
+            "type": "string"
+          },
+          "tannsEmployeeId": {
+            "description": "The Id of the Employee in Tanss",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "availableSlots": {
+      "description": "Array containing all available TimeSlots for a proposed Event",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "busyHours": {
+      "description": "Array containing all busy time slots of the owner",
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "businessHours": {
+      "description": "Array containing businessHours",
+      "type": "array"
+    },
+    "bookedTimeslot": {
+      "description": "Timeslot chosen by the customer; must be validated to appear as a valid event",
+      "type": "object"
+    },
+    "attendees": {
+      "description": "Recipient of event confirmation",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "emailAddress": {
+            "description": "The Email Address an Name of an Attendee",
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          },
+          "type": {
+            "type": "string",
+            "enum": ["required", "optional", "resource"]
+          },
+          "status": {
+            "type": "object",
+            "properties": {
+              "response": {
+                "type": "string"
+              },
+              "time": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ownerFullName": {
+      "description": "The full Name of the Event Owner",
+      "type": "string"
+    },
+    "tenant": {
+      "description": "The tenant slug of the tenant",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "event"
 }
