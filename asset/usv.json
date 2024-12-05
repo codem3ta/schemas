@@ -58,6 +58,21 @@
       "target": "https://codemeta.de/schemas/interface",
       "objectId": true,
       "database": "config"
+    },
+    "oids": {
+      "title": "Diffrent oids for the usv.",
+      "description": "Diffrent oids for the usv.",
+      "type": "object",
+      "properties": {
+        "statusOID": {
+          "description": "The oid thats used to query the status",
+          "type": "string"
+        },
+        "remainingMinutesOID": {
+          "description": "The oid thats used to query the remainingMinutesOID",
+          "type": "string"
+        }
+      }
     }
   },
   "required": [
