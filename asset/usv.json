@@ -33,7 +33,7 @@
     "state": {
       "description": "The state of the virtual machine.",
       "type": "string",
-      "enum": ["running", "stopped", "paused"]
+      "enum": ["online", "battery", "offline"]
     },
     "remainingMinutes": {
       "description": "The remaining minutes.",
