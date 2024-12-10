@@ -31,7 +31,7 @@
       "format": "date-time"
     },
     "plannedDuration": {
-      "description": "The duration from Start to End of the Event",
+      "description": "The duration in Minutes from Start to End of the Event",
       "type": "number"
     },
     "type": {
@@ -46,9 +46,13 @@
       ]
     },
     "location": {
-      "description": "State or Type of the Event",
+      "description": "Defines, where a support takes place",
       "type": "string",
       "emum": ["OFFICE", "CUSTOMER", "REMOTE"]
+    },
+    "durationApproach": {
+      "description": "The duration in Minutes that is added to an Event for the drive to a Customer. Only used if Location is CUSTOMER",
+      "type": "number"
     },
     "owner": {
       "description": "The Name of the Technician responsible for the event",
