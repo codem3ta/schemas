@@ -51,7 +51,6 @@
     }
   },
   "required": [
-    "name",
-    "interface"
+    "name"
   ]
 }
