@@ -114,6 +114,7 @@
       "format": "date-time"
     }
   },
+  "searchable": true,
   "required": ["caller", "phoneNumber", "priority"],
   "additionalProperties": false
 }

@@ -20,7 +20,7 @@
       "target": "https://codemeta.de/schemas/asset/rack",
       "objectId": true
     },
-    "hosts":{
+    "hosts": {
       "description": "An array of hosts for the usv.",
       "type": "array",
       "items": {
@@ -75,8 +75,5 @@
       }
     }
   },
-  "required": [
-    "title",
-    "interface"
-  ]
+  "required": ["title", "interface"]
 }
