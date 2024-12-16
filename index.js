@@ -38,5 +38,6 @@ module.exports = {
   usage: require("./usage.json"),
   event: require("./event.json"),
   salesOrder: require("./salesOrder.json"),
-  interface: require("./interface.json")
+  interface: require("./interface.json"),
+  visitor: require("./visitor.json"),
 };
