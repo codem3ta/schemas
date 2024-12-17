@@ -1,0 +1,31 @@
+{
+  "$id": "https://codemeta.de/schemas/visitor",
+  "title": "Visitor",
+  "collection": "visitors",
+  "description": "A person visiting",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Besucher:in",
+      "plural": "Besucher:innen",
+      "description": "Personen, die vor Ort Termine wahrnehmen."
+    }
+  },
+  "properties": {
+    "name": {
+      "description": "The name of the visitor",
+      "type": "string"
+    },
+    "responsibleUserId": {
+      "description": "The user ID of the responsible user",
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
+      "database": "config"
+    }
+  },
+  "required": [],
+  "name": "visitor",
+  "searchable": true
+}

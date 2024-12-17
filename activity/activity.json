@@ -79,5 +79,5 @@
   },
   "required": [],
   "name": "activity",
-  "unevaluatedProperties": false
+  "unevaluatedProperties": true
 }

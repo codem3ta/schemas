@@ -1,0 +1,51 @@
+{
+  "$id": "https://codemeta.de/schemas/asset/host",
+  "type": "object",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset/endpoint"
+    }
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "host",
+      "default": "host"
+    },
+    "externalId": {
+      "description": "The external id of the host.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the host.",
+      "type": "string"
+    },
+    "rack": {
+      "description": "The rack of the host.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/asset/rack",
+      "objectId": true
+    },
+    "cpus": {
+      "description": "The cpu count of the host.",
+      "type": "number"
+    },
+    "memory": {
+      "description": "The memory amount of the host.",
+      "type": "number"
+    },
+    "interface": {
+      "description": "The interface with the credentials.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/interface",
+      "objectId": true,
+      "database": "config"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
