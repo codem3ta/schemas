@@ -1,0 +1,26 @@
+{
+  "$id": "https://codemeta.de/schemas/comment",
+  "title": "Comment",
+  "collection": "comments",
+  "description": "A comment",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Comment",
+      "plural": "Comments",
+      "description": "Eine Kommentarmöglichkeit welche schema übergreifend ist."
+    }
+  },
+  "properties": {
+    "title": {
+      "description": "The title of the comment",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "comment"
+}
