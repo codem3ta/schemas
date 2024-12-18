@@ -40,4 +40,5 @@ module.exports = {
   salesOrder: require("./salesOrder.json"),
   interface: require("./interface.json"),
   visitor: require("./visitor.json"),
+  comment: require("./comment.json"),
 };
