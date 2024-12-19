@@ -22,7 +22,8 @@
     },
     "entityId": {
       "description": "The id of the entity",
-      "type": "string"
+      "type": "string",
+      "objectId": true
     },
     "entityName": {
       "description": "The collection name of the entity",
