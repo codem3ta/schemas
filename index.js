@@ -1,5 +1,5 @@
 module.exports = {
-  asset: require("./asset/asset.json"),
+  asset: require("./asset.json"),
   endpoint: require("./asset/endpoint.json"),
   vm: require("./asset/vm.json"),
   host: require("./asset/host.json"),
