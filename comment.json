@@ -19,6 +19,14 @@
     "description": {
       "description": "The description",
       "type": "string"
+    },
+    "entityId": {
+      "description": "The id of the entity",
+      "type": "string"
+    },
+    "entityName": {
+      "description": "The collection name of the entity",
+      "type": "string"
     }
   },
   "required": [],

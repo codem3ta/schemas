@@ -72,16 +72,6 @@
       "enum": ["new", "pending", "completed"],
       "default": "new"
     },
-    "comments": {
-      "type": "array",
-      "description": "Connected comments",
-      "items": {
-        "description": "Comment",
-        "type": "string",
-        "target": "https://codemeta.de/schemas/comment",
-        "objectId": true
-      }
-    },
     "completedAt": {
       "description": "The date-time when the callback was completed",
       "type": "string",
