@@ -2,6 +2,13 @@
   "$id": "https://codemeta.de/schemas/asset",
   "type": "object",
   "collection": "assets",
+  "i18n": {
+    "de": {
+      "singular": "Asset",
+      "plural": "Asset",
+      "description": "Asset"
+    }
+  },
   "properties": {
     "identifier": {
       "type": "string"
