@@ -23,6 +23,11 @@
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/user",
       "database": "config"
+    },
+    "scheduledArrival": {
+      "description": "The scheduled arrival of the visitor",
+      "type": "string",
+      "format": "date-time"
     }
   },
   "required": [],
