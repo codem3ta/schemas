@@ -7,6 +7,13 @@
       "$ref": "https://codemeta.de/schemas/endpoint"
     }
   ],
+  "i18n": {
+    "de": {
+      "singular": "USV",
+      "plural": "USV",
+      "description": "USV"
+    }
+  },
   "properties": {
     "type": {
       "type": "string",

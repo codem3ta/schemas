@@ -7,6 +7,13 @@
       "$ref": "https://codemeta.de/schemas/asset"
     }
   ],
+  "i18n": {
+    "de": {
+      "singular": "Raum",
+      "plural": "Raum",
+      "description": "Raum"
+    }
+  },
   "description": "An room",
   "type": "object",
   "properties": {

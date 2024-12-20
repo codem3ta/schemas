@@ -7,6 +7,13 @@
       "$ref": "https://codemeta.de/schemas/endpoint"
     }
   ],
+  "i18n": {
+    "de": {
+      "singular": "Host",
+      "plural": "Host",
+      "description": "Host"
+    }
+  },
   "properties": {
     "type": {
       "type": "string",

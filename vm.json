@@ -7,6 +7,13 @@
       "$ref": "https://codemeta.de/schemas/endpoint"
     }
   ],
+  "i18n": {
+    "de": {
+      "singular": "VM",
+      "plural": "VM",
+      "description": "VM"
+    }
+  },
   "properties": {
     "externalId": {
       "description": "The external id of the virtual machine.",

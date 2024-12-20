@@ -7,6 +7,13 @@
       "$ref": "https://codemeta.de/schemas/asset"
     }
   ],
+  "i18n": {
+    "de": {
+      "singular": "Serverschrank",
+      "plural": "Serverschrank",
+      "description": "Serverschrank"
+    }
+  },
   "description": "An rack",
   "type": "object",
   "properties": {
