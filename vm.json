@@ -48,6 +48,20 @@
       "description": "The memory amount of the virtual machine.",
       "type": "number"
     },
+    "shutdownThresholdMinutes": {
+      "description": "The remaining minutes.",
+      "type": "number"
+    },
+    "dependencies": {
+      "description": "The interface with the credentials.",
+      "type": "array",
+      "items": {
+        "description": "Connected vm",
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/vm",
+        "objectId": true
+      }
+    },
     "interface": {
       "description": "The interface with the credentials.",
       "type": "string",

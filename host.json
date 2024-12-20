@@ -35,6 +35,16 @@
       "target": "https://codemeta.de/schemas/rack",
       "objectId": true
     },
+    "vms": {
+      "type": "array",
+      "items": {
+        "description": "The vm connected to the host.",
+        "type": "string",
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/vm",
+        "objectId": true
+      }
+    },
     "cpus": {
       "description": "The cpu count of the host.",
       "type": "number"
