@@ -56,7 +56,7 @@
       "description": "The interface with the credentials.",
       "type": "array",
       "items": {
-        "description": "Connected vm",
+        "type": "string",
         "relation": "manyToOne",
         "target": "https://codemeta.de/schemas/vm",
         "objectId": true
