@@ -1,5 +1,5 @@
 {
-  "$id": "https://codemeta.de/schemas/asset/endpoint",
+  "$id": "https://codemeta.de/schemas/endpoint",
   "type": "object",
   "collection": "assets",
   "allOf": [

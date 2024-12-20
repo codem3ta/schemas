@@ -1,10 +1,10 @@
 {
-  "$id": "https://codemeta.de/schemas/asset/usv",
+  "$id": "https://codemeta.de/schemas/usv",
   "type": "object",
   "collection": "assets",
   "allOf": [
     {
-      "$ref": "https://codemeta.de/schemas/asset/endpoint"
+      "$ref": "https://codemeta.de/schemas/endpoint"
     }
   ],
   "properties": {
@@ -17,7 +17,7 @@
       "description": "The rack of the usv.",
       "type": "string",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/asset/rack",
+      "target": "https://codemeta.de/schemas/rack",
       "objectId": true
     },
     "hosts": {
@@ -26,7 +26,7 @@
       "items": {
         "type": "string",
         "relation": "manyToOne",
-        "target": "https://codemeta.de/schemas/asset/host",
+        "target": "https://codemeta.de/schemas/host",
         "objectId": true
       }
     },

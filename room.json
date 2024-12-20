@@ -1,5 +1,5 @@
 {
-  "$id": "https://codemeta.de/schemas/asset/room",
+  "$id": "https://codemeta.de/schemas/room",
   "title": "Room",
   "collection": "assets",
   "allOf": [
