@@ -47,5 +47,6 @@
       "description": "The version of the operating system",
       "type": "string"
     }
-  }
+  },
+  "unevaluatedProperties": true
 }
