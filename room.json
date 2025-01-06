@@ -1,5 +1,5 @@
 {
-  "$id": "https://codemeta.de/schemas/asset/room",
+  "$id": "https://codemeta.de/schemas/room",
   "title": "Room",
   "collection": "assets",
   "allOf": [
@@ -7,6 +7,13 @@
       "$ref": "https://codemeta.de/schemas/asset"
     }
   ],
+  "i18n": {
+    "de": {
+      "singular": "Raum",
+      "plural": "Raum",
+      "description": "Raum"
+    }
+  },
   "description": "An room",
   "type": "object",
   "properties": {

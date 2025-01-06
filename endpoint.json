@@ -1,5 +1,5 @@
 {
-  "$id": "https://codemeta.de/schemas/asset/endpoint",
+  "$id": "https://codemeta.de/schemas/endpoint",
   "type": "object",
   "collection": "assets",
   "allOf": [
@@ -7,6 +7,13 @@
       "$ref": "https://codemeta.de/schemas/asset"
     }
   ],
+  "i18n": {
+    "de": {
+      "singular": "Endpoint",
+      "plural": "Endpoint",
+      "description": "Endpoint"
+    }
+  },
   "properties": {
     "networkInterfaces": {
       "description": "The network interfaces of the endpoint",
@@ -40,5 +47,6 @@
       "description": "The version of the operating system",
       "type": "string"
     }
-  }
+  },
+  "unevaluatedProperties": true
 }

@@ -1,5 +1,5 @@
 {
-  "$id": "https://codemeta.de/schemas/asset/rack",
+  "$id": "https://codemeta.de/schemas/rack",
   "title": "Rack",
   "collection": "assets",
   "allOf": [
@@ -7,6 +7,13 @@
       "$ref": "https://codemeta.de/schemas/asset"
     }
   ],
+  "i18n": {
+    "de": {
+      "singular": "Serverschrank",
+      "plural": "Serverschrank",
+      "description": "Serverschrank"
+    }
+  },
   "description": "An rack",
   "type": "object",
   "properties": {
@@ -34,7 +41,7 @@
       "description": "The room of the rack location.",
       "type": "string",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/asset/room",
+      "target": "https://codemeta.de/schemas/room",
       "objectId": true
     }
   },
