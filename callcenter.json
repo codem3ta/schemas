@@ -1,9 +1,9 @@
 {
-  "$id": "https://codemeta.de/schemas/callcenter",
-  "title": "Callcenter",
-  "collection": "callcenters",
-  "name": "callcenter",
-  "description": "A callcenter",
+  "$id": "https://codemeta.de/schemas/call",
+  "title": "Calls",
+  "collection": "calls",
+  "name": "call",
+  "description": "A call",
   "type": "object",
   "i18n": {
     "de": {
