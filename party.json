@@ -4,6 +4,9 @@
   "collection": "parties",
   "description": "A person or organization",
   "type": "object",
+  "titleField": ["company", ["firstName", "lastName"]],
+  "descriptionField": ["customerNumber", "supplierNumber", "company"],
+  "icon": "contacts",
   "i18n": {
     "de": {
       "singular": "Party",
