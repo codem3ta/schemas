@@ -17,10 +17,10 @@ deploy_test:
 
 deploy_staging:
   stage: deploy
-  tags:
-    - docker
+  image: node:alpine
   before_script:
     - apk add --no-cache aws-cli
+    - node deploy.js
   script:
     - aws s3 cp ./ s3://$S3_STAGING_BUCKET --recursive --exclude "*" --include "*.json"
   only:
