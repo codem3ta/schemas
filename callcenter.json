@@ -1,0 +1,151 @@
+{
+  "$id": "https://codemeta.de/schemas/callcenter",
+  "title": "Callcenter",
+  "collection": "callcenters",
+  "name": "callcenter",
+  "description": "A callcenter",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Anruf",
+      "plural": "Anrufe",
+      "description": "Anruf"
+    }
+  },
+  "properties": {
+    "callUuid": {
+      "type": "string",
+      "format": "uuid",
+      "description": "The unique identifier for the call."
+    },
+    "timeStart": {
+      "type": "string",
+      "description": "The start time of the call as a timestamp.",
+      "format": "date-time"
+    },
+    "timeEnd": {
+      "type": "string",
+      "description": "The end time of the call as a timestamp.",
+      "format": "date-time"
+    },
+    "callerName": {
+      "type": "string",
+      "description": "The name of the caller."
+    },
+    "callerNumber": {
+      "type": "string",
+      "description": "The phone number of the caller."
+    },
+    "internalCall": {
+      "type": "boolean",
+      "description": "Indicates if the call is internal."
+    },
+    "pickup": {
+      "type": "boolean",
+      "description": "Indicates if the call was picked up."
+    },
+    "pickupFirstName": {
+      "type": "string",
+      "description": "The first name of the person who picked up the call."
+    },
+    "pickupLastName": {
+      "type": "string",
+      "description": "The last name of the person who picked up the call."
+    },
+    "pickupAccountId": {
+      "type": "integer",
+      "description": "The account ID of the person who picked up the call."
+    },
+    "pickupTime": {
+      "type": "string",
+      "description": "The timestamp when the call was picked up.",
+      "format": "date-time"
+    },
+    "type": {
+      "type": "string",
+      "description": "The type of the call.",
+      "enum": ["call"]
+    },
+    "outgoing": {
+      "type": "boolean",
+      "description": "Indicates if the call is outgoing."
+    },
+    "callFinished": {
+      "type": "boolean",
+      "description": "Indicates if the call is finished."
+    },
+    "callFlow": {
+      "type": "array",
+      "description": "Details of the call flow.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "forwardType": {
+            "type": "string",
+            "description": "The type of call forwarding.",
+            "enum": ["CFNR"]
+          },
+          "calledAccountId": {
+            "type": "string",
+            "description": "The account ID that was called."
+          },
+          "calledType": {
+            "type": "string",
+            "description": "The type of the called entity (e.g., USER, GROUP)."
+          },
+          "timeStart": {
+            "type": "integer",
+            "description": "The start time of the call step as a timestamp."
+          },
+          "timeEnd": {
+            "type": "integer",
+            "description": "The end time of the call step as a timestamp."
+          },
+          "connected": {
+            "type": "boolean",
+            "description": "Indicates if the call step was connected."
+          },
+          "calledName": {
+            "type": "string",
+            "description": "The name of the called entity."
+          },
+          "calledNumber": {
+            "type": "string",
+            "description": "The phone number of the called entity."
+          },
+          "moduleInfo": {
+            "type": "string",
+            "description": "Additional module information."
+          },
+          "agentInfo": {
+            "type": "array",
+            "description": "Details of the agents involved in the call.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "accountId": {
+                  "type": "string",
+                  "description": "The account ID of the agent."
+                },
+                "busy": {
+                  "type": "boolean",
+                  "description": "Indicates if the agent is busy."
+                },
+                "dnd": {
+                  "type": "boolean",
+                  "description": "Indicates if the agent has Do Not Disturb enabled."
+                },
+                "online": {
+                  "type": "boolean",
+                  "description": "Indicates if the agent is online."
+                }
+              },
+              "required": ["accountId", "busy", "dnd", "online"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

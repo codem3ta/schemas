@@ -41,4 +41,5 @@ module.exports = {
   interface: require("./interface.json"),
   visitor: require("./visitor.json"),
   comment: require("./comment.json"),
+  callcenter: require("./callcenter.json"), 
 };
