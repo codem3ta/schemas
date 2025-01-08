@@ -2,6 +2,7 @@
   "$id": "https://codemeta.de/schemas/history",
   "type": "object",
   "collection": "history",
+  "name": "history",
   "i18n": {
     "de": {
       "singular": "History",
