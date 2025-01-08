@@ -1,0 +1,13 @@
+{
+  "$id": "https://codemeta.de/schemas/history",
+  "type": "object",
+  "collection": "history",
+  "i18n": {
+    "de": {
+      "singular": "History",
+      "plural": "History",
+      "description": "History"
+    }
+  },
+  "properties": {}
+}
