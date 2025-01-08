@@ -42,5 +42,4 @@ module.exports = {
   visitor: require("./visitor.json"),
   comment: require("./comment.json"),
   call: require("./call.json"),
-  history: require("./history.json"),
 };
