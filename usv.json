@@ -82,5 +82,5 @@
       }
     }
   },
-  "required": ["title", "interface"]
+  "required": ["title"]
 }

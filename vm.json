@@ -15,8 +15,8 @@
     }
   },
   "properties": {
-    "name": {
-      "description": "The name of the virtual machine.",
+    "title": {
+      "description": "The title of the virtual machine.",
       "type": "string"
     },
     "type": {
@@ -67,5 +67,5 @@
       "database": "config"
     }
   },
-  "required": ["name"]
+  "required": ["title"]
 }
