@@ -7,9 +7,9 @@
   "type": "object",
   "i18n": {
     "de": {
-      "singular": "Datenbank",
-      "plural": "Datenbanken",
-      "description": "Datenbanken, die bei Codemeta angelegt wurden"
+      "singular": "Datenquelle",
+      "plural": "Datenquellen",
+      "description": "Datenquellen, von verschiedenen Systemen"
     }
   },
   "properties": {
