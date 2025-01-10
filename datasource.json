@@ -5,6 +5,13 @@
   "collection": "datasources",
   "description": "A datasource",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Datenbank",
+      "plural": "Datenbanken",
+      "description": "Datenbanken, die bei Codemeta angelegt wurden"
+    }
+  },
   "properties": {
     "source": {
       "description": "The origin source of the datasource",
@@ -41,9 +48,6 @@
       "type": "object"
     }
   },
-  "required": [
-    "schema",
-    "source"
-  ],
+  "required": ["schema", "source"],
   "unevaluatedProperties": false
 }
