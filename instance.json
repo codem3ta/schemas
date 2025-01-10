@@ -12,6 +12,8 @@
       "description": "Eine Instanz eines Prozesses enthält Informationen zu konkreten Ereignissen und Aktionen."
     }
   },
+  "titleField": "title",
+  "descriptionField": [["createdAt","status"]],
   "properties": {
     "title": { "description": "The title of the process", "type": "string" },
     "description": { "description": "The description of the process", "type": "string" },

@@ -11,6 +11,8 @@
       "description": "Eine Kommentarmöglichkeit welche schema übergreifend ist."
     }
   },
+  "titleField": "title",
+  "descriptionField": "description",
   "properties": {
     "title": {
       "description": "The title of the comment",

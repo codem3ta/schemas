@@ -12,6 +12,8 @@
       "description": "Ein Rückruf repräsentiert einen Rückrufwunsch eines Kunden."
     }
   },
+  "titleField": "caller",
+  "descriptionField": "priority",
   "properties": {
     "caller": {
       "description": "The caller",

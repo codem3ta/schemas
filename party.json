@@ -11,6 +11,8 @@
       "description": "Ein Party repräsentiert Organisationen oder Personen."
     }
   },
+  "titleField": "company",
+  "descriptionField": "email",
   "properties": {
     "partyType": {
       "description": "The type of the party",
