@@ -5,6 +5,13 @@
   "collection": "datasources",
   "description": "A datasource",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Datenquelle",
+      "plural": "Datenquellen",
+      "description": "Datenquellen, von verschiedenen Systemen"
+    }
+  },
   "properties": {
     "source": {
       "description": "The origin source of the datasource",
@@ -41,9 +48,6 @@
       "type": "object"
     }
   },
-  "required": [
-    "schema",
-    "source"
-  ],
+  "required": ["schema", "source"],
   "unevaluatedProperties": false
 }
