@@ -11,6 +11,8 @@
       "description": "Benutzerprofile mit Kontaktdaten"
     }
   },
+  "titleField": [["firstName", "lastName"], "email"],
+  "descriptionField": "email",
   "type": "object",
   "properties": {
     "email": {

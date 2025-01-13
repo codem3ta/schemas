@@ -11,6 +11,8 @@
       "description": "Personen, die vor Ort Termine wahrnehmen."
     }
   },
+  "titleField": "name",
+  "descriptionField": "scheduledArrival",
   "properties": {
     "name": {
       "description": "The name of the visitor",

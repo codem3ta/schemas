@@ -25,6 +25,10 @@
     "articleId": {
       "type": "string"
     },
+    "externalId": {
+      "description": "The external id of the virtual machine.",
+      "type": "string"
+    },
     "ownedBy": {
       "type": "string",
       "objectId": true,

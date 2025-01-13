@@ -20,12 +20,8 @@
       "const": "host",
       "default": "host"
     },
-    "externalId": {
-      "description": "The external id of the host.",
-      "type": "string"
-    },
-    "name": {
-      "description": "The name of the host.",
+    "title": {
+      "description": "The title of the host.",
       "type": "string"
     },
     "rack": {
@@ -62,5 +58,5 @@
       "database": "config"
     }
   },
-  "required": ["name"]
+  "required": ["title"]
 }
