@@ -12,8 +12,9 @@
       "description": "Ein Rückruf repräsentiert einen Rückrufwunsch eines Kunden."
     }
   },
-  "titleField": [["caller", "company"],"phoneNumber"],
+  "titleField": [["caller", "company"], "phoneNumber"],
   "descriptionField": "priority",
+  "icon": "perm_phone_msg",
   "properties": {
     "caller": {
       "description": "The caller",

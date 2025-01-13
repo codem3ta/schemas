@@ -147,5 +147,9 @@
       }
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "searchable": true,
+  "titleField": "callerName",
+  "descriptionField": "timeStart",
+  "icon": "call"
 }

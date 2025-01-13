@@ -13,6 +13,7 @@
   },
   "titleField": "name",
   "descriptionField": "scheduledArrival",
+  "icon": "person",
   "properties": {
     "name": {
       "description": "The name of the visitor",
