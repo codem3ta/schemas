@@ -15,6 +15,7 @@
   "titleField": [["caller", "company"], "phoneNumber"],
   "descriptionField": "priority",
   "icon": "perm_phone_msg",
+  "baseUrl": "/organizer/callbacks",
   "properties": {
     "caller": {
       "description": "The caller",

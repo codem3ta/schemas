@@ -149,7 +149,8 @@
   },
   "additionalProperties": false,
   "searchable": true,
-  "titleField": "callerName",
+  "titleField": [["Anruf von", "callerName"]],
   "descriptionField": "timeStart",
-  "icon": "call"
+  "icon": "call",
+  "baseUrl": "/crm/callcenter/calls"
 }

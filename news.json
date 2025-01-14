@@ -1,0 +1,53 @@
+{
+  "$id": "https://codemeta.de/schemas/news",
+  "title": "News",
+  "name": "news",
+  "collection": "news",
+  "description": "News are articles or emails for the public or for internal communication.",
+  "i18n": {
+    "de": {
+      "singular": "Neuigkeit",
+      "plural": "Neuigkeiten",
+      "description": "Interne oder veröffentlichte Neuigkeiten."
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the news article."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the news article."
+    },
+    "content": {
+      "type": "string",
+      "description": "The content of the news article."
+    },
+    "published": {
+      "type": "boolean",
+      "description": "Indicates if the news article is published."
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the news article was published."
+    },
+    "author": {
+      "type": "string",
+      "description": "The author of the news article.",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
+      "objectId": true,
+      "database": "config"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for the news article."
+    }
+  },
+  "unevaluatedProperties": true
+}
