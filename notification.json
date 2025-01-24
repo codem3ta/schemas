@@ -51,6 +51,10 @@
           }
         }
       }
+    },
+    "path": {
+      "description": "A path that the notification links to",
+      "type": "string"
     }
   },
   "required": ["title", "user"],
