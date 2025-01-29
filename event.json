@@ -155,6 +155,11 @@
     "tenant": {
       "description": "The tenant slug of the tenant",
       "type": "string"
+    },
+    "sensitivity": {
+      "description": "The sensitivity of the Event",
+      "type": "string",
+      "enum": ["normal", "personal", "private", "confidential"]
     }
   },
   "required": [],
