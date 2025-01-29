@@ -13,6 +13,7 @@
   },
   "titleField": "title",
   "descriptionField": "description",
+  "icon": "comment",
   "properties": {
     "title": {
       "description": "The title of the comment",

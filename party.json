@@ -4,6 +4,9 @@
   "collection": "parties",
   "description": "A person or organization",
   "type": "object",
+  "titleField": ["company", ["firstName", "lastName"]],
+  "descriptionField": ["customerNumber", "supplierNumber", "company", "email"],
+  "icon": "contacts",
   "i18n": {
     "de": {
       "singular": "Party",
@@ -11,8 +14,6 @@
       "description": "Ein Party repräsentiert Organisationen oder Personen."
     }
   },
-  "titleField": "company",
-  "descriptionField": "email",
   "properties": {
     "partyType": {
       "description": "The type of the party",

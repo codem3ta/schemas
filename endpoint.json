@@ -36,7 +36,7 @@
             "type": "string"
           }
         },
-        "required": ["ipv4", "mac", "network"]
+        "required": ["ipv4"]
       }
     },
     "os": {
