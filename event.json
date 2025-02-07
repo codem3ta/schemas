@@ -160,6 +160,21 @@
       "description": "The sensitivity of the Event",
       "type": "string",
       "enum": ["normal", "personal", "private", "confidential"]
+    },
+    "planningType": {
+      "description": "The PlanningType of the event, is used to differentiate Supprt and Appointment in Tanss",
+      "type": "string",
+      "emum": [
+        "SUPPORT",
+        "APPOINTMENT_FIX",
+        "APPOINTMENT_PROPOSAL",
+        "APPOINTMENT_PRIVATE",
+        "VACATION",
+        "ILLNESS",
+        "STAND_BY",
+        "OVERTIME",
+        "ABSENCE"
+      ]
     }
   },
   "required": [],
