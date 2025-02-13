@@ -1,0 +1,19 @@
+{
+  "$id": "https://codemeta.de/schemas/history",
+  "title": "History",
+  "collection": "history",
+  "name": "history",
+  "description": "The documents history",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "History",
+      "plural": "History",
+      "description": "History"
+    }
+  },
+  "properties": {},
+  "searchable": true,
+  "required": [],
+  "additionalProperties": true
+}
