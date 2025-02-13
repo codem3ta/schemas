@@ -12,7 +12,28 @@
       "description": "History"
     }
   },
-  "properties": {},
+  "properties": {
+    "collection": {
+      "type": "string"
+    },
+    "documentId": {
+      "type": "string",
+      "objectId": true
+    },
+    "operationType": {
+      "type": "string"
+    },
+    "updatedFields": {
+      "type": "object"
+    },
+    "user": {
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
+      "database": "config"
+    }
+  },
   "searchable": true,
   "required": [],
   "additionalProperties": true
