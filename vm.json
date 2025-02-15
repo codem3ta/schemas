@@ -44,8 +44,8 @@
       "description": "The memory amount of the virtual machine.",
       "type": "number"
     },
-    "shutdownThresholdMinutes": {
-      "description": "The remaining minutes.",
+    "shutdownThreshold ": {
+      "description": "The shutdown Threshold",
       "type": "number"
     },
     "dependencies": {
