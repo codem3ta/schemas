@@ -3,7 +3,7 @@ module.exports = {
   endpoint: require("./endpoint.json"),
   vm: require("./vm.json"),
   host: require("./host.json"),
-  usv: require("./usv.json"),
+  usp: require("./usp.json"),
   rack: require("./rack.json"),
   room: require("./room.json"),
   bucket: require("./bucket.json"),
