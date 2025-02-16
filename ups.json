@@ -82,5 +82,6 @@
       }
     }
   },
-  "required": ["title"]
+  "required": ["title"],
+  "name": "ups"
 }

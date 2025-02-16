@@ -58,5 +58,6 @@
       "database": "config"
     }
   },
-  "required": ["title"]
+  "required": ["title"],
+  "name": "host"
 }
