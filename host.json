@@ -41,6 +41,11 @@
         "objectId": true
       }
     },
+    "state": {
+      "description": "The state of the host machine.",
+      "type": "string",
+      "enum": ["running", "stopped", "paused"]
+    },
     "cpus": {
       "description": "The cpu count of the host.",
       "type": "number"
