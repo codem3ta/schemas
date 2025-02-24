@@ -31,13 +31,13 @@
     "status": {
       "description": "The status of the bucket",
       "type": "string",
-      "enum": ["OPEN", "CLOSED"],
+      "enum": ["OPEN", "CLOSED", "BILLED"],
       "default": "OPEN"
     },
     "type": {
       "description": "The type of the bucket",
       "type": "string",
-      "enum": ["RECEIVED", "DELIVERY", "BILLED"]
+      "enum": ["RECEIVED", "DELIVERY"]
     },
     "comment": {
       "description": "The comment of the bucket",
