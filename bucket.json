@@ -28,6 +28,10 @@
       "description": "The sales order number to which the bucket belongs",
       "type": "string"
     },
+    "ticketID": {
+      "description": "The ticket ID to which the bucket belongs",
+      "type": "number"
+    },
     "status": {
       "description": "The status of the bucket",
       "type": "string",

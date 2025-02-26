@@ -11,6 +11,7 @@
       "description": "Interne oder veröffentlichte Neuigkeiten."
     }
   },
+  "type": "object",
   "properties": {
     "title": {
       "type": "string",
