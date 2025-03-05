@@ -15,7 +15,7 @@
     }
   },
   "properties": {
-    "partyType": {
+    "type": {
       "description": "The type of the party",
       "type": "string",
       "enum": ["ORGANIZATION", "PERSON"]
@@ -169,7 +169,6 @@
       "type": "string"
     }
   },
-  "required": ["partyType"],
   "name": "party",
   "searchable": true,
   "searchFields": ["company", "company2", "firstName", "lastName", "email"]
