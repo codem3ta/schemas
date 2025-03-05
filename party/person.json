@@ -16,10 +16,14 @@
     "firstName": { "description": "The first name", "type": "string" },
     "lastName": { "description": "The last name", "type": "string" },
     "title": { "description": "The title", "type": "string" },
-    "initials": { "description": "The initials of the party", "type": "string" },
-    "birthDate": { "description": "The birth date of the party", "type": "integer" }
+    "initials": {
+      "description": "The initials of the party",
+      "type": "string"
+    },
+    "birthDate": {
+      "description": "The birth date of the party",
+      "type": "integer"
+    }
   },
-  "allOf": [
-    { "$ref": "https://codemeta.de/schemas/party" }
-  ]
+  "allOf": [{ "$ref": "https://codemeta.de/schemas/party" }]
 }
