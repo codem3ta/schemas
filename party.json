@@ -167,6 +167,10 @@
     "slug": {
       "description": "The slug of the party",
       "type": "string"
+    },
+    "tenant": {
+      "description": "Is party part of this tenant",
+      "type": "string"
     }
   },
   "name": "party",

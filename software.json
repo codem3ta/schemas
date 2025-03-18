@@ -1,0 +1,41 @@
+{
+  "$id": "https://codemeta.de/schemas/software",
+  "type": "object",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ],
+  "i18n": {
+    "de": {
+      "singular": "Endpoint",
+      "plural": "Endpoint",
+      "description": "Endpoint"
+    }
+  },
+  "properties": {
+    "manufacturer": {
+      "description": "The Manufacturer of this Software",
+      "type": "string"
+    },
+    "localInstallation": {
+      "description": "Need to install local or not",
+      "type": "boolean"
+    },
+    "licenseRequired": {
+      "description": "Is a License required to use this Software",
+      "type": "boolean"
+    },
+    "userRequired": {
+      "description": "Is a User required to use this Software",
+      "type": "boolean"
+    },
+    "roleRequired": {
+      "description": "Is a Role required to use this Software",
+      "type": "boolean"
+    }
+  },
+  "unevaluatedProperties": true,
+  "name": "software"
+}
