@@ -34,7 +34,7 @@
       "type": "string"
     },
     "description": {
-      "description": "The description of the rack!",
+      "description": "The description of the rack!!",
       "type": "string"
     },
     "room": {
