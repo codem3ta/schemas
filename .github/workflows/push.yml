@@ -13,6 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Build step
+        run: |
+          mkdir dist
+
       - name: Download Build Artifacts
         uses: actions/download-artifact@v4
         with:
