@@ -10,18 +10,13 @@ jobs:
     name: Deploy to Staging
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Build step
-        run: |
-          mkdir dist
-
-      - name: Download Build Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: dist
-          path: dist/
+      - name: Create dist/ directory
+        run: mkdir dist
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
