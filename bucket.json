@@ -60,6 +60,10 @@
       "type": "number",
       "default": 0
     },
+    "warehouseId": {
+      "description": "The warehouse id",
+      "type": "string"
+    },
     "items": {
       "description": "The items in the bucket",
       "type": "array",
@@ -97,6 +101,10 @@
             "description": "Value of item in cents",
             "type": "number",
             "default": 0
+          },
+          "storagePlaceId": {
+            "description": "The storage place id",
+            "type": "string"
           }
         }
       }
