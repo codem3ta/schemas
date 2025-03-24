@@ -44,4 +44,5 @@ module.exports = {
   call: require("./call.json"),
   news: require("./news.json"),
   history: require("./history.json"),
+  software: require("./software.json"),
 };

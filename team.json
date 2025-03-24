@@ -44,6 +44,10 @@
     "tenant": {
       "type": "string",
       "description": "The team's tenant slug (NOT THE ID)"
+    },
+    "tanssDepartmentId": {
+      "type": "number",
+      "description": "The team's tanss department ID"
     }
   },
   "config": true,

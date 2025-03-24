@@ -69,13 +69,7 @@
     "salutation": {
       "description": "The salutation",
       "type": "string",
-      "enum": [
-        "COMPANY",
-        "FAMILY",
-        "MR",
-        "MRS",
-        "NO_SALUTATION"
-      ]
+      "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION"]
     },
     "state": {
       "description": "The state",
@@ -88,6 +82,11 @@
     "titleId": {
       "description": "The title ID",
       "type": "string"
+    },
+    "primary": {
+      "description": "Determines if the address is the primary address",
+      "type": "boolean",
+      "default": false
     }
   },
   "required": [],

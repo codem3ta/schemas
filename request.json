@@ -6,29 +6,59 @@
   "type": "object",
   "properties": {
     "title": { "description": "The subject of the request", "type": "string" },
-    "description": { "description": "The content of the request", "type": "string" },
+    "description": {
+      "description": "The content of the request",
+      "type": "string"
+    },
     "linkedParty": {
       "description": "The party linked to the request",
-      "type": "string",
+      "type": "object",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/party"
+      "target": "https://codemeta.de/schemas/party",
+      "database": "config"
     },
-    "team": {
-      "description": "The team of the request",
-      "type": "string",
+    "assignedTeam": {
+      "description": "The team assigned to the request",
+      "type": "object",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/team"
+      "target": "https://codemeta.de/schemas/team",
+      "database": "config"
+    },
+    "assignedUser": {
+      "description": "The user assigned to the request",
+      "type": "object",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
+      "database": "config"
+    },
+    "createdByUser": {
+      "description": "The user created the request",
+      "type": "object",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
+      "database": "config"
     },
     "status": {
       "description": "The status of the request",
-      "type": "string"
+      "type": "string",
+      "enum": ["NEW", "IN_PROGRESS", "COMPLETED"]
     },
     "tanss": {
       "description": "The tanss ID of the request",
       "type": "number"
+    },
+    "createdDate": {
+      "description": "The date the request was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedStateDate": {
+      "description": "The date the request was last updated",
+      "type": "string",
+      "format": "date-time"
     }
   },
-  "required": ["title", "content"],
+  "required": ["title"],
   "name": "request",
   "unevaluatedProperties": false,
   "inheritPermissionsFrom": "linkedParty"
