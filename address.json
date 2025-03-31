@@ -83,7 +83,7 @@
       "description": "The title ID",
       "type": "string"
     },
-    "primary": {
+    "primeAddress": {
       "description": "Determines if the address is the primary address",
       "type": "boolean",
       "default": false

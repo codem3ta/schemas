@@ -15,7 +15,7 @@
     }
   },
   "properties": {
-    "type": {
+    "partyType": {
       "description": "The type of the party",
       "type": "string",
       "enum": ["ORGANIZATION", "PERSON"]
