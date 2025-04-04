@@ -152,6 +152,10 @@
       "description": "The full Name of the Event Owner",
       "type": "string"
     },
+    "companyFullName": {
+      "description": "The full Name of Company the Event is booked on",
+      "type": "string"
+    },
     "tenant": {
       "description": "The tenant slug of the tenant",
       "type": "string"
@@ -175,6 +179,10 @@
         "OVERTIME",
         "ABSENCE"
       ]
+    },
+    "changeKey": {
+      "description": "The Microsoft ChangeKey of a synced Event",
+      "type": "string"
     }
   },
   "required": [],
