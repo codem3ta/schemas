@@ -1,0 +1,74 @@
+{
+  "$id": "https://codemeta.de/schemas/pc",
+  "type": "object",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/endpoint"
+    }
+  ],
+  "i18n": {
+    "de": {
+      "singular": "PC",
+      "plural": "PC",
+      "description": "PC"
+    }
+  },
+  "properties": {
+    "pcName": {
+      "description": "The Name of the PC.",
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "const": "pc",
+      "default": "pc"
+    },
+    "manufacturer": {
+      "description": "The manufacturer of the PC.",
+      "type": "string"
+    },
+    "model": {
+      "description": "The Model of the PC.",
+      "type": "string"
+    },
+    "serialnumber": {
+      "description": "The serialnumber of the PC.",
+      "type": "string"
+    },
+    "cpus": {
+      "description": "The cpu of the PC.",
+      "type": "string"
+    },
+    "memory": {
+      "description": "The memory amount of the PC.",
+      "type": "number"
+    },
+    "room ": {
+      "description": "The room where the PC is isntalled.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/room",
+      "objectId": true,
+      "database": "config"
+    },
+    "assignedEmployee": {
+      "description": "The main user of this PC",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
+      "objectId": true,
+      "database": "config"
+    },
+    "interface": {
+      "description": "The interface with the credentials.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/interface",
+      "objectId": true,
+      "database": "config"
+    }
+  },
+  "required": ["title"],
+  "name": "pc"
+}
