@@ -15,10 +15,6 @@
     }
   },
   "properties": {
-    "pcName": {
-      "description": "The Name of the PC.",
-      "type": "string"
-    },
     "type": {
       "type": "string",
       "const": "pc",
