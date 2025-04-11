@@ -20,6 +20,9 @@
       "const": "pc",
       "default": "pc"
     },
+    "title": {
+      "type": "string"
+    },
     "manufacturer": {
       "description": "The manufacturer of the PC.",
       "type": "string"

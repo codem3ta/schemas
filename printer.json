@@ -19,6 +19,9 @@
       "description": "The Name of the printer.",
       "type": "string"
     },
+    "title": {
+      "type": "string"
+    },
     "type": {
       "type": "string",
       "const": "printer",
