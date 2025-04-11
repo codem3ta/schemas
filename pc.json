@@ -32,7 +32,7 @@
       "description": "The Model of the PC.",
       "type": "string"
     },
-    "serialnumber": {
+    "serialNumber": {
       "description": "The serialnumber of the PC.",
       "type": "string"
     },
