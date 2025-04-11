@@ -52,13 +52,16 @@
       "objectId": true,
       "database": "config"
     },
-    "interface": {
-      "description": "The interface with the credentials.",
-      "type": "string",
-      "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/interface",
-      "objectId": true,
-      "database": "config"
+    "localUsers": {
+      "type": "array",
+      "description": "An Array with the interfaces containing the credentials.",
+      "items": {
+        "type": "string",
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/interface",
+        "objectId": true,
+        "database": "config"
+      }
     }
   },
   "required": ["title"],
