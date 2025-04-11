@@ -1,0 +1,66 @@
+{
+  "$id": "https://codemeta.de/schemas/printer",
+  "type": "object",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/endpoint"
+    }
+  ],
+  "i18n": {
+    "de": {
+      "singular": "Drucker",
+      "plural": "Drucker",
+      "description": "Drucker"
+    }
+  },
+  "properties": {
+    "pcName": {
+      "description": "The Name of the printer.",
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "const": "printer",
+      "default": "printer"
+    },
+    "manufacturer": {
+      "description": "The manufacturer of the printer.",
+      "type": "string"
+    },
+    "model": {
+      "description": "The Model of the printer.",
+      "type": "string"
+    },
+    "name": {
+      "description": "The Model of the printer.",
+      "type": "string"
+    },
+    "assignedToPc ": {
+      "description": "The PC this printer is assigned to.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/pc",
+      "objectId": true,
+      "database": "config"
+    },
+    "room ": {
+      "description": "The room where the printer is isntalled.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/room",
+      "objectId": true,
+      "database": "config"
+    },
+    "interface": {
+      "description": "The interface with the credentials.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/interface",
+      "objectId": true,
+      "database": "config"
+    }
+  },
+  "required": ["title"],
+  "name": "printer"
+}

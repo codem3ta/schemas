@@ -45,4 +45,6 @@ module.exports = {
   news: require("./news.json"),
   history: require("./history.json"),
   software: require("./software.json"),
+  pc: require("./pc.json"),
+  printer: require("./printer.json"),
 };

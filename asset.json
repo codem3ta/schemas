@@ -25,6 +25,9 @@
     "articleId": {
       "type": "string"
     },
+    "serialNumber": {
+      "type": "string"
+    },
     "externalId": {
       "description": "The external id of the virtual machine.",
       "type": "string"
