@@ -36,10 +36,6 @@
       "description": "The Model of the printer.",
       "type": "string"
     },
-    "serialNumber": {
-      "description": "The serial Number of the printer.",
-      "type": "string"
-    },
     "assignedToPc ": {
       "description": "The PC this printer is assigned to.",
       "type": "string",

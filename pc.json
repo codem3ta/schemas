@@ -32,10 +32,6 @@
       "description": "The Model of the PC.",
       "type": "string"
     },
-    "serialnumber": {
-      "description": "The serialnumber of the PC.",
-      "type": "string"
-    },
     "cpus": {
       "description": "The cpu of the PC.",
       "type": "string"
