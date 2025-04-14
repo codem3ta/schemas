@@ -32,12 +32,51 @@
       "type": "string"
     },
     "cpus": {
-      "description": "The cpu of the PC.",
+      "description": "The CPU of the PC.",
       "type": "string"
     },
-    "memory": {
-      "description": "The memory amount of the PC.",
-      "type": "number"
+    "os": {
+      "description": "The Operating System of the PC.",
+      "type": "string"
+    },
+    "hardDrive": {
+      "description": "The Hard Drive of the PC.",
+      "type": "string"
+    },
+    "mainboard": {
+      "description": "The Mainboard of the PC.",
+      "type": "string"
+    },
+    "bios": {
+      "description": "The BIOS of the PC.",
+      "type": "string"
+    },
+    "ram": {
+      "description": "The RAM of the PC.",
+      "type": "string"
+    },
+    "graphicsCard": {
+      "description": "The Graphics Card of the PC.",
+      "type": "string"
+    },
+    "networkCard": {
+      "description": "The Network Card of the PC.",
+      "type": "string"
+    },
+    "soundCard": {
+      "description": "The Sound Card of the PC.",
+      "type": "string"
+    },
+    "printers": {
+      "type": "array",
+      "description": "An Array with the Printers connected with this PC.",
+      "items": {
+        "type": "string",
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/printer",
+        "objectId": true,
+        "database": "config"
+      }
     },
     "room ": {
       "description": "The room where the PC is isntalled.",
