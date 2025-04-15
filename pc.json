@@ -78,7 +78,7 @@
         "database": "config"
       }
     },
-    "room ": {
+    "room": {
       "description": "The room where the PC is isntalled.",
       "type": "string",
       "relation": "manyToOne",
@@ -93,17 +93,6 @@
       "target": "https://codemeta.de/schemas/user",
       "objectId": true,
       "database": "config"
-    },
-    "localUsers": {
-      "type": "array",
-      "description": "An Array with the interfaces containing the credentials.",
-      "items": {
-        "type": "string",
-        "relation": "manyToOne",
-        "target": "https://codemeta.de/schemas/interface",
-        "objectId": true,
-        "database": "config"
-      }
     }
   },
   "required": ["title"],
