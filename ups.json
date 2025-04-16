@@ -75,8 +75,12 @@
           "description": "The oid thats used to query the status",
           "type": "string"
         },
-        "expectedStatus": {
-          "description": "The expected status value",
+        "expectedStatusOK": {
+          "description": "The expected status value for the ok state",
+          "type": "string"
+        },
+        "expectedStatusBATTERY": {
+          "description": "The expected status value for the battery state",
           "type": "string"
         },
         "estimatedChargeOID": {
