@@ -40,7 +40,7 @@
     "state": {
       "description": "The state of the virtual machine.",
       "type": "string",
-      "enum": ["online", "battery", "offline"]
+      "enum": ["online", "battery", "offline", "error"]
     },
     "estimatedCharge": {
       "description": "The estimated charge",
