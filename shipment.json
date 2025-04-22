@@ -189,6 +189,10 @@
         "isHandDischargeNecessary": {
           "description": "Is hand unloading necessary",
           "type": "boolean"
+        },
+        "isHandDischargeNecessary2": {
+          "description": "Is hand unloading necessary2",
+          "type": "boolean"
         }
       }
     },
@@ -250,6 +254,11 @@
     "invoiceAddress": {
       "$ref": "https://codemeta.de/schemas/address",
       "description": "The invoice address of the shipment"
+    },
+    "lastClientUpdate": {
+      "type": "string",
+      "description": "The timestamp of the last client update",
+      "format": "date-time"
     },
     "shipmentItems": {
       "type": "array",
