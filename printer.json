@@ -15,10 +15,6 @@
     }
   },
   "properties": {
-    "pcName": {
-      "description": "The Name of the printer.",
-      "type": "string"
-    },
     "type": {
       "type": "string",
       "const": "printer",
@@ -36,13 +32,16 @@
       "description": "The Model of the printer.",
       "type": "string"
     },
-    "assignedToPc ": {
-      "description": "The PC this printer is assigned to.",
-      "type": "string",
-      "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/pc",
-      "objectId": true,
-      "database": "config"
+    "assignedToPc": {
+      "type": "array",
+      "description": "An Array with the PCs connected to this Printer.",
+      "items": {
+        "type": "string",
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/pc",
+        "objectId": true,
+        "database": "config"
+      }
     },
     "room ": {
       "description": "The room where the printer is isntalled.",
@@ -61,6 +60,7 @@
       "database": "config"
     }
   },
+  "unevaluatedProperties": true,
   "required": ["title"],
   "name": "printer"
 }

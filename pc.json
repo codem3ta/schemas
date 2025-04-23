@@ -92,6 +92,7 @@
       "database": "config"
     }
   },
+  "unevaluatedProperties": true,
   "required": ["title"],
   "name": "pc"
 }
