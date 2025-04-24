@@ -75,6 +75,6 @@
       "type": "boolean"
     }
   },
-  "required": ["from"],
+  "required": ["from", "subject", "body"],
   "unevaluatedProperties": false
 }
