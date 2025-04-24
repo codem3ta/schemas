@@ -1,0 +1,80 @@
+{
+  "$id": "https://codemeta.de/schemas/message",
+  "title": "Message",
+  "name": "message",
+  "collection": "messages",
+  "description": "A Message",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Nachricht",
+      "plural": "Nachrichten",
+      "description": "Nachrichten, von verschiedenen Systemen"
+    }
+  },
+  "properties": {
+    "subject": {
+      "description": "The subject of this message",
+      "type": "string"
+    },
+    "body": {
+      "description": "The body of this message",
+      "type": "string"
+    },
+    "receivedDateTime": {
+      "description": "The date and time at which the message was recieved",
+      "type": "string",
+      "format": "date-time"
+    },
+    "sentDateTime": {
+      "description": "The date and time at which the message was sent",
+      "type": "string",
+      "format": "date-time"
+    },
+    "from": {
+      "description": "The sender of this message",
+      "type": "object",
+      "properties": {
+          "emailAddress": {
+            "description": "The Email Address an Name of the Sender",
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+    },
+    "toRecipients": {
+      "description": "Recipient of this Message",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "emailAddress": {
+            "description": "The Email Address an Name of a Recipient",
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "hasAttachments": {
+      "description": "indicates if the message has an attachment",
+      "type": "boolean"
+    }
+  },
+  "required": ["from"],
+  "unevaluatedProperties": false
+}
