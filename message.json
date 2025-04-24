@@ -35,19 +35,19 @@
       "description": "The sender of this message",
       "type": "object",
       "properties": {
-          "emailAddress": {
-            "description": "The Email Address an Name of the Sender",
-            "type": "object",
-            "properties": {
-              "address": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              }
+        "emailAddress": {
+          "description": "The Email Address an Name of the Sender",
+          "type": "object",
+          "properties": {
+            "address": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
             }
           }
         }
+      }
     },
     "toRecipients": {
       "description": "Recipient of this Message",
@@ -75,6 +75,5 @@
       "type": "boolean"
     }
   },
-  "required": ["from", "subject", "body"],
-  "unevaluatedProperties": false
+  "required": ["from", "subject", "body"]
 }
