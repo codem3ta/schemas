@@ -75,5 +75,6 @@
       "type": "boolean"
     }
   },
-  "required": ["from", "subject", "body"]
+  "required": ["from", "subject", "body"],
+  "unevaluatedProperties": true
 }
