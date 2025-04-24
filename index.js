@@ -47,4 +47,6 @@ module.exports = {
   software: require("./software.json"),
   pc: require("./pc.json"),
   printer: require("./printer.json"),
+  webhookSubscription: require("./webhookSubscription.json"),
+  message: require("./message.json")
 };
