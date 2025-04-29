@@ -147,6 +147,13 @@
       "description": "The birth date of the party",
       "type": "integer"
     },
+    "departments": {
+      "description": "The departments of the party",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "partyEmailAddresses": {
       "description": "The email addresses of the party",
       "type": "array",
