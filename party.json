@@ -166,7 +166,7 @@
     },
     "parentPartyId": {
       "description": "The parent party of the party",
-      "type": "string",
+      "type": ["string", "null"],
       "objectId": true,
       "target": "https://codemeta.de/schemas/party",
       "relation": "manyToOne"
