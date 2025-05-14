@@ -73,7 +73,7 @@
     "status": {
       "description": "The status",
       "type": "string",
-      "enum": ["new", "pending", "completed", "waiting"],
+      "enum": ["new", "pending", "completed", "waiting", "notReached"],
       "default": "new"
     },
     "completedAt": {
