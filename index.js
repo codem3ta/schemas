@@ -48,5 +48,6 @@ module.exports = {
   pc: require("./pc.json"),
   printer: require("./printer.json"),
   webhookSubscription: require("./webhookSubscription.json"),
-  message: require("./message.json")
+  message: require("./message.json"),
+  token: require("./token.json"),
 };
