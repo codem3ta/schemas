@@ -179,10 +179,23 @@
       "description": "The contacts of the party",
       "type": "array",
       "items": {
-        "type": "string",
-        "objectId": true,
-        "relation": "manyToOne",
-        "target": "https://codemeta.de/schemas/party"
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "objectId": true,
+            "relation": "manyToOne",
+            "target": "https://codemeta.de/schemas/party"
+          },
+          "contact": {
+            "type": "boolean",
+            "description": "Indicates if the party is a contact person"
+          },
+          "primary": {
+            "type": "boolean",
+            "description": "Indicates if the contact is primary"
+          }
+        }
       }
     },
     "personCompany": {
