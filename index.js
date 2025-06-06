@@ -50,4 +50,5 @@ module.exports = {
   webhookSubscription: require("./webhookSubscription.json"),
   message: require("./message.json"),
   token: require("./token.json"),
+  certificate: require("./certificate.json"),
 };
