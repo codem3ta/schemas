@@ -47,8 +47,7 @@
     },
     "location": {
       "description": "Defines, where a support takes place",
-      "type": "string",
-      "emum": ["OFFICE", "CUSTOMER", "REMOTE"]
+      "type": "string"
     },
     "durationApproach": {
       "description": "The duration in Minutes that is added to an Event for the drive to a Customer. Only used if Location is CUSTOMER",

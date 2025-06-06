@@ -1,0 +1,42 @@
+{
+  "$id": "https://codemeta.de/schemas/certificate",
+  "type": "object",
+  "collection": "assets",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ],
+  "i18n": {
+    "de": {
+      "singular": "Zertifikat",
+      "plural": "Zertifikate",
+      "description": "Ein Zertifikat mit Ablaufdatum"
+    }
+  },
+  "properties": {
+    "expiryDate": {
+      "description": "The expiry date of the certificate",
+      "type": "string",
+      "format": "date-time"
+    },
+    "assignedEmployee": {
+      "description": "The employee assigned to the certificate",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/user"
+    },
+    "assignedDepartment": {
+      "description": "The team assigned to the certificate",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/team"
+    },
+    "reminder": {
+      "description": "The amount of time (in milliseconds) before the expiry date of the certificate when a reminder is sent",
+      "type": "number"
+    }
+  },
+  "unevaluatedProperties": true,
+  "name": "certificate"
+}
