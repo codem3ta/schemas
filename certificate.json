@@ -23,14 +23,18 @@
     "assignedEmployee": {
       "description": "The employee assigned to the certificate",
       "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
       "objectId": true,
-      "target": "https://codemeta.de/schemas/user"
+      "database": "config"
     },
     "assignedDepartment": {
       "description": "The team assigned to the certificate",
       "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/team",
       "objectId": true,
-      "target": "https://codemeta.de/schemas/team"
+      "database": "config"
     },
     "reminder": {
       "description": "The amount of time (in milliseconds) before the expiry date of the certificate when a reminder is sent",
