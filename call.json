@@ -28,6 +28,10 @@
       "description": "The end time of the call as a timestamp.",
       "format": "date-time"
     },
+    "callerAccountId": {
+      "type": "string",
+      "description": "The account id of the caller."
+    },
     "callerName": {
       "type": "string",
       "description": "The name of the caller."
