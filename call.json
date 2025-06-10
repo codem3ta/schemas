@@ -145,6 +145,24 @@
           }
         }
       }
+    },
+    "pickupUsers": {
+      "type": "array",
+      "description": "List of users who picked up the call.",
+      "items": {
+        "type": "number"
+      }
+    },
+    "ringingUsers": {
+      "type": "array",
+      "description": "List of users who were ringing.",
+      "items": {
+        "type": "number"
+      }
+    },
+    "waiting": {
+      "type": "number",
+      "description": "Number of seconds the caller was waiting."
     }
   },
   "additionalProperties": false,
