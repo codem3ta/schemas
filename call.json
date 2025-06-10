@@ -117,6 +117,22 @@
             "type": "string",
             "description": "Additional module information."
           },
+          "pickup": {
+            "type": "boolean",
+            "description": "Whether the call was picked up in this step."
+          },
+          "pickupAccountId": {
+            "type": "string",
+            "description": "Account id that picked up."
+          },
+          "pickupFirstName": {
+            "type": "string",
+            "description": "First name of the user who picked up."
+          },
+          "pickupLastName": {
+            "type": "string",
+            "description": "Last name of the user who picked up."
+          },
           "agentInfo": {
             "type": "array",
             "description": "Details of the agents involved in the call.",
