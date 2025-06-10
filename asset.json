@@ -41,5 +41,5 @@
   },
   "required": ["identifier"],
   "name": "asset",
-  "unevaluatedProperties": true
+  "unevaluatedProperties": false
 }
