@@ -351,5 +351,6 @@
     "invoiceAddress",
     "shipmentItems"
   ],
-  "name": "shipment"
+  "name": "shipment",
+  "additionalProperties": false
 }
