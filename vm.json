@@ -68,5 +68,6 @@
     }
   },
   "required": ["title"],
-  "name": "vm"
+  "name": "vm",
+  "unevaluatedProperties": false
 }

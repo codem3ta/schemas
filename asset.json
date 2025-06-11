@@ -40,6 +40,5 @@
     }
   },
   "required": ["identifier"],
-  "name": "asset",
-  "unevaluatedProperties": false
+  "name": "asset"
 }
