@@ -248,10 +248,12 @@
       ]
     },
     "recipientAddress": {
+      "type": "object",
       "$ref": "https://codemeta.de/schemas/address",
       "description": "The recipient address of the shipment"
     },
     "invoiceAddress": {
+      "type": "object",
       "$ref": "https://codemeta.de/schemas/address",
       "description": "The invoice address of the shipment"
     },
@@ -351,5 +353,6 @@
     "invoiceAddress",
     "shipmentItems"
   ],
-  "name": "shipment"
+  "name": "shipment",
+  "additionalProperties": false
 }

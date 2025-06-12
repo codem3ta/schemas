@@ -51,6 +51,7 @@
     }
   },
   "config": true,
+  "database": "config",
   "version": "1.0",
   "unevaluatedProperties": false
 }

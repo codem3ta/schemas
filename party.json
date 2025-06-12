@@ -158,10 +158,7 @@
       "description": "The email addresses of the party",
       "type": "array",
       "items": {
-        "type": "string",
-        "objectId": true,
-        "relation": "manyToOne",
-        "target": "https://codemeta.de/schemas/emailAddresses"
+        "type": "object"
       }
     },
     "parentPartyId": {

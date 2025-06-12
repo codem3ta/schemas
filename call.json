@@ -28,6 +28,10 @@
       "description": "The end time of the call as a timestamp.",
       "format": "date-time"
     },
+    "callerAccountId": {
+      "type": "string",
+      "description": "The account id of the caller."
+    },
     "callerName": {
       "type": "string",
       "description": "The name of the caller."
@@ -117,6 +121,22 @@
             "type": "string",
             "description": "Additional module information."
           },
+          "pickup": {
+            "type": "boolean",
+            "description": "Whether the call was picked up in this step."
+          },
+          "pickupAccountId": {
+            "type": "string",
+            "description": "Account id that picked up."
+          },
+          "pickupFirstName": {
+            "type": "string",
+            "description": "First name of the user who picked up."
+          },
+          "pickupLastName": {
+            "type": "string",
+            "description": "Last name of the user who picked up."
+          },
           "agentInfo": {
             "type": "array",
             "description": "Details of the agents involved in the call.",
@@ -145,6 +165,24 @@
           }
         }
       }
+    },
+    "pickupUsers": {
+      "type": "array",
+      "description": "List of users who picked up the call.",
+      "items": {
+        "type": "number"
+      }
+    },
+    "ringingUsers": {
+      "type": "array",
+      "description": "List of users who were ringing.",
+      "items": {
+        "type": "number"
+      }
+    },
+    "waiting": {
+      "type": "number",
+      "description": "Number of seconds the caller was waiting."
     }
   },
   "additionalProperties": false,

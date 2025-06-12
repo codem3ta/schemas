@@ -48,6 +48,5 @@
       "type": "string"
     }
   },
-  "unevaluatedProperties": true,
   "name": "endpoint"
 }

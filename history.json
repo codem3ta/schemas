@@ -36,5 +36,7 @@
   },
   "searchable": true,
   "required": [],
-  "additionalProperties": true
+  "additionalProperties": true,
+  "inheritPermissionsFromId": "documentId",
+  "inheritPermissionsFromCollection": "collection"
 }
