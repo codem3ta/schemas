@@ -44,6 +44,10 @@
       "description": "The date on which the reminder is set",
       "type": "string",
       "format": "date-time"
+    },
+    "tanssTicketId": {
+      "description": "The Id of the Reminder Ticket in Tanss",
+      "tpye": "number"
     }
   },
   "unevaluatedProperties": true,
