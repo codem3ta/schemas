@@ -39,6 +39,11 @@
     "reminder": {
       "description": "The amount of time (in milliseconds) before the expiry date of the certificate when a reminder is sent",
       "type": "number"
+    },
+    "reminderDate": {
+      "description": "The date on which the reminder is set",
+      "type": "string",
+      "format": "date-time"
     }
   },
   "unevaluatedProperties": true,
