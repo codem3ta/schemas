@@ -69,5 +69,5 @@
   },
   "required": ["title"],
   "name": "vm",
-  "unevaluatedProperties": false
+  "unevaluatedProperties": true
 }
