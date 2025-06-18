@@ -145,7 +145,8 @@
     },
     "birthDate": {
       "description": "The birth date of the party",
-      "type": "date-time"
+      "type": "string",
+      "format": "date-time"
     },
     "departments": {
       "description": "The departments of the party",
