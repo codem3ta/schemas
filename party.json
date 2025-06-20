@@ -200,7 +200,7 @@
       "type": "string",
       "description": "The company name where the party is the contact person"
     },
-    "exteralId": {
+    "externalId": {
       "description": "An external ID for the party",
       "type": "string"
     }
