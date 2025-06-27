@@ -41,12 +41,21 @@
       "type": "array",
       "description": "A list of users participating in the game.",
       "items": {
-        "type": "string",
-        "objectId": true,
-        "relation": "manyToOne",
-        "target": "https://codemeta.de/schemas/user",
-        "database": "config",
-        "description": "Reference to a user in the team."
+        "type": "object",
+        "properties": {
+          "users": {
+            "type": "string",
+            "objectId": true,
+            "relation": "manyToOne",
+            "target": "https://codemeta.de/schemas/user",
+            "database": "config",
+            "description": "The user ID of the participant."
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the user."
+          }
+        }
       }
     },
     "events": {
