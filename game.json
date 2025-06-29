@@ -44,12 +44,16 @@
         "type": "object",
         "properties": {
           "users": {
-            "type": "string",
-            "objectId": true,
-            "relation": "manyToOne",
-            "target": "https://codemeta.de/schemas/user",
-            "database": "config",
-            "description": "The user ID of the participant."
+            "type": "array",
+            "description": "A list of users in the team.",
+            "items": {
+              "type": "string",
+              "objectId": true,
+              "relation": "manyToOne",
+              "target": "https://codemeta.de/schemas/user",
+              "database": "config",
+              "description": "The user ID of the participant."
+            }
           },
           "name": {
             "type": "string",
