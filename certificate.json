@@ -50,6 +50,6 @@
       "tpye": "number"
     }
   },
-  "unevaluatedProperties": true,
-  "name": "certificate"
+  "name": "certificate",
+  "unevaluatedProperties": true
 }
