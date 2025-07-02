@@ -145,7 +145,8 @@
     },
     "birthDate": {
       "description": "The birth date of the party",
-      "type": "integer"
+      "type": "string",
+      "format": "date-time"
     },
     "departments": {
       "description": "The departments of the party",
@@ -198,6 +199,10 @@
     "personCompany": {
       "type": "string",
       "description": "The company name where the party is the contact person"
+    },
+    "externalId": {
+      "description": "An external ID for the party",
+      "type": "string"
     }
   },
   "name": "party",

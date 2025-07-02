@@ -1,0 +1,120 @@
+{
+  "$id": "https://codemeta.de/schemas/game",
+  "title": "Games",
+  "collection": "games",
+  "description": "A game",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Game",
+      "plural": "Games",
+      "description": "Ein Spiel"
+    }
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "enum": ["FIFA"],
+      "description": "The name of the game"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["SCHEDULED", "RUNNING", "PAUSED", "FINISHED", "CANCELED"],
+      "description": "The status of the game"
+    },
+    "scheduledFor": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time the game is planned to start."
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The actual start date and time of the game."
+    },
+    "finishedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The end date and time of the game."
+    },
+    "teams": {
+      "type": "array",
+      "description": "A list of users participating in the game.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "users": {
+            "type": "array",
+            "description": "A list of users in the team.",
+            "items": {
+              "type": "string",
+              "objectId": true,
+              "relation": "manyToOne",
+              "target": "https://codemeta.de/schemas/user",
+              "database": "config",
+              "description": "The user ID of the participant."
+            }
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the user."
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "description": "A list of events that occurred during the game.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the event (e.g., 'Goal', 'Level Up')."
+          },
+          "reachedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when the event was reached."
+          },
+          "reachedBy": {
+            "type": "string",
+            "objectId": true,
+            "relation": "manyToOne",
+            "target": "https://codemeta.de/schemas/user",
+            "database": "config",
+            "description": "The user who achieved this event."
+          },
+          "count": {
+            "type": "integer",
+            "description": "A count associated with the event (e.g., number of points)."
+          }
+        }
+      }
+    },
+    "sessions": {
+      "type": "array",
+      "description": "A list of game sessions.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name or identifier for the session."
+          },
+          "start": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Start time of the session."
+          },
+          "end": {
+            "type": "string",
+            "format": "date-time",
+            "description": "End time of the session."
+          }
+        }
+      }
+    }
+  },
+  "name": "game"
+}

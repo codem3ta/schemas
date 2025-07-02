@@ -44,7 +44,7 @@
       "description": "The memory amount of the virtual machine.",
       "type": "number"
     },
-    "shutdownThreshold ": {
+    "shutdownThreshold": {
       "description": "The shutdown Threshold",
       "type": "number"
     },
@@ -69,5 +69,5 @@
   },
   "required": ["title"],
   "name": "vm",
-  "unevaluatedProperties": false
+  "unevaluatedProperties": true
 }

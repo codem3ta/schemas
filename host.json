@@ -64,5 +64,6 @@
     }
   },
   "required": ["title"],
-  "name": "host"
+  "name": "host",
+  "unevaluatedProperties": true
 }
