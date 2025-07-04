@@ -15,8 +15,8 @@
     },
     "schema": {
       "type": "object"
-    },
-    "required": ["schema"]
+    }
   },
+  "required": ["schema"],
   "name": "schemata"
 }
