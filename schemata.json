@@ -13,10 +13,10 @@
     "position": {
       "type": "object"
     },
-    "schema": {
+    "content": {
       "type": "object"
     }
   },
-  "required": ["schema"],
+  "required": ["content"],
   "name": "schemata"
 }
