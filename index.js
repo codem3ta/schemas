@@ -52,5 +52,5 @@ module.exports = {
   token: require("./token.json"),
   certificate: require("./certificate.json"),
   game: require("./game.json"),
-  schemas: require("./schemas.json"),
+  schemata: require("./schemata.json"),
 };
