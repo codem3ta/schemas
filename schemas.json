@@ -1,12 +1,12 @@
 {
-  "$id": "https://codemeta.de/schemas/schemas",
+  "$id": "https://codemeta.de/schemas/schemata",
   "type": "object",
-  "collection": "schemas",
+  "collection": "schematas",
   "i18n": {
     "de": {
-      "singular": "schema",
-      "plural": "schema",
-      "description": "schema"
+      "singular": "schemata",
+      "plural": "schemata",
+      "description": "schemata"
     }
   },
   "properties": {
@@ -18,5 +18,5 @@
     },
     "required": ["schema"]
   },
-  "name": "schemas"
+  "name": "schemata"
 }
