@@ -71,7 +71,7 @@
     "website": {
       "description": "The website URL",
       "type": "string",
-      "format": "uri"
+      "anyOf": [{ "format": "uri" }, { "maxLength": 0 }]
     },
     "mobilePhone1": {
       "description": "The primary mobile phone number",
