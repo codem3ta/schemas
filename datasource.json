@@ -30,10 +30,6 @@
       "description": "The collection of the data inside the toast database",
       "type": "string"
     },
-    "schema": {
-      "description": "The schema of the data",
-      "type": "string"
-    },
     "queryInterval": {
       "description": "The interval at which the datasource should be queried",
       "type": "string"
@@ -48,6 +44,6 @@
       "type": "object"
     }
   },
-  "required": ["schema", "source"],
+  "required": ["source"],
   "unevaluatedProperties": false
 }
