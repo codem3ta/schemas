@@ -38,7 +38,7 @@
     },
     "leadStatus": {
       "description": "The lead status of the party",
-      "type": "string",
+      "type": ["string", "null"],
       "enum": ["CONVERTED", "DISQUALIFIED", "NEW", "PREQUALIFIED", "QUALIFIED"]
     },
     "customerBlocked": {
@@ -124,7 +124,7 @@
     },
     "salutation": {
       "description": "The salutation",
-      "type": "string",
+      "type": ["string", "null"],
       "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION"]
     },
     "firstName": {
@@ -205,6 +205,7 @@
       "type": "string"
     }
   },
+  "required": ["partyType"],
   "name": "party",
   "searchable": true,
   "searchFields": ["company", "company2", "firstName", "lastName", "email"]
