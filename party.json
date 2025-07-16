@@ -39,7 +39,14 @@
     "leadStatus": {
       "description": "The lead status of the party",
       "type": ["string", "null"],
-      "enum": ["CONVERTED", "DISQUALIFIED", "NEW", "PREQUALIFIED", "QUALIFIED"]
+      "enum": [
+        "CONVERTED",
+        "DISQUALIFIED",
+        "NEW",
+        "PREQUALIFIED",
+        "QUALIFIED",
+        null
+      ]
     },
     "customerBlocked": {
       "description": "Indicates if the customer is blocked",
@@ -125,7 +132,7 @@
     "salutation": {
       "description": "The salutation",
       "type": ["string", "null"],
-      "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION"]
+      "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION", null]
     },
     "firstName": {
       "description": "The first name",
