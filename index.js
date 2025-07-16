@@ -52,4 +52,5 @@ module.exports = {
   certificate: require("./certificate.json"),
   game: require("./game.json"),
   location: require("./location.json"),
+  schemata: require("./schemata.json"),
 };
