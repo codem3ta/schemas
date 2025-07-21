@@ -41,7 +41,7 @@
     },
     "lastQueryResult": {
       "description": "The result of the last query",
-      "type": "object"
+      "type": ["object", "null"]
     }
   },
   "required": ["source"],
