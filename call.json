@@ -68,7 +68,7 @@
     "type": {
       "type": "string",
       "description": "The type of the call.",
-      "enum": ["call"]
+      "enum": ["call", "teams", "callbacksuggestion"]
     },
     "outgoing": {
       "type": "boolean",
@@ -183,6 +183,27 @@
     "waiting": {
       "type": "number",
       "description": "Number of seconds the caller was waiting."
+    },
+    "participants": {
+      "type": "array",
+      "description": "If type is Teams, includes all Participants",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the Participant"
+          },
+          "email": {
+            "type": "string",
+            "description": "The E-Mail Adress of the Participant"
+          },
+          "tenant": {
+            "type": "string",
+            "description": "The Tenant of the Participant"
+          }
+        }
+      }
     }
   },
   "additionalProperties": false,
