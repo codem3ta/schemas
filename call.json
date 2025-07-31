@@ -201,6 +201,10 @@
           "tenant": {
             "type": "string",
             "description": "The Tenant of the Participant"
+          },
+          "id": {
+            "type": "string",
+            "description": "The Id of the caller in our Database"
           }
         }
       }
