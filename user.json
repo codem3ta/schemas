@@ -73,6 +73,31 @@
     "tanssEmployeeId": {
       "type": "number",
       "description": "The user's tanss employee id"
+    },
+    "lastActivityAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time of the users last activity"
+    },
+    "outOfOffice": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The beginning of the period"
+        },
+        "to": {
+          "type": "string",
+          "format": "date-time",
+          "description": "The end of the period"
+        },
+        "note":{
+          "type": "string",
+          "description": "A note which will be displayed, when out of office"
+        }
+      },
+      "description": "Defines a time period in which a user is marked as out of office"
     }
   },
   "config": true,

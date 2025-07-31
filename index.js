@@ -4,7 +4,6 @@ module.exports = {
   vm: require("./vm.json"),
   host: require("./host.json"),
   ups: require("./ups.json"),
-  rack: require("./rack.json"),
   room: require("./room.json"),
   bucket: require("./bucket.json"),
   project: require("./project.json"),
@@ -52,4 +51,6 @@ module.exports = {
   token: require("./token.json"),
   certificate: require("./certificate.json"),
   game: require("./game.json"),
+  location: require("./location.json"),
+  schemata: require("./schemata.json"),
 };

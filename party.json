@@ -38,8 +38,15 @@
     },
     "leadStatus": {
       "description": "The lead status of the party",
-      "type": "string",
-      "enum": ["CONVERTED", "DISQUALIFIED", "NEW", "PREQUALIFIED", "QUALIFIED"]
+      "type": ["string", "null"],
+      "enum": [
+        "CONVERTED",
+        "DISQUALIFIED",
+        "NEW",
+        "PREQUALIFIED",
+        "QUALIFIED",
+        null
+      ]
     },
     "customerBlocked": {
       "description": "Indicates if the customer is blocked",
@@ -64,7 +71,7 @@
     "website": {
       "description": "The website URL",
       "type": "string",
-      "format": "uri"
+      "anyOf": [{ "format": "uri" }, { "maxLength": 0 }]
     },
     "mobilePhone1": {
       "description": "The primary mobile phone number",
@@ -124,8 +131,8 @@
     },
     "salutation": {
       "description": "The salutation",
-      "type": "string",
-      "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION"]
+      "type": ["string", "null"],
+      "enum": ["COMPANY", "FAMILY", "MR", "MRS", "NO_SALUTATION", null]
     },
     "firstName": {
       "description": "The first name",
@@ -203,8 +210,17 @@
     "externalId": {
       "description": "An external ID for the party",
       "type": "string"
+    },
+    "responsibleUserId": {
+      "description": "The employee assigned to the party",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
+      "objectId": true,
+      "database": "config"
     }
   },
+  "required": ["partyType"],
   "name": "party",
   "searchable": true,
   "searchFields": ["company", "company2", "firstName", "lastName", "email"]

@@ -1,0 +1,52 @@
+{
+  "$id": "https://codemeta.de/schemas/location",
+  "type": "object",
+  "collection": "locations",
+  "name": "location",
+  "i18n": {
+    "de": {
+      "singular": "Location",
+      "plural": "Locations",
+      "description": "Locations are used to represent physical locations like buildings, floors, rooms, or racks."
+    }
+  },
+  "properties": {
+    "type": { "type": "string", "enum": ["building", "floor", "room", "rack"] },
+    "title": {
+      "type": "string",
+      "description": "The title of the location, e.g. 'Main Building', 'Floor 2', 'Room 101'"
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the location, e.g. 'Main building of the university', 'Second floor of the main building'"
+    },
+    "parent": {
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/location"
+    }
+  },
+  "required": ["title", "type"],
+  "allOf": [
+    {
+      "if": {
+        "properties": { "type": { "const": "building" } },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": {
+          "address": {
+            "$ref": "https://codemeta.de/schemas/address"
+          }
+        },
+        "required": ["address"]
+      },
+      "else": {
+        "not": {
+          "required": ["address"]
+        }
+      }
+    }
+  ]
+}

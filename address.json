@@ -91,5 +91,5 @@
   },
   "required": [],
   "name": "address",
-  "unevaluatedProperties": true
+  "unevaluatedProperties": false
 }
