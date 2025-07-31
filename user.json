@@ -74,10 +74,10 @@
       "type": "number",
       "description": "The user's tanss employee id"
     },
-    "lastLoginAt": {
+    "lastActivityAt": {
       "type": "string",
       "format": "date-time",
-      "description": "The date and time of the users last login"
+      "description": "The date and time of the users last activity"
     },
     "outOfOffice": {
       "type": "object",
