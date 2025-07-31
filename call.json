@@ -193,15 +193,15 @@
           "name": {
             "type": "string",
             "description": "Name of the Participant"
+          },
+          "email": {
+            "type": "string",
+            "description": "The E-Mail Adress of the Participant"
+          },
+          "tenant": {
+            "type": "string",
+            "description": "The Tenant of the Participant"
           }
-        },
-        "email": {
-          "type": "string",
-          "description": "The E-Mail Adress of the Participant"
-        },
-        "tenant": {
-          "type": "string",
-          "description": "The Tenant of the Participant"
         }
       }
     }
