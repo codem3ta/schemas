@@ -11,7 +11,10 @@
     }
   },
   "properties": {
-    "type": { "type": "string", "enum": ["building", "floor", "room", "rack"] },
+    "type": {
+      "type": "string",
+      "enum": ["building", "floor", "room", "rack"]
+    },
     "title": {
       "type": "string",
       "description": "The title of the location, e.g. 'Main Building', 'Floor 2', 'Room 101'"
@@ -19,6 +22,10 @@
     "description": {
       "type": "string",
       "description": "A description of the location, e.g. 'Main building of the university', 'Second floor of the main building'"
+    },
+    "number": {
+      "type": "string",
+      "description": "Can be a Rack-, Room-, Floor- or Building-Number"
     },
     "parent": {
       "type": "string",
@@ -31,7 +38,11 @@
   "allOf": [
     {
       "if": {
-        "properties": { "type": { "const": "building" } },
+        "properties": {
+          "type": {
+            "const": "building"
+          }
+        },
         "required": ["type"]
       },
       "then": {

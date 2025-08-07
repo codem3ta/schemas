@@ -47,14 +47,6 @@
         "database": "config"
       }
     },
-    "room ": {
-      "description": "The room where the printer is isntalled.",
-      "type": "string",
-      "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/room",
-      "objectId": true,
-      "database": "config"
-    },
     "interface": {
       "description": "The interface with the credentials.",
       "type": "string",
@@ -62,9 +54,19 @@
       "target": "https://codemeta.de/schemas/interface",
       "objectId": true,
       "database": "config"
+    },
+    "location": {
+      "description": "The Location where the printer is isntalled.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/location",
+      "objectId": true,
+      "database": "config"
     }
   },
   "unevaluatedProperties": true,
-  "required": ["title"],
+  "required": [
+    "title"
+  ],
   "name": "printer"
 }

@@ -78,21 +78,23 @@
         "database": "config"
       }
     },
-    "room": {
-      "description": "The room where the PC is isntalled.",
-      "type": "string",
-      "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/room",
-      "objectId": true,
-      "database": "config"
-    },
     "assignedEmployee": {
       "description": "The main user of this PC",
       "type": "string",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/user",
-      "objectId": true,
-      "database": "config"
+      "target": "https://codemeta.de/schemas/party",
+      "objectId": true
+    },
+    "location": {
+      "description": "The room where the PC is isntalled.",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/location",
+      "objectId": true
+    },
+    "locationComment": {
+      "type": "string",
+      "description": "Comment to specify location further"
     }
   },
   "unevaluatedProperties": true,
