@@ -1,0 +1,35 @@
+{
+  "$id": "https://codemeta.de/schemas/component",
+  "type": "object",
+  "collection": "components",
+  "i18n": {
+    "de": {
+      "singular": "Komponente",
+      "plural": "Komponenten",
+      "description": "Eine Komponente"
+    }
+  },
+  "properties": {
+    "manufacturer": {
+      "type": "string",
+      "description": "The Manufacturer of the Component"
+    },
+    "parentPc": {
+      "type": "string",
+      "description": "the PC in which the component is installed",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/pc"
+    },
+    "model": {
+      "type": "string",
+      "description": "The model of the Component"
+    }
+  },
+  "required": [],
+  "name": "component",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ]
+}

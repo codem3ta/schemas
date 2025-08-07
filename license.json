@@ -1,0 +1,56 @@
+{
+  "$id": "https://codemeta.de/schemas/license",
+  "type": "object",
+  "collection": "licenses",
+  "i18n": {
+    "de": {
+      "singular": "Lizenz",
+      "plural": "Lizenzen",
+      "description": "Eine Lizenz"
+    }
+  },
+  "properties": {
+    "expiryDate": {
+      "type": "string",
+      "description": "The date when the license expires",
+      "format": "date-time"
+    },
+    "maxInstallations": {
+      "type": [
+        "number"
+      ],
+      "description": "The maximum Amount of installtions"
+    },
+    "renewable": {
+      "type": [
+        "boolean"
+      ],
+      "description": "Must the license be renewed"
+    },
+    "current": {
+      "description": "Is this License currently used",
+      "type": [
+        "boolean"
+      ]
+    },
+    "assignedEmployee": {
+      "type": "string",
+      "description": "The main Employee of the License",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "startDate": {
+      "type": "string",
+      "description": "The Date from when the license is used",
+      "format": "date-time"
+    }
+  },
+  "required": [],
+  "name": "license",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ]
+}
