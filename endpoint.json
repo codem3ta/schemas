@@ -46,6 +46,33 @@
     "osVersion": {
       "description": "The version of the operating system",
       "type": "string"
+    },
+    "serialNumber": {
+      "description": "The serialNumber of the Endpoint",
+      "type": "string"
+    },
+    "manufacturer": {
+      "description": "The manufacturer of the Endpoint",
+      "type": "string"
+    },
+    "model": {
+      "description": "The model of the Endpoint",
+      "type": "string"
+    },
+    "articleNumber": {
+      "description": "The articlenumber of the Endpoint",
+      "type": "string"
+    },
+    "assignedEmployee": {
+      "description": "The main user of this PC",
+      "type": "string",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party",
+      "objectId": true
+    },
+    "locationComment": {
+      "description": "A Placeholder to store the location as a String until we use the location Schema",
+      "type": "string"
     }
   },
   "name": "endpoint"

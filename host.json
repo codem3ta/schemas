@@ -20,10 +20,6 @@
       "const": "host",
       "default": "host"
     },
-    "title": {
-      "description": "The title of the host.",
-      "type": "string"
-    },
     "rack": {
       "description": "The rack of the host.",
       "type": "string",
@@ -46,14 +42,6 @@
       "type": "string",
       "enum": ["running", "stopped", "paused"]
     },
-    "cpus": {
-      "description": "The cpu count of the host.",
-      "type": "number"
-    },
-    "memory": {
-      "description": "The memory amount of the host.",
-      "type": "number"
-    },
     "interface": {
       "description": "The interface with the credentials.",
       "type": "string",
@@ -61,6 +49,38 @@
       "target": "https://codemeta.de/schemas/interface",
       "objectId": true,
       "database": "config"
+    },
+    "cpus": {
+      "description": "The CPU of the PC.",
+      "type": "string"
+    },
+    "memory": {
+      "description": "The memory amount of the host.",
+      "type": "number"
+    },
+    "hardDrive": {
+      "description": "The Hard Drive of the PC.",
+      "type": "string"
+    },
+    "mainboard": {
+      "description": "The Mainboard of the PC.",
+      "type": "string"
+    },
+    "bios": {
+      "description": "The BIOS of the PC.",
+      "type": "string"
+    },
+    "ram": {
+      "description": "The RAM of the PC.",
+      "type": "string"
+    },
+    "graphicsCard": {
+      "description": "The Graphics Card of the PC.",
+      "type": "string"
+    },
+    "soundCard": {
+      "description": "The Sound Card of the PC.",
+      "type": "string"
     }
   },
   "required": ["title"],
