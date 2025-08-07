@@ -20,23 +20,8 @@
       "const": "pc",
       "default": "pc"
     },
-    "title": {
-      "type": "string"
-    },
-    "manufacturer": {
-      "description": "The manufacturer of the PC.",
-      "type": "string"
-    },
-    "model": {
-      "description": "The Model of the PC.",
-      "type": "string"
-    },
     "cpus": {
       "description": "The CPU of the PC.",
-      "type": "string"
-    },
-    "os": {
-      "description": "The Operating System of the PC.",
       "type": "string"
     },
     "hardDrive": {
@@ -59,10 +44,6 @@
       "description": "The Graphics Card of the PC.",
       "type": "string"
     },
-    "networkCard": {
-      "description": "The Network Card of the PC.",
-      "type": "string"
-    },
     "soundCard": {
       "description": "The Sound Card of the PC.",
       "type": "string"
@@ -78,23 +59,12 @@
         "database": "config"
       }
     },
-    "assignedEmployee": {
-      "description": "The main user of this PC",
-      "type": "string",
-      "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/party",
-      "objectId": true
-    },
     "location": {
       "description": "The room where the PC is isntalled.",
       "type": "string",
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/location",
       "objectId": true
-    },
-    "locationComment": {
-      "type": "string",
-      "description": "Comment to specify location further"
     }
   },
   "unevaluatedProperties": true,
