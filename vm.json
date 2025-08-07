@@ -67,7 +67,7 @@
       "database": "config"
     }
   },
-  "required": ["title"],
+  "required": [],
   "name": "vm",
   "unevaluatedProperties": true
 }

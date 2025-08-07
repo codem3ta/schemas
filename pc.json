@@ -68,6 +68,6 @@
     }
   },
   "unevaluatedProperties": true,
-  "required": ["title"],
+  "required": [],
   "name": "pc"
 }
