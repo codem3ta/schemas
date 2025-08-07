@@ -31,6 +31,10 @@
       "target": "https://codemeta.de/schemas/host",
       "objectId": true
     },
+    "hostExternalId": {
+      "description": "placeholder, the id of the host in Tanss",
+      "type": "string"
+    },
     "state": {
       "description": "The state of the virtual machine.",
       "type": "string",
