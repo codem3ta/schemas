@@ -130,7 +130,11 @@
           },
           "type": {
             "type": "string",
-            "enum": ["required", "optional", "resource"]
+            "enum": [
+              "required",
+              "optional",
+              "resource"
+            ]
           },
           "status": {
             "type": "object",
@@ -162,7 +166,12 @@
     "sensitivity": {
       "description": "The sensitivity of the Event",
       "type": "string",
-      "enum": ["normal", "personal", "private", "confidential"]
+      "enum": [
+        "normal",
+        "personal",
+        "private",
+        "confidential"
+      ]
     },
     "planningType": {
       "description": "The PlanningType of the event, is used to differentiate Supprt and Appointment in Tanss",
