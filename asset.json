@@ -37,6 +37,18 @@
       "objectId": true,
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/party"
+    },
+    "purchaseDate": {
+      "description": "The PurchaseDate of the Asset",
+      "type": "string"
+    },
+    "guaranteeUntil": {
+      "description": "The PurchaseDate of the Asset",
+      "type": "string"
+    },
+    "warrantyUntil": {
+      "description": "The PurchaseDate of the Asset",
+      "type": "string"
     }
   },
   "required": ["identifier"],

@@ -1,0 +1,65 @@
+{
+  "$id": "https://codemeta.de/schemas/component",
+  "type": "object",
+  "collection": "components",
+  "i18n": {
+    "de": {
+      "singular": "Komponente",
+      "plural": "Komponenten",
+      "description": "Eine Komponente"
+    }
+  },
+  "properties": {
+    "manufacturer": {
+      "type": "string",
+      "description": "The Manufacturer of the Component"
+    },
+    "assignedToPc": {
+      "type": "string",
+      "description": "the PC in which the component is installed",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/pc"
+    },
+    "assignedToHost": {
+      "type": "string",
+      "description": "the PC in which the component is installed",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/host"
+    },
+    "model": {
+      "type": "string",
+      "description": "The model of the Component"
+    },
+    "inventoryNumber": {
+      "type": "string",
+      "description": "The inventoryNumber of the Component"
+    },
+    "macAddress": {
+      "type": "string",
+      "description": "The macAddress of the Component"
+    },
+    "hddType": {
+      "type": "string",
+      "description": "The hddType of the Component"
+    },
+    "scsiId": {
+      "type": "string",
+      "description": "The scsiId of the Component"
+    },
+    "capacity": {
+      "type": "string",
+      "description": "The model of the capacity"
+    },
+    "onboard": {
+      "description": "True if it is an onboard component",
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "name": "component",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ]
+}

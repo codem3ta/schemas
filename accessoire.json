@@ -1,0 +1,90 @@
+{
+  "$id": "https://codemeta.de/schemas/accessoire",
+  "type": "object",
+  "collection": "accessoires",
+  "i18n": {
+    "de": {
+      "singular": "Accessoir",
+      "plural": "Accessoires",
+      "description": "Ein Accessoire"
+    }
+  },
+  "properties": {
+    "serialNumber": {
+      "description": "The serialNumber of the Endpoint",
+      "type": "string"
+    },
+    "manufacturer": {
+      "description": "The manufacturer of the Endpoint",
+      "type": "string"
+    },
+    "model": {
+      "description": "The model of the Endpoint",
+      "type": "string"
+    },
+    "articleNumber": {
+      "description": "The articlenumber of the Endpoint",
+      "type": "string"
+    },
+    "locationComment": {
+      "description": "A Placeholder to store the location as a String until we use the location Schema",
+      "type": "string"
+    },
+    "isdnNumber": {
+      "description": "The ISDN-Number of the device",
+      "type": "string"
+    },
+    "location": {
+      "type": "string",
+      "description": "The Room in which the Accessoire is ",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/location"
+    },
+    "assignedEmployee": {
+      "type": "string",
+      "description": "The main User of this Accessoire",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user"
+    },
+    "assignedPc": {
+      "type": "string",
+      "description": "The assigned PC of this Accessoire",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/pc"
+    },
+    "assignedAccessoire": {
+      "type": "string",
+      "description": "The assigned PC of this Accessoire",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/accessoire"
+    },
+    "assignedPrinter": {
+      "type": "string",
+      "description": "The assigned PC of this Accessoire",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/printer"
+    },
+    "ownage": {
+      "description": "The Ownage of the Accessoire",
+      "type": "string",
+      "enum": [
+        "ownDevice",
+        "rentedOwnDevice",
+        "foreignDevice",
+        "rentedForeignDevice"
+      ]
+    }
+  },
+  "required": [],
+  "name": "accessoire",
+  "allOf": [
+    {
+      "$ref": "https://codemeta.de/schemas/asset"
+    }
+  ]
+}
