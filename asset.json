@@ -49,6 +49,11 @@
     "warrantyUntil": {
       "description": "The Date until when the Warranty is valid",
       "type": "string"
+    },
+    "ownage": {
+      "description": "The Ownage of the Accessoire",
+      "type": "string",
+      "enum": ["OWN", "FOREIGN", "OWN_RENT", "FOREIGN_RENT", "DEFAULT"]
     }
   },
   "required": ["identifier"],

@@ -68,11 +68,6 @@
       "objectId": true,
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/printer"
-    },
-    "ownage": {
-      "description": "The Ownage of the Accessoire",
-      "type": "string",
-      "enum": ["OWN", "FOREIGN", "OWN_RENT", "FOREIGN_RENT", "DEFAULT"]
     }
   },
   "required": [],
