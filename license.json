@@ -1,7 +1,7 @@
 {
   "$id": "https://codemeta.de/schemas/license",
   "type": "object",
-  "collection": "licenses",
+  "collection": "assets",
   "i18n": {
     "de": {
       "singular": "Lizenz",
@@ -16,22 +16,16 @@
       "format": "date-time"
     },
     "maxInstallations": {
-      "type": [
-        "number"
-      ],
+      "type": ["number"],
       "description": "The maximum Amount of installtions"
     },
     "renewable": {
-      "type": [
-        "boolean"
-      ],
+      "type": ["boolean"],
       "description": "Must the license be renewed"
     },
     "current": {
       "description": "Is this License currently used",
-      "type": [
-        "boolean"
-      ]
+      "type": ["boolean"]
     },
     "assignedEmployee": {
       "type": "string",
