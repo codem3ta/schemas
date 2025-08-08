@@ -43,11 +43,11 @@
       "type": "string"
     },
     "guaranteeUntil": {
-      "description": "The PurchaseDate of the Asset",
+      "description": "The Date until when the Guarantee is valid",
       "type": "string"
     },
     "warrantyUntil": {
-      "description": "The PurchaseDate of the Asset",
+      "description": "The Date until when the Warranty is valid",
       "type": "string"
     }
   },
