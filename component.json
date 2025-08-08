@@ -69,6 +69,10 @@
     "onboard": {
       "description": "True if it is an onboard component",
       "type": "boolean"
+    },
+    "componentType": {
+      "description": "Describes what kind of Component this is",
+      "type": "string"
     }
   },
   "required": [],
