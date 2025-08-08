@@ -53,4 +53,7 @@ module.exports = {
   game: require("./game.json"),
   location: require("./location.json"),
   schemata: require("./schemata.json"),
+  accessore: require("./accessoire.json"),
+  license: require("./license.json"),
+  component: require("./comment.json"),
 };
