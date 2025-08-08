@@ -46,7 +46,7 @@
       "description": "The main User of this Accessoire",
       "objectId": true,
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/user"
+      "target": "https://codemeta.de/schemas/party"
     },
     "assignedPc": {
       "type": "string",
