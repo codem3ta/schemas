@@ -7,6 +7,12 @@
       "$ref": "https://codemeta.de/schemas/asset"
     }
   ],
+  "childs": [
+    "https://codemeta.de/schemas/host",
+    "https://codemeta.de/schemas/pc",
+    "https://codemeta.de/schemas/vm",
+    "https://codemeta.de/schemas/printer"
+  ],
   "i18n": {
     "de": {
       "singular": "Endpoint",
