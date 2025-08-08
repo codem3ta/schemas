@@ -26,6 +26,22 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/host"
     },
+    "assignedToPrinter": {
+      "type": "string",
+      "description": "the Printer in which the component is installed",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/printer"
+    },
+    "assignedToAccessoire": {
+      "type": "string",
+      "description": "the Accessoire in which the component is installed",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/accessoire"
+    },
+    "articleNumber": {
+      "description": "The Article Number of the Component",
+      "type": "string"
+    },
     "model": {
       "type": "string",
       "description": "The model of the Component"
