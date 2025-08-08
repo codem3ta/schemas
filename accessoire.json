@@ -72,12 +72,7 @@
     "ownage": {
       "description": "The Ownage of the Accessoire",
       "type": "string",
-      "enum": [
-        "ownDevice",
-        "rentedOwnDevice",
-        "foreignDevice",
-        "rentedForeignDevice"
-      ]
+      "enum": ["OWN", "FOREIGN", "OWN_RENT", "FOREIGN_RENT", "DEFAULT"]
     }
   },
   "required": [],
