@@ -24,7 +24,7 @@
       "description": "The employee assigned to the certificate",
       "type": "string",
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/user",
+      "target": "https://codemeta.de/schemas/party",
       "objectId": true,
       "database": "config"
     },
