@@ -33,14 +33,6 @@
       "target": "https://codemeta.de/schemas/user",
       "database": "config"
     },
-    "createdByUser": {
-      "description": "The user created the request",
-      "type": "string",
-      "objectId": true,
-      "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/user",
-      "database": "config"
-    },
     "reportedBy": {
       "description": "The Person that reported the request",
       "type": "string",
