@@ -12,50 +12,90 @@
     },
     "linkedParty": {
       "description": "The party linked to the request",
-      "type": "object",
+      "type": "string",
+      "objectId": true,
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/party",
-      "database": "config"
+      "target": "https://codemeta.de/schemas/party"
     },
     "assignedTeam": {
       "description": "The team assigned to the request",
-      "type": "object",
+      "type": "string",
+      "objectId": true,
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/team",
       "database": "config"
     },
     "assignedUser": {
       "description": "The user assigned to the request",
-      "type": "object",
+      "type": "string",
+      "objectId": true,
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/user",
       "database": "config"
     },
     "createdByUser": {
       "description": "The user created the request",
-      "type": "object",
+      "type": "string",
+      "objectId": true,
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/user",
       "database": "config"
+    },
+    "reportedBy": {
+      "description": "The Person that reported the request",
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party"
     },
     "status": {
       "description": "The status of the request",
       "type": "string",
       "enum": ["NEW", "IN_PROGRESS", "COMPLETED"]
     },
+    "key": {
+      "description": "The unique Key to identify the request",
+      "type": "string"
+    },
+    "type": {
+      "description": "The Type of the request",
+      "type": "string"
+    },
+    "linkedAssets": {
+      "teams": {
+        "type": "array",
+        "description": "A List of all Assets that are used in the Request",
+        "items": {
+          "type": "string",
+          "objectId": true,
+          "relation": "manyToOne",
+          "target": "https://codemeta.de/schemas/asset",
+          "database": "config",
+          "description": "The ID of the Asset."
+        }
+      }
+    },
     "tanss": {
       "description": "The tanss ID of the request",
       "type": "number"
     },
-    "createdDate": {
-      "description": "The date the request was created",
+    "dueAt": {
+      "description": "The date when the Request is due",
       "type": "string",
       "format": "date-time"
     },
-    "updatedStateDate": {
-      "description": "The date the request was last updated",
+    "priority": {
+      "description": "The Priority of the Ticket",
       "type": "string",
-      "format": "date-time"
+      "enum": ["LOW", "MIDDLE", "HIGH"]
+    },
+    "tags": {
+      "description": "Custom Tags set in the Frontend",
+      "type": "string"
+    },
+    "note": {
+      "description": "An Internal Note for the Ticket User",
+      "type": "string"
     }
   },
   "required": ["title"],
