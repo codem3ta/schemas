@@ -86,8 +86,9 @@
     },
     "priority": {
       "description": "The Priority of the Ticket",
-      "type": "string",
-      "enum": ["LOW", "MIDDLE", "HIGH"]
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
     },
     "tags": {
       "description": "Custom Tags set in the Frontend",
