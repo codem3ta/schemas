@@ -84,6 +84,10 @@
           "tannsEmployeeId": {
             "description": "The Id of the Employee in Tanss",
             "type": "string"
+          },
+          "tannsVacationId": {
+            "description": "The Id of the Vacation in Tanss",
+            "type": "string"
           }
         }
       }
