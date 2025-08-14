@@ -25,6 +25,11 @@
       "description": "The HTML body of this message",
       "type": "string"
     },
+    "type": {
+      "description": "The type of this message",
+      "type": "string",
+      "enum": ["email", "teams", "whatsapp", "other"]
+    },
     "receivedDateTime": {
       "description": "The date and time at which the message was recieved",
       "type": "string",
@@ -50,6 +55,10 @@
               "type": "string"
             }
           }
+        },
+        "phoneNumber": {
+          "description": "The phone number of the sender",
+          "type": "string"
         }
       }
     },
@@ -70,6 +79,10 @@
                 "type": "string"
               }
             }
+          },
+          "phoneNumber": {
+            "description": "The phone number of the sender",
+            "type": "string"
           }
         }
       }
