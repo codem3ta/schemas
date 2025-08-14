@@ -21,6 +21,10 @@
       "description": "The body of this message",
       "type": "string"
     },
+    "htmlBody": {
+      "description": "The HTML body of this message",
+      "type": "string"
+    },
     "receivedDateTime": {
       "description": "The date and time at which the message was recieved",
       "type": "string",
