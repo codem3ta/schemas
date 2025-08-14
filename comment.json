@@ -31,6 +31,10 @@
     "entityName": {
       "description": "The collection name of the entity",
       "type": "string"
+    },
+    "tanss": {
+      "description": "The Tanss Id of the comment",
+      "type": "number"
     }
   },
   "required": [],
