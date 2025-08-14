@@ -73,6 +73,15 @@
     "hasAttachments": {
       "description": "indicates if the message has an attachment",
       "type": "boolean"
+    },
+    "entityId": {
+      "description": "The id of the entity this message is related to",
+      "type": "string",
+      "objectId": true
+    },
+    "entityName": {
+      "description": "The collection name of the entity this message is related to",
+      "type": "string"
     }
   },
   "required": ["from", "subject", "body"],
