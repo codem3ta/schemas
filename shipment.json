@@ -214,7 +214,8 @@
     },
     "movedToDate": {
       "description": "The shipping date where the shipment was moved to",
-      "type": ["integer", "null"]
+      "type": "string",
+      "format": "date-time"
     },
     "recordEmailAddresses": {
       "title": "Record Email Addresses",
