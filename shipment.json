@@ -212,6 +212,10 @@
       "description": "The shipping date of the shipment",
       "type": ["integer", "null"]
     },
+    "movedToDate": {
+      "description": "The shipping date where the shipment was moved to",
+      "type": ["integer", "null"]
+    },
     "recordEmailAddresses": {
       "title": "Record Email Addresses",
       "description": "Email addresses associated with the shipment record",
@@ -244,7 +248,8 @@
         "INCOMING_SHIPPED",
         "IN_ROUTE",
         "NEW",
-        "SHIPPED"
+        "SHIPPED",
+        "MOVED"
       ]
     },
     "recipientAddress": {
