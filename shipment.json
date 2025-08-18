@@ -217,6 +217,10 @@
       "type": "string",
       "format": "date-time"
     },
+    "moved": {
+      "description": "Whether it is moved or not",
+      "type": "boolean"
+    },
     "recordEmailAddresses": {
       "title": "Record Email Addresses",
       "description": "Email addresses associated with the shipment record",
@@ -249,8 +253,7 @@
         "INCOMING_SHIPPED",
         "IN_ROUTE",
         "NEW",
-        "SHIPPED",
-        "MOVED"
+        "SHIPPED"
       ]
     },
     "recipientAddress": {
