@@ -52,6 +52,10 @@
       "type": "string",
       "description": "The user's mobile phone number"
     },
+    "starfaceId": {
+      "type": "number",
+      "description": "The user's starfaceId"
+    },
     "company": {
       "type": "string",
       "description": "The user's company"
@@ -92,7 +96,7 @@
           "format": "date-time",
           "description": "The end of the period"
         },
-        "note":{
+        "note": {
           "type": "string",
           "description": "A note which will be displayed, when out of office"
         }
