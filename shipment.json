@@ -214,7 +214,7 @@
     },
     "movedToDate": {
       "description": "The shipping date where the shipment was moved to",
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "moved": {
