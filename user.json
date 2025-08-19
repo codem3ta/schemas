@@ -53,7 +53,7 @@
       "description": "The user's mobile phone number"
     },
     "starfaceId": {
-      "type": "number",
+      "type": ["number", "null"],
       "description": "The user's starfaceId"
     },
     "company": {
