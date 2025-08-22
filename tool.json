@@ -1,0 +1,81 @@
+{
+  "$id": "https://codemeta.de/schemas/tool",
+  "title": "Tool",
+  "name": "tool",
+  "collection": "tools",
+  "description": "internal tool checkin and checkout",
+  "i18n": {
+    "de": {
+      "singular": "Neuigkeit",
+      "plural": "Neuigkeiten",
+      "description": "Interne Werkzeug Erfassung"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the tool."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the tool."
+    },
+    "content": {
+      "type": "string",
+      "description": "The content of the tool."
+    },
+    "status": {
+      "type": "string",
+      "description": "The state of the tool.",
+      "enum": ["AVAILABLE", "MAINTENANCE", "TAKEN"]
+    },
+    "toolStatus": {
+      "type": "string",
+      "description": "The state of the tool.",
+      "enum": ["MISSING", "BROKEN"]
+    },
+    "locationId": {
+      "type": "string",
+      "description": "The location of the tool.",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/location",
+      "objectId": true
+    },
+    "takenBy": {
+      "type": ["string", "null"],
+      "description": "Information who took it.",
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user",
+      "objectId": true,
+      "database": "config"
+    },
+    "takedAt": {
+      "type": "string",
+      "description": "Information when it was taken.",
+      "format": "date-time"
+    },
+    "items": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "description": "The title of the item.",
+            "type": "string"
+          },
+          "description": {
+            "description": "The discription of the item.",
+            "type": "string"
+          },
+          "count": {
+            "description": "The count shows how much is taken.",
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "unevaluatedProperties": true
+}
