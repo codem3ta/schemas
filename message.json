@@ -103,6 +103,11 @@
     "messageId": {
       "description": "The external id of the message",
       "type": "string"
+    },
+    "status": {
+      "description": "The delivery status of the message.",
+      "type": "string",
+      "enum": ["sent", "delivered", "bounced", "complaint", "processing"]
     }
   },
   "required": [],
