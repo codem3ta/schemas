@@ -56,4 +56,5 @@ module.exports = {
   accessoire: require("./accessoire.json"),
   license: require("./license.json"),
   component: require("./component.json"),
+  tool: require("./tool.json"),
 };
