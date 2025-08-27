@@ -12,6 +12,10 @@
     }
   },
   "properties": {
+    "sentToRecipient": {
+      "description": "Indicates whether the shipment has been sent to the recipient.",
+      "type": "boolean"
+    },
     "shipmentNumber": {
       "description": "The shipment number",
       "type": "string"
