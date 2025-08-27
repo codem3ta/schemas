@@ -8,7 +8,7 @@
     "de": {
       "singular": "Neuigkeit",
       "plural": "Neuigkeiten",
-      "description": "Interne Werkzeug Erfassung"
+      "description": "Interne Werkzeuge Erfassung"
     }
   },
   "type": "object",
@@ -50,8 +50,8 @@
       "objectId": true,
       "database": "config"
     },
-    "takedAt": {
-      "type": "string",
+    "takenAt": {
+      "type": ["string", "null"],
       "description": "Information when it was taken.",
       "format": "date-time"
     },
