@@ -33,7 +33,7 @@
     "toolStatus": {
       "type": "string",
       "description": "The state of the tool.",
-      "enum": ["MISSING", "BROKEN"]
+      "enum": ["MISSING", "BROKEN", "OK"]
     },
     "locationId": {
       "type": "string",
