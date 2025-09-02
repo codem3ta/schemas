@@ -55,6 +55,11 @@
       "description": "Information when it was taken.",
       "format": "date-time"
     },
+    "returnedAt": {
+      "type": ["string", "null"],
+      "description": "Information when it was returned.",
+      "format": "date-time"
+    },
     "items": {
       "description": "",
       "type": "array",
