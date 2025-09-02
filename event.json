@@ -88,6 +88,10 @@
           "tannsVacationId": {
             "description": "The Id of the Vacation in Tanss",
             "type": "string"
+          },
+          "tanssIllnessId": {
+            "description": "The Id of the Illness in Tanss",
+            "type": "string"
           }
         }
       }
@@ -134,11 +138,7 @@
           },
           "type": {
             "type": "string",
-            "enum": [
-              "required",
-              "optional",
-              "resource"
-            ]
+            "enum": ["required", "optional", "resource"]
           },
           "status": {
             "type": "object",
@@ -170,12 +170,7 @@
     "sensitivity": {
       "description": "The sensitivity of the Event",
       "type": "string",
-      "enum": [
-        "normal",
-        "personal",
-        "private",
-        "confidential"
-      ]
+      "enum": ["normal", "personal", "private", "confidential"]
     },
     "planningType": {
       "description": "The PlanningType of the event, is used to differentiate Supprt and Appointment in Tanss",
