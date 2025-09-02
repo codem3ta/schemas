@@ -100,11 +100,16 @@
       "description": "The collection name of the entity this message is related to",
       "type": "string"
     },
-    "tanss": {
-      "description": "The Tanss Id of the message",
-      "type": "number"
+    "messageId": {
+      "description": "The external id of the message",
+      "type": "string"
+    },
+    "status": {
+      "description": "The delivery status of the message.",
+      "type": "string",
+      "enum": ["sent", "delivered", "bounced", "complaint", "processing"]
     }
   },
-  "required": ["from", "subject", "body"],
+  "required": [],
   "unevaluatedProperties": true
 }
