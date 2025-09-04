@@ -194,6 +194,10 @@
     "recurrence": {
       "description": "The Recurrence Rule of the Event",
       "type": "object"
+    },
+    "teamsCall": {
+      "description": "Information displaying if the event is a teams Call",
+      "type": "boolean "
     }
   },
   "required": [],
