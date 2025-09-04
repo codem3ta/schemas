@@ -69,6 +69,16 @@
       "target": "https://codemeta.de/schemas/interface",
       "objectId": true,
       "database": "config"
+    },
+    "excludeFromStart": {
+      "description": "Determines if the vm should be excluded from the start process.",
+      "type": "boolean",
+      "default": false
+    },
+    "excludeFromStop": {
+      "description": "Determines if the VM should be excluded from the stop process.",
+      "type": "boolean",
+      "default": false
     }
   },
   "required": [],
