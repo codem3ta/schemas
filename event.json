@@ -197,7 +197,7 @@
     },
     "teamsCall": {
       "description": "Information displaying if the event is a teams Call",
-      "type": "boolean "
+      "type": "boolean"
     }
   },
   "required": [],
