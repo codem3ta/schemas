@@ -58,5 +58,8 @@
   },
   "required": ["identifier"],
   "searchable": true,
+  "titleField": "title",
+  "descriptionField": "description",
+  "icon": "asset",
   "name": "asset"
 }
