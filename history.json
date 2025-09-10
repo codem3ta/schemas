@@ -23,6 +23,10 @@
     "operationType": {
       "type": "string"
     },
+    "changedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
     "updatedFields": {
       "type": "object"
     },
