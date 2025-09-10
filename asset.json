@@ -57,5 +57,6 @@
     }
   },
   "required": ["identifier"],
+  "searchable": true,
   "name": "asset"
 }

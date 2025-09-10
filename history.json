@@ -34,7 +34,7 @@
       "database": "config"
     }
   },
-  "searchable": true,
+  "searchable": false,
   "required": [],
   "additionalProperties": true,
   "inheritPermissionsFromId": "documentId",
