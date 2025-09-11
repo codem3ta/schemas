@@ -17,6 +17,10 @@
       "type": "string",
       "description": "The title of the tool."
     },
+    "HistoryContent": {
+      "type": "string",
+      "description": "The content of the history"
+    },
     "description": {
       "type": "string",
       "description": "A short description of the tool."
@@ -24,6 +28,10 @@
     "content": {
       "type": "string",
       "description": "The content of the tool."
+    },
+    "returnComment": {
+      "type": "string",
+      "description": "Brief explanation of why the tool was put back"
     },
     "status": {
       "type": "string",
@@ -53,6 +61,11 @@
     "takenAt": {
       "type": ["string", "null"],
       "description": "Information when it was taken.",
+      "format": "date-time"
+    },
+    "returnedAt": {
+      "type": ["string", "null"],
+      "description": "Information when it was returned.",
       "format": "date-time"
     },
     "items": {

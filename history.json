@@ -23,6 +23,10 @@
     "operationType": {
       "type": "string"
     },
+    "changedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
     "updatedFields": {
       "type": "object"
     },
@@ -34,7 +38,7 @@
       "database": "config"
     }
   },
-  "searchable": true,
+  "searchable": false,
   "required": [],
   "additionalProperties": true,
   "inheritPermissionsFromId": "documentId",
