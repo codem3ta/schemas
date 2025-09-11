@@ -54,11 +54,11 @@
     },
     "customerNumber": {
       "description": "The customer number",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "supplierNumber": {
       "description": "The supplier number",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "phone": {
       "description": "The phone number",
