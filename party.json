@@ -152,7 +152,7 @@
     },
     "birthDate": {
       "description": "The birth date of the party",
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "departments": {
