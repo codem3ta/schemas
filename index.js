@@ -57,4 +57,5 @@ module.exports = {
   license: require("./license.json"),
   component: require("./component.json"),
   tool: require("./tool.json"),
+  dashboard: require("./dashboard.json"),
 };
