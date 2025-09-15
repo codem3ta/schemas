@@ -63,7 +63,5 @@
         }
       }
     }
-  },
-  "additionalProperties": false,
-  "baseUrl": "/crm/callcenter/calls"
+  }
 }
