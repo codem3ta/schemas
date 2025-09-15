@@ -62,6 +62,16 @@
           }
         }
       }
+    },
+    "hiddenFor": {
+      "type": "array",
+      "description": "An array of user IDs for whom the dashboard is hidden",
+      "items": {
+        "type": "string",
+        "target": "https://codemeta.de/schemas/user",
+        "objectId": true,
+        "database": "config"
+      }
     }
   }
 }
