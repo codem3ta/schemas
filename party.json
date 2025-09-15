@@ -54,11 +54,11 @@
     },
     "customerNumber": {
       "description": "The customer number",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "supplierNumber": {
       "description": "The supplier number",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "phone": {
       "description": "The phone number",
@@ -152,7 +152,7 @@
     },
     "birthDate": {
       "description": "The birth date of the party",
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "departments": {
