@@ -13,7 +13,7 @@
     }
   },
   "properties": {
-    "name": {
+    "title": {
       "type": "string",
       "description": "The Name of the Dashboard"
     },
@@ -24,7 +24,7 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "number",
+            "type": "string",
             "description": "The unique identifier for the widget"
           },
           "title": {
