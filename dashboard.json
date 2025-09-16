@@ -43,11 +43,11 @@
             "type": "number",
             "description": "The row position of the widget"
           },
-          "width": {
+          "w": {
             "type": "number",
             "description": "The width of the widget"
           },
-          "height": {
+          "h": {
             "type": "number",
             "description": "The height of the widget"
           },
