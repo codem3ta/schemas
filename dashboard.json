@@ -58,7 +58,12 @@
           "actions": {
             "type": "object",
             "description": "Actions for the widget",
-            "properties": {}
+            "properties": {
+              "delete": {
+                "type": "boolean",
+                "description": "Indicates if the widget can be deleted"
+              }
+            }
           }
         }
       }
