@@ -51,6 +51,22 @@
             "type": "number",
             "description": "The height of the widget"
           },
+          "sm": {
+            "type": "object",
+            "description": "The Position and size of the widget on small screens"
+          },
+          "lg": {
+            "type": "object",
+            "description": "The Position and size of the widget on large screens"
+          },
+          "xl": {
+            "type": "object",
+            "description": "The Position and size of the widget on extra large screens"
+          },
+          "xxl": {
+            "type": "object",
+            "description": "The Position and size of the widget on double extra large screens"
+          },
           "active": {
             "type": "boolean",
             "description": "Indicates if the widget is active"
