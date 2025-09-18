@@ -43,7 +43,7 @@
     "desiredState": {
       "description": "The desired state of the virtual machine.",
       "type": ["string", "null"],
-      "enum": ["running", "stopped", null],
+      "enum": ["running", "stopped", "relocated", null],
       "default": null
     },
     "cpus": {
