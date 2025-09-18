@@ -40,6 +40,12 @@
       "type": "string",
       "enum": ["running", "stopped", "paused"]
     },
+    "desiredState": {
+      "description": "The desired state of the virtual machine.",
+      "type": ["string", "null"],
+      "enum": ["running", "stopped", null],
+      "default": null
+    },
     "cpus": {
       "description": "The cpu count of the virtual machine.",
       "type": "number"
