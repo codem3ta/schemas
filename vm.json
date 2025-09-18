@@ -85,6 +85,11 @@
       "description": "Determines if the VM should be excluded from the stop process.",
       "type": "boolean",
       "default": false
+    },
+    "autoRelocate": {
+      "description": "Determines if the VM should be automatically relocated to another host in case of a failure.",
+      "type": "boolean",
+      "default": false
     }
   },
   "required": [],
