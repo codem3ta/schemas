@@ -37,6 +37,11 @@
         "objectId": true
       }
     },
+    "powerMode": {
+      "description": "The power mode of the host.",
+      "type": "string",
+      "enum": ["battery", "online"]
+    },
     "state": {
       "description": "The state of the host machine.",
       "type": "string",
