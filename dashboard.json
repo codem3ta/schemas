@@ -1,0 +1,92 @@
+{
+  "$id": "https://codemeta.de/schemas/dashboard",
+  "title": "Dashboard",
+  "collection": "dashboards",
+  "name": "dashboard",
+  "description": "A dashboard, consisting of multiple widgets",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Dashboard",
+      "plural": "Dashboards",
+      "description": "Ein Dashboard"
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The Name of the Dashboard"
+    },
+    "widgets": {
+      "type": "array",
+      "description": "An array of widgets in this dashboard",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The unique identifier for the widget"
+          },
+          "title": {
+            "type": "string",
+            "description": "The title of the widget"
+          },
+          "description": {
+            "type": "string",
+            "description": "The description of the widget"
+          },
+          "col": {
+            "type": "number",
+            "description": "The column position of the widget"
+          },
+          "row": {
+            "type": "number",
+            "description": "The row position of the widget"
+          },
+          "w": {
+            "type": "number",
+            "description": "The width of the widget"
+          },
+          "h": {
+            "type": "number",
+            "description": "The height of the widget"
+          },
+          "sm": {
+            "type": "object",
+            "description": "The Position and size of the widget on small screens"
+          },
+          "lg": {
+            "type": "object",
+            "description": "The Position and size of the widget on large screens"
+          },
+          "xl": {
+            "type": "object",
+            "description": "The Position and size of the widget on extra large screens"
+          },
+          "xxl": {
+            "type": "object",
+            "description": "The Position and size of the widget on double extra large screens"
+          },
+          "active": {
+            "type": "boolean",
+            "description": "Indicates if the widget is active"
+          },
+          "actions": {
+            "type": "array",
+            "description": "Actions for the widget"
+          }
+        }
+      }
+    },
+    "hiddenFor": {
+      "type": "array",
+      "description": "An array of user IDs for whom the dashboard is hidden",
+      "items": {
+        "type": "string",
+        "target": "https://codemeta.de/schemas/user",
+        "objectId": true,
+        "database": "config"
+      }
+    }
+  }
+}

@@ -17,6 +17,10 @@
       "description": "The origin source of the datasource",
       "type": "string"
     },
+    "sourceType": {
+      "description": "The origin source type of the datasource",
+      "type": "string"
+    },
     "sourceId": {
       "description": "The id in the source's system",
       "type": "string"

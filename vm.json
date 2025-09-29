@@ -38,7 +38,13 @@
     "state": {
       "description": "The state of the virtual machine.",
       "type": "string",
-      "enum": ["running", "stopped", "paused"]
+      "enum": ["running", "stopped", "paused", "error"]
+    },
+    "desiredState": {
+      "description": "The desired state of the virtual machine.",
+      "type": ["string", "null"],
+      "enum": ["running", "stopped", "relocated", null],
+      "default": null
     },
     "cpus": {
       "description": "The cpu count of the virtual machine.",
@@ -77,6 +83,11 @@
     },
     "excludeFromStop": {
       "description": "Determines if the VM should be excluded from the stop process.",
+      "type": "boolean",
+      "default": false
+    },
+    "autoRelocate": {
+      "description": "Determines if the VM should be automatically relocated to another host in case of a failure.",
       "type": "boolean",
       "default": false
     }
