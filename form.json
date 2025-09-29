@@ -1,0 +1,32 @@
+{
+  "$id": "https://codemeta.de/schemas/form",
+  "title": "form",
+  "collection": "forms",
+  "name": "form",
+  "description": "A form, consisting of multiple widgets",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Formular",
+      "plural": "Formulare",
+      "description": "Ein Formular, welches aus mehreren Input-Feldern besteht"
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The Name of the Form"
+    },
+    "description": {
+      "type": "string",
+      "description": "The Description of the Form"
+    },
+    "components": {
+      "type": "array",
+      "description": "An array of components in this Form",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}
