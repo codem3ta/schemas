@@ -28,6 +28,10 @@
       "description": "Additional company information",
       "type": "string"
     },
+    "referenceNumber": {
+      "description": "The reference number of the party",
+      "type": "string"
+    },
     "customer": {
       "description": "Indicates if the party is a customer",
       "type": "boolean"
