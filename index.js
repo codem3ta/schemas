@@ -58,4 +58,5 @@ module.exports = {
   component: require("./component.json"),
   tool: require("./tool.json"),
   dashboard: require("./dashboard.json"),
+  form: require("./form.json"),
 };
