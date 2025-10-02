@@ -58,6 +58,10 @@
     "weclappId": {
       "type": "string",
       "description": "The user's Weclapp ID"
+    },
+    "tanssEmployeeId": {
+      "type": "number",
+      "description": "The user's tanssEmployeeId"
     }
   },
   "unevaluatedProperties": false

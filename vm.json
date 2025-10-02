@@ -38,7 +38,7 @@
     "state": {
       "description": "The state of the virtual machine.",
       "type": "string",
-      "enum": ["running", "stopped", "paused"]
+      "enum": ["running", "stopped", "paused", "error"]
     },
     "desiredState": {
       "description": "The desired state of the virtual machine.",

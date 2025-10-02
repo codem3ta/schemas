@@ -39,13 +39,13 @@
     },
     "powerMode": {
       "description": "The power mode of the host.",
-      "type": "string",
-      "enum": ["battery", "online"]
+      "type": ["string", "null"],
+      "enum": ["battery", "online", null]
     },
     "state": {
       "description": "The state of the host machine.",
       "type": "string",
-      "enum": ["running", "stopped", "paused"]
+      "enum": ["running", "stopped", "paused", "error"]
     },
     "interface": {
       "description": "The interface with the credentials.",

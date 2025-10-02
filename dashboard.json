@@ -72,14 +72,8 @@
             "description": "Indicates if the widget is active"
           },
           "actions": {
-            "type": "object",
-            "description": "Actions for the widget",
-            "properties": {
-              "delete": {
-                "type": "boolean",
-                "description": "Indicates if the widget can be deleted"
-              }
-            }
+            "type": "array",
+            "description": "Actions for the widget"
           }
         }
       }
