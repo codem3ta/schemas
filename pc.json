@@ -69,7 +69,6 @@
   },
   "unevaluatedProperties": true,
   "required": [],
-  "searchable": true,
   "titleField": "title",
   "descriptionField": "description",
   "icon": "asset",
