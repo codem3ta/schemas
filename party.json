@@ -217,7 +217,7 @@
     },
     "responsibleUserId": {
       "description": "The employee assigned to the party",
-      "type": "string",
+      "type": ["string", "null"],
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/user",
       "objectId": true,
