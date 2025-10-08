@@ -111,7 +111,8 @@
     },
     "email": {
       "description": "The email of the party",
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "format": "email"
     },
     "categories": {
       "description": "Categories associated with the party",
