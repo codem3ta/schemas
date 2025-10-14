@@ -45,8 +45,7 @@
     "pdfs": {
       "type": "array",
       "items": {
-        "type": "string",
-        "objectId": true
+        "type": "string"
       },
       "description": "The _ids of pdfs connected to the news."
     },
