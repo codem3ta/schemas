@@ -54,8 +54,20 @@
       "type": "array",
       "items": {
         "type": "object",
-        "properties": {},
-        "additionalProperties": true
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the product"
+          },
+          "image": {
+            "type": "string",
+            "description": "The image url"
+          },
+          "initials": {
+            "type": "string",
+            "description": "The image url"
+          }
+        }
       },
       "description": "The products included in the contract"
     },
