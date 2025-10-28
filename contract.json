@@ -65,7 +65,7 @@
           },
           "initials": {
             "type": "string",
-            "description": "The image url"
+            "description": "The initials of the product"
           }
         }
       },
