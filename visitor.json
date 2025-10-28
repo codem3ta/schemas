@@ -31,6 +31,10 @@
       "description": "The scheduled arrival of the visitor",
       "type": "string",
       "format": "date-time"
+    },
+    "reason": {
+      "description": "The reason for the visit",
+      "type": "string"
     }
   },
   "required": [],
