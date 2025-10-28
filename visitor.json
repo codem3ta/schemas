@@ -32,7 +32,7 @@
       "type": "string",
       "format": "date-time"
     },
-    "reason": {
+    "comment": {
       "description": "The reason for the visit",
       "type": "string"
     }
