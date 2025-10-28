@@ -26,6 +26,10 @@
       "format": "date-time",
       "description": "The date the contract was signed"
     },
+    "partyName": {
+      "type": "string",
+      "description": "The name of the party associated with the contract"
+    },
     "partyId": {
       "type": "string",
       "objectId": true,
