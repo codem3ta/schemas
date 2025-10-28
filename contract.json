@@ -54,7 +54,8 @@
       "type": "array",
       "items": {
         "type": "object",
-        "properties": {}
+        "properties": {},
+        "additionalProperties": true
       },
       "description": "The products included in the contract"
     },
