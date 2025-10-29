@@ -33,7 +33,7 @@
       "type": "string"
     },
     "ownedBy": {
-      "type": "string",
+      "type": ["string", "null"],
       "objectId": true,
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/party"
