@@ -113,9 +113,9 @@
                     "minimum": 0,
                     "description": "Upper bound for dynamic quantity"
                   },
-                  "sort": {
-                    "type": "integer",
-                    "description": "Sort/prioritization key for resolving dynamic quantities"
+                  "split": {
+                    "type": "boolean",
+                    "description": "Indicates if the quantity can be split into multiple items"
                   }
                 },
                 "required": ["articleNumber"]
