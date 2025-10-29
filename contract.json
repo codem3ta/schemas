@@ -125,6 +125,11 @@
           "unitPrice": {
             "type": "number",
             "description": "The price of the item in the contract"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["STATIC", "DYNAMIC"],
+            "description": "The type of the item in the contract"
           }
         }
       },
