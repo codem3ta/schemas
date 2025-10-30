@@ -88,6 +88,10 @@
             "type": "string",
             "description": "The article ID of the item in the contract"
           },
+          "articleNumber": {
+            "type": "string",
+            "description": "Reference article number the dynamic quantity depends on"
+          },
           "quantity": {
             "description": "Quantity can be a static number or a dynamic rule object",
             "oneOf": [
