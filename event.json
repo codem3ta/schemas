@@ -20,6 +20,10 @@
       "description": "The Description of the event",
       "type": "string"
     },
+    "internalDescription": {
+      "description": "The internal Description of the event",
+      "type": "string"
+    },
     "start": {
       "description": "The date and Time when the event starts",
       "type": "string",
