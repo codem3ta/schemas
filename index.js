@@ -60,4 +60,6 @@ module.exports = {
   dashboard: require("./dashboard.json"),
   form: require("./form.json"),
   contract: require("./contract.json"),
+  course: require("./course.json"),
+  enrollment: require("./enrollment.json"),
 };

@@ -21,13 +21,109 @@
       "description": "The description of the course",
       "type": "string"
     },
-    "teacher": {
-      "description": "The teacher of the course",
+    "instructorName": {
+      "description": "The instructor of the course",
       "type": "string"
+    },
+    "aboutInstructor": {
+      "description": "A description of the instructor",
+      "type": "string"
+    },
+    "instructorCompany": {
+      "description": "The company or institution the instructor is affiliated with",
+      "type": "string"
+    },
+    "rating": {
+      "description": "The rating of the course",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "image": {
+      "description": "An optional image url representing the course",
+      "type": "string"
+    },
+    "lectures": {
+      "type": "array",
+      "description": "A list of lectures in the course",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "The unique identifier for the lecture",
+            "type": "string"
+          },
+          "title": {
+            "description": "The title of the lecture",
+            "type": "string"
+          },
+          "duration": {
+            "description": "The duration of the lecture in mm:ss format",
+            "type": "string",
+            "pattern": "^([0-5]?[0-9]):([0-5][0-9])$"
+          },
+          "icon": {
+            "description": "An optional icon representing the lecture",
+            "type": "string"
+          },
+          "items": {
+            "description": "Optional items associated with the lecture",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "The unique identifier for the lecture item",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "The title of the lecture item",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of lecture (e.g., video, article, quiz)",
+                  "type": "string",
+                  "enum": ["video", "text", "quiz", "assignment"]
+                },
+                "video": {
+                  "description": "The URL of the video lecture",
+                  "type": "string",
+                  "format": "uri"
+                },
+                "content": {
+                  "description": "The content of the text lecture",
+                  "type": "string"
+                },
+                "questions": {
+                  "description": "The questions for the quiz lecture",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "unevaluatedProperties": true
+                  }
+                },
+                "fileTypes": {
+                  "description": "The accepted file types for the assignment lecture",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "multipleFiles": {
+                  "description": "Whether multiple files can be submitted for the assignment lecture",
+                  "type": "boolean"
+                }
+              },
+              "required": ["type", "title", "contentUrl"],
+              "unevaluatedProperties": false
+            }
+          }
+        },
+        "required": ["id", "title", "duration"],
+        "unevaluatedProperties": false
+      }
     }
   },
-  "required": [
-    "title"
-  ],
+  "required": ["title"],
   "unevaluatedProperties": false
 }
