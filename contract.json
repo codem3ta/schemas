@@ -140,14 +140,19 @@
             "description": "The type of the item in the contract"
           },
           "startDate": {
-            "type": "string",
+            "type": ["string", "null"],
             "format": "date-time",
             "description": "The start date of the item in the contract"
           },
           "endDate": {
-            "type": "string",
+            "type": ["string", "null"],
             "format": "date-time",
             "description": "The end date of the item in the contract"
+          },
+          "period": {
+            "type": ["string", "null"],
+            "description": "The billing period for the item in the contract",
+            "enum": ["P1Y", "P1M", null]
           }
         }
       },
