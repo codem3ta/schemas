@@ -107,9 +107,12 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                  "articleNumber": {
-                    "type": "string",
-                    "description": "Reference article number the dynamic quantity depends on"
+                  "identifiers": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "List of reference article numbers the dynamic quantity depends on"
                   },
                   "min": {
                     "type": "number",
@@ -126,7 +129,7 @@
                     "description": "Indicates if the quantity can be split into multiple items"
                   }
                 },
-                "required": ["articleNumber"]
+                "required": ["identifiers"]
               }
             ]
           },
