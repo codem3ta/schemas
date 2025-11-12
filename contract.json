@@ -86,33 +86,34 @@
           },
           "companyName": {
             "type": "string",
-            "description": "The name of the company or the department associated with the item in the contract"
+            "description": "The name of the company or department"
           },
           "articleId": {
             "type": "string",
-            "description": "The article ID of the item in the contract"
+            "description": "The article ID of the item"
           },
           "articleNumber": {
             "type": "string",
-            "description": "Reference article number the dynamic quantity depends on"
+            "description": "Reference article number"
+          },
+          "articleType": {
+            "type": "string",
+            "enum": ["BASIC", "SALES_BILL_OF_MATERIAL"],
+            "description": "The type of the article",
+            "default": "BASIC"
           },
           "quantity": {
             "description": "Quantity can be a static number or a dynamic rule object",
             "oneOf": [
-              {
-                "type": "number",
-                "minimum": 0
-              },
+              { "type": "number", "minimum": 0 },
               {
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
                   "identifiers": {
                     "type": "array",
-                    "items": {
-                      "type": "string"
-                    },
-                    "description": "List of reference article numbers the dynamic quantity depends on"
+                    "items": { "type": "string" },
+                    "description": "List of reference article numbers"
                   },
                   "min": {
                     "type": "number",
@@ -126,7 +127,7 @@
                   },
                   "split": {
                     "type": "boolean",
-                    "description": "Indicates if the quantity can be split into multiple items"
+                    "description": "Indicates if the quantity can be split"
                   }
                 },
                 "required": ["identifiers"]
@@ -135,27 +136,72 @@
           },
           "unitPrice": {
             "type": "number",
-            "description": "The price of the item in the contract"
+            "description": "The price of the item"
           },
           "type": {
             "type": "string",
             "enum": ["STATIC", "DYNAMIC"],
-            "description": "The type of the item in the contract"
+            "description": "The type of the item"
           },
           "startDate": {
             "type": ["string", "null"],
             "format": "date-time",
-            "description": "The start date of the item in the contract"
+            "description": "The start date of the item"
           },
           "endDate": {
             "type": ["string", "null"],
             "format": "date-time",
-            "description": "The end date of the item in the contract"
+            "description": "The end date of the item"
           },
           "period": {
             "type": ["string", "null"],
-            "description": "The billing period for the item in the contract",
-            "enum": ["P1Y", "P1M", null]
+            "enum": ["P1Y", "P1M", null],
+            "description": "The billing period for the item"
+          },
+          "subItems": {
+            "type": "array",
+            "description": "Sub-items for a sales BOM",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "articleId": {
+                  "type": "string"
+                },
+                "articleNumber": {
+                  "type": "string"
+                },
+                "unitPrice": {
+                  "type": "number"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["STATIC", "DYNAMIC"]
+                },
+                "quantity": {
+                  "description": "Quantity for a sub-item, min/max are derived from the parent BOM",
+                  "oneOf": [
+                    { "type": "number", "minimum": 0 },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "identifier": {
+                          "type": "string",
+                          "description": "Reference article number for the sub-item"
+                        }
+                      },
+                      "required": ["identifier"]
+                    }
+                  ]
+                }
+              }
+            }
           }
         }
       },
