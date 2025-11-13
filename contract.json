@@ -158,7 +158,7 @@
             "enum": ["P1Y", "P1M", null],
             "description": "The billing period for the item"
           },
-          "subItems": {
+          "salesBillOfMaterialItems": {
             "type": "array",
             "description": "Sub-items for a sales BOM",
             "items": {
