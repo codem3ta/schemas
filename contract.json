@@ -76,6 +76,10 @@
       "items": {
         "type": "object",
         "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "The unique identifier for the contract items"
+          },
           "title": {
             "type": "string",
             "description": "The title of the item in the contract"
@@ -164,6 +168,10 @@
             "items": {
               "type": "object",
               "properties": {
+                "uuid": {
+                  "type": "string",
+                  "description": "The unique identifier for the bill of material item"
+                },
                 "title": {
                   "type": "string"
                 },
