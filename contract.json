@@ -191,12 +191,13 @@
                       "type": "object",
                       "additionalProperties": false,
                       "properties": {
-                        "identifier": {
-                          "type": "string",
-                          "description": "Reference article number for the sub-item"
+                        "identifiers": {
+                          "type": "array",
+                          "items": { "type": "string" },
+                          "description": "List of reference article numbers"
                         }
                       },
-                      "required": ["identifier"]
+                      "required": ["identifiers"]
                     }
                   ]
                 }
