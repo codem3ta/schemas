@@ -20,6 +20,10 @@
       "description": "The Description of the event",
       "type": "string"
     },
+    "internalDescription": {
+      "description": "The internal Description of the event",
+      "type": "string"
+    },
     "start": {
       "description": "The date and Time when the event starts",
       "type": "string",
@@ -29,6 +33,10 @@
       "description": "The date and Time when the event ends",
       "type": "string",
       "format": "date-time"
+    },
+    "color": {
+      "description": "The color associated with the event",
+      "type": "string"
     },
     "plannedDuration": {
       "description": "The duration in Minutes from Start to End of the Event",
@@ -53,11 +61,62 @@
       "description": "The duration in Minutes that is added to an Event for the drive to a Customer. Only used if Location is CUSTOMER",
       "type": "number"
     },
+    "ownerFullName": {
+      "description": "The full Name of the Event Owner",
+      "type": "string"
+    },
     "owner": {
       "description": "The Name of the Technician responsible for the event",
       "type": "string",
       "objectId": true,
       "target": "https://codemeta.de/schemas/user"
+    },
+    "companyFullName": {
+      "description": "The full Name of Company the Event is booked on",
+      "type": "string"
+    },
+    "partyId": {
+      "description": "The id of the linked party",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "attendees": {
+      "description": "Recipient of event confirmation",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "emailAddress": {
+            "description": "The Email Address an Name of an Attendee",
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          },
+          "type": {
+            "type": "string",
+            "enum": ["required", "optional", "resource"]
+          },
+          "status": {
+            "type": "object",
+            "properties": {
+              "response": {
+                "type": "string"
+              },
+              "time": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      }
     },
     "links": {
       "description": "Eventids in Tanns and Outlook",
@@ -117,55 +176,6 @@
     "bookedTimeslot": {
       "description": "Timeslot chosen by the customer; must be validated to appear as a valid event",
       "type": "object"
-    },
-    "attendees": {
-      "description": "Recipient of event confirmation",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "emailAddress": {
-            "description": "The Email Address an Name of an Attendee",
-            "type": "object",
-            "properties": {
-              "address": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              }
-            }
-          },
-          "type": {
-            "type": "string",
-            "enum": ["required", "optional", "resource"]
-          },
-          "status": {
-            "type": "object",
-            "properties": {
-              "response": {
-                "type": "string"
-              },
-              "time": {
-                "type": "string",
-                "format": "date-time"
-              }
-            }
-          }
-        }
-      }
-    },
-    "ownerFullName": {
-      "description": "The full Name of the Event Owner",
-      "type": "string"
-    },
-    "companyFullName": {
-      "description": "The full Name of Company the Event is booked on",
-      "type": "string"
-    },
-    "tenant": {
-      "description": "The tenant slug of the tenant",
-      "type": "string"
     },
     "sensitivity": {
       "description": "The sensitivity of the Event",

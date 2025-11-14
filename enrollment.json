@@ -1,0 +1,44 @@
+{
+  "$id": "https://codemeta.de/schemas/enrollment",
+  "title": "Enrollment",
+  "collection": "enrollments",
+  "name": "enrollment",
+  "description": "A record of a user's enrollment in a course",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Einschreibung",
+      "plural": "Einschreibungen",
+      "description": "Eine Einschreibung in einen Kurs."
+    }
+  },
+  "properties": {
+    "userId": {
+      "description": "The unique identifier for the user",
+      "type": "string"
+    },
+    "courseId": {
+      "description": "The unique identifier for the course",
+      "type": "string"
+    },
+    "lecturesCompleted": {
+      "description": "A list of lecture IDs that the user has completed",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "assignments": {
+      "description": "A list of assignment IDs that the user has submitted",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "readOnly": true
+    }
+  },
+  "required": ["userId", "courseId"],
+  "unevaluatedProperties": false
+}

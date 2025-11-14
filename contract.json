@@ -1,0 +1,222 @@
+{
+  "$id": "https://codemeta.de/schemas/contract",
+  "title": "Contract",
+  "name": "contract",
+  "collection": "contracts",
+  "description": "A contract",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Vertrag",
+      "plural": "Verträge",
+      "description": "Verträge"
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the contract"
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the contract"
+    },
+    "contractDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The date the contract was signed"
+    },
+    "partyName": {
+      "type": "string",
+      "description": "The name of the party associated with the contract"
+    },
+    "partyId": {
+      "type": "string",
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party",
+      "description": "The party associated with the contract"
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "The unique contract number"
+    },
+    "contractStatus": {
+      "type": "string",
+      "enum": ["ACTIVE", "DRAFT", "INACTIVE"],
+      "description": "The status of the contract"
+    },
+    "billingFrequency": {
+      "type": "string",
+      "description": "The billing frequency for the contract"
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the product"
+          },
+          "image": {
+            "type": "string",
+            "description": "The image url"
+          },
+          "initials": {
+            "type": "string",
+            "description": "The initials of the product"
+          }
+        }
+      },
+      "description": "The products included in the contract"
+    },
+    "contractItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "The unique identifier for the contract items"
+          },
+          "title": {
+            "type": "string",
+            "description": "The title of the item in the contract"
+          },
+          "description": {
+            "type": "string",
+            "description": "A description of the item in the contract"
+          },
+          "companyName": {
+            "type": "string",
+            "description": "The name of the company or department"
+          },
+          "articleId": {
+            "type": "string",
+            "description": "The article ID of the item"
+          },
+          "articleNumber": {
+            "type": "string",
+            "description": "Reference article number"
+          },
+          "articleType": {
+            "type": "string",
+            "enum": ["BASIC", "SALES_BILL_OF_MATERIAL"],
+            "description": "The type of the article",
+            "default": "BASIC"
+          },
+          "quantity": {
+            "description": "Quantity can be a static number or a dynamic rule object",
+            "oneOf": [
+              { "type": "number", "minimum": 0 },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "identifiers": {
+                    "type": "array",
+                    "items": { "type": "string" },
+                    "description": "List of reference article numbers"
+                  },
+                  "min": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Lower bound for dynamic quantity"
+                  },
+                  "max": {
+                    "type": "number",
+                    "minimum": 0,
+                    "description": "Upper bound for dynamic quantity"
+                  },
+                  "split": {
+                    "type": "boolean",
+                    "description": "Indicates if the quantity can be split"
+                  }
+                },
+                "required": ["identifiers"]
+              }
+            ]
+          },
+          "unitPrice": {
+            "type": "number",
+            "description": "The price of the item"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["STATIC", "DYNAMIC"],
+            "description": "The type of the item"
+          },
+          "startDate": {
+            "type": ["string", "null"],
+            "format": "date-time",
+            "description": "The start date of the item"
+          },
+          "endDate": {
+            "type": ["string", "null"],
+            "format": "date-time",
+            "description": "The end date of the item"
+          },
+          "period": {
+            "type": ["string", "null"],
+            "enum": ["P1Y", "P1M", null],
+            "description": "The billing period for the item"
+          },
+          "salesBillOfMaterialItems": {
+            "type": "array",
+            "description": "Sub-items for a sales BOM",
+            "items": {
+              "type": "object",
+              "properties": {
+                "uuid": {
+                  "type": "string",
+                  "description": "The unique identifier for the bill of material item"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "articleId": {
+                  "type": "string"
+                },
+                "articleNumber": {
+                  "type": "string"
+                },
+                "unitPrice": {
+                  "type": "number"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["STATIC", "DYNAMIC"]
+                },
+                "quantity": {
+                  "description": "Quantity for a sub-item, min/max are derived from the parent BOM",
+                  "oneOf": [
+                    { "type": "number", "minimum": 0 },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "identifiers": {
+                          "type": "array",
+                          "items": { "type": "string" },
+                          "description": "List of reference article numbers"
+                        }
+                      },
+                      "required": ["identifiers"]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "description": "The items included in the contract"
+    }
+  },
+  "required": [],
+  "unevaluatedProperties": false
+}

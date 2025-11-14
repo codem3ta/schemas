@@ -39,8 +39,8 @@
     },
     "powerMode": {
       "description": "The power mode of the host.",
-      "type": "string",
-      "enum": ["battery", "online"]
+      "type": ["string", "null"],
+      "enum": ["battery", "online", null]
     },
     "state": {
       "description": "The state of the host machine.",

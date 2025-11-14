@@ -3,6 +3,7 @@
   "title": "Bucket",
   "collection": "buckets",
   "name": "bucket",
+  "icon": "bucket",
   "description": "A bucket for items taken to a customer",
   "type": "object",
   "i18n": {

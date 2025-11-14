@@ -13,7 +13,7 @@
   },
   "titleField": "name",
   "descriptionField": "scheduledArrival",
-  "icon": "person",
+  "icon": "visitor",
   "properties": {
     "name": {
       "description": "The name of the visitor",
@@ -31,6 +31,10 @@
       "description": "The scheduled arrival of the visitor",
       "type": "string",
       "format": "date-time"
+    },
+    "comment": {
+      "description": "The reason for the visit",
+      "type": "string"
     }
   },
   "required": [],
