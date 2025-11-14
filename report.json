@@ -1,0 +1,39 @@
+{
+  "$id": "https://codemeta.de/schemas/report",
+  "title": "Report",
+  "collection": "reports",
+  "description": "A report describing the aggregation of data",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "The title of the report",
+      "type": "string"
+    },
+    "interval": {
+      "description": "The time interval the report covers",
+      "type": "string"
+    },
+    "timeStart": {
+      "description": "The start time of the report",
+      "type": "string",
+      "format": "date-time"
+    },
+    "timeEnd": {
+      "description": "The end time of the report",
+      "type": "string",
+      "format": "date-time"
+    },
+    "data": {
+      "description": "The data included in the report",
+      "type": "object"
+    },
+    "type": {
+      "description": "The type of report",
+      "type": "string",
+      "enum": ["callReport"]
+    }
+  },
+  "required": [],
+  "name": "report",
+  "unevaluatedProperties": true
+}
