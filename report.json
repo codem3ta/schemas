@@ -4,6 +4,13 @@
   "collection": "reports",
   "description": "A report describing the aggregation of data",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Report",
+      "plural": "Berichte",
+      "description": "Ein Bericht, der die Aggregation von Daten beschreibt"
+    }
+  },
   "properties": {
     "title": {
       "description": "The title of the report",
