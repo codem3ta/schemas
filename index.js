@@ -59,6 +59,7 @@ module.exports = {
   tool: require("./tool.json"),
   dashboard: require("./dashboard.json"),
   form: require("./form.json"),
+  report: require("./report.json"),
   contract: require("./contract.json"),
   course: require("./course.json"),
   enrollment: require("./enrollment.json"),
