@@ -171,6 +171,11 @@
             "enum": ["P1Y", "P1M", null],
             "description": "The billing period for the item"
           },
+          "useSalesBillOfMaterialItemPrices": {
+            "type": "boolean",
+            "description": "Indicates if the sales bill of material item prices should be used",
+            "default": true
+          },
           "salesBillOfMaterialItems": {
             "type": "array",
             "description": "Sub-items for a sales BOM",
