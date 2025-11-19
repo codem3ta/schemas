@@ -138,6 +138,11 @@
               }
             ]
           },
+          "factor": {
+            "type": "number",
+            "description": "A multiplication factor for the item quantity",
+            "default": 1
+          },
           "unitPrice": {
             "type": "number",
             "description": "The price of the item"
@@ -204,6 +209,11 @@
                 "type": {
                   "type": "string",
                   "enum": ["STATIC", "DYNAMIC"]
+                },
+                "factor": {
+                  "type": "number",
+                  "description": "A multiplication factor for the item quantity",
+                  "default": 1
                 },
                 "quantity": {
                   "description": "Quantity for a sub-item, min/max are derived from the parent BOM",
