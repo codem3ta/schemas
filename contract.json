@@ -206,6 +206,11 @@
                 "unitPrice": {
                   "type": "number"
                 },
+                "pricingDate": {
+                  "type": ["string", "null"],
+                  "format": "date-time",
+                  "description": "The date the price was set"
+                },
                 "type": {
                   "type": "string",
                   "enum": ["STATIC", "DYNAMIC"]
