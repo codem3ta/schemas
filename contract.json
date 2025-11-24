@@ -237,7 +237,8 @@
                 "rounding": {
                   "type": "string",
                   "enum": ["EXACT", "CEIL", "ROUND"],
-                  "description": "Rounding method for the sub-item quantity"
+                  "description": "Rounding method for the sub-item quantity",
+                  "default": "EXACT"
                 },
                 "quantity": {
                   "description": "Quantity for a sub-item, min/max are derived from the parent BOM",
