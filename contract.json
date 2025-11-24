@@ -138,9 +138,14 @@
               }
             ]
           },
+          "articleFactor": {
+            "type": "number",
+            "description": "A multiplication factor for the article quantity",
+            "default": 1
+          },
           "factor": {
             "type": "number",
-            "description": "A multiplication factor for the item quantity",
+            "description": "The factor",
             "default": 1
           },
           "unitPrice": {
@@ -221,7 +226,12 @@
                 },
                 "factor": {
                   "type": "number",
-                  "description": "A multiplication factor for the item quantity",
+                  "description": "The factor",
+                  "default": 1
+                },
+                "articleFactor": {
+                  "type": "number",
+                  "description": "A multiplication factor for the article quantity",
                   "default": 1
                 },
                 "quantity": {
