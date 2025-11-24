@@ -102,7 +102,7 @@
           },
           "articleType": {
             "type": "string",
-            "enum": ["BASIC", "SALES_BILL_OF_MATERIAL"],
+            "enum": ["BASIC", "SALES_BILL_OF_MATERIAL", "STORABLE"],
             "description": "The type of the article",
             "default": "BASIC"
           },
