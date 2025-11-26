@@ -108,7 +108,7 @@
           },
           "groupName": {
             "type": "string",
-            "description": "The group name of the item"
+            "description": "The uuid of the group name of the item"
           },
           "quantity": {
             "description": "Quantity can be a static number or a dynamic rule object",
@@ -302,7 +302,17 @@
       "type": "array",
       "description": "The group names of the contract items",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "The title of the group"
+          },
+          "uuid": {
+            "type": "string",
+            "description": "The unique identifier of the group"
+          }
+        }
       }
     }
   },
