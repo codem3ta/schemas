@@ -260,39 +260,39 @@
                 }
               }
             }
-          },
-          "linkedDocuments": {
-            "type": "array",
-            "description": "Linked documents for the contract item",
-            "items": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "description": "The type of the linked document"
-                },
-                "title": {
-                  "type": "string",
-                  "description": "The title of the linked document"
-                },
-                "description": {
-                  "type": "string",
-                  "description": "A description of the linked document"
-                },
-                "id": {
-                  "type": "string",
-                  "description": "The identifier of the linked document"
-                },
-                "collection": {
-                  "type": "string",
-                  "description": "The collection of the linked document"
-                }
-              }
-            }
           }
         }
       },
       "description": "The items included in the contract"
+    },
+    "linkedDocuments": {
+      "type": "array",
+      "description": "Linked documents for the contract item",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "The type of the linked document"
+          },
+          "title": {
+            "type": "string",
+            "description": "The title of the linked document"
+          },
+          "description": {
+            "type": "string",
+            "description": "A description of the linked document"
+          },
+          "id": {
+            "type": "string",
+            "description": "The identifier of the linked document"
+          },
+          "collection": {
+            "type": "string",
+            "description": "The collection of the linked document"
+          }
+        }
+      }
     }
   },
   "required": [],
