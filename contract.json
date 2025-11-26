@@ -106,6 +106,10 @@
             "description": "The type of the article",
             "default": "BASIC"
           },
+          "groupName": {
+            "type": "string",
+            "description": "The group name of the item"
+          },
           "quantity": {
             "description": "Quantity can be a static number or a dynamic rule object",
             "oneOf": [
@@ -292,6 +296,13 @@
             "description": "The collection of the linked document"
           }
         }
+      }
+    },
+    "groupNames": {
+      "type": "array",
+      "description": "The group names of the contract items",
+      "items": {
+        "type": "string"
       }
     }
   },
