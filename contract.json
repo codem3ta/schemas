@@ -107,7 +107,7 @@
             "default": "BASIC"
           },
           "groupName": {
-            "type": "string",
+            "type": ["string", "null"],
             "description": "The uuid of the group name of the item"
           },
           "quantity": {
