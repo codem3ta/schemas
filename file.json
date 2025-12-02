@@ -54,6 +54,11 @@
       "minimum": 0,
       "maximum": 10000000000
     },
+    "queriedAt": {
+      "description": "The last time the file was queried",
+      "type": "string",
+      "format": "date-time"
+    },
     "expiresAt": {
       "type": "string",
       "format": "date-time",
