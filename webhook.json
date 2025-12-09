@@ -31,9 +31,9 @@
       "type": "boolean",
       "description": "Whether the webhook was authenticated"
     },
-    "imported": {
+    "processed": {
       "type": "boolean",
-      "description": "Whether the webhook has been imported successfully"
+      "description": "Whether the webhook has been processed successfully"
     }
   },
   "required": [],
