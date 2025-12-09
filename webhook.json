@@ -30,8 +30,12 @@
     "authenticated": {
       "type": "boolean",
       "description": "Whether the webhook was authenticated"
+    },
+    "imported": {
+      "type": "boolean",
+      "description": "Whether the webhook has been imported successfully"
     }
   },
-  "required": [ ],
+  "required": [],
   "unevaluatedProperties": false
 }
