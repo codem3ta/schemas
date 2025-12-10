@@ -108,6 +108,9 @@
               },
               "name": {
                 "type": "string"
+              },
+              "phone": {
+                "type": "string"
               }
             }
           },
