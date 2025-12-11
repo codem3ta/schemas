@@ -71,6 +71,18 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/user"
     },
+    "owners": {
+      "description": "Array of additional Event Owners",
+      "type": "array",
+      "items": {
+        "ownerId": {
+          "description": "The Id of an additional Technician responsible for the event",
+          "type": "string",
+          "objectId": true,
+          "target": "https://codemeta.de/schemas/user"
+        }
+      }
+    },
     "companyFullName": {
       "description": "The full Name of Company the Event is booked on",
       "type": "string"
@@ -96,6 +108,9 @@
               },
               "name": {
                 "type": "string"
+              },
+              "phone": {
+                "type": "string"
               }
             }
           },
@@ -117,6 +132,10 @@
           }
         }
       }
+    },
+    "noSetAttendees": {
+      "description": "If true for an InScheduling Event, Users need to give their information in the Frontend",
+      "type": "boolean"
     },
     "links": {
       "description": "Eventids in Tanns and Outlook",
