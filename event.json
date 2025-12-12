@@ -93,7 +93,7 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/party"
     },
-    "newTechnicanId": {
+    "newTechnicianId": {
       "description": "The id of the new linked technician",
       "type": "string",
       "objectId": true,
