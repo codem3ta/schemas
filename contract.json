@@ -249,6 +249,10 @@
                   "description": "A multiplication factor for the article quantity",
                   "default": 1
                 },
+                "discountPercentage": {
+                  "type": "number",
+                  "description": "The discount percentage applied to the item"
+                },
                 "quantity": {
                   "description": "Quantity for a sub-item, min/max are derived from the parent BOM",
                   "oneOf": [
