@@ -106,6 +106,10 @@
           "storagePlaceId": {
             "description": "The storage place id",
             "type": "string"
+          },
+          "serialNumber": {
+            "description": "The serialnumber",
+            "type": "string"
           }
         }
       }
