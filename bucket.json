@@ -109,7 +109,7 @@
           },
           "serialNumber": {
             "description": "The serialnumber",
-            "type": "string"
+            "type": ["null", "string"]
           }
         }
       }
