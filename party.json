@@ -220,6 +220,13 @@
       "target": "https://codemeta.de/schemas/user",
       "objectId": true,
       "database": "config"
+    },
+    "domains": {
+      "description": "The domains associated with the party",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": ["partyType"],
