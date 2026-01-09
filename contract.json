@@ -128,6 +128,11 @@
                     "items": { "type": "string" },
                     "description": "List of reference article numbers"
                   },
+                  "reducerIdentifiers": {
+                    "type": "array",
+                    "items": { "type": "string" },
+                    "description": "List of reducer article numbers"
+                  },
                   "min": {
                     "type": "number",
                     "minimum": 0,
@@ -265,6 +270,11 @@
                           "type": "array",
                           "items": { "type": "string" },
                           "description": "List of reference article numbers"
+                        },
+                        "reducerIdentifiers": {
+                          "type": "array",
+                          "items": { "type": "string" },
+                          "description": "List of reducer article numbers"
                         }
                       },
                       "required": ["identifiers"]
