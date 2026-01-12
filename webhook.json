@@ -30,8 +30,12 @@
     "authenticated": {
       "type": "boolean",
       "description": "Whether the webhook was authenticated"
+    },
+    "processed": {
+      "type": "boolean",
+      "description": "Whether the webhook has been processed successfully"
     }
   },
-  "required": [ ],
+  "required": [],
   "unevaluatedProperties": false
 }

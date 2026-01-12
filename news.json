@@ -42,6 +42,14 @@
       "objectId": true,
       "database": "config"
     },
+    "pdfs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "objectId": true
+      },
+      "description": "The _ids of pdfs connected to the news."
+    },
     "tags": {
       "type": "array",
       "items": {

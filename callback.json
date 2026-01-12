@@ -14,7 +14,7 @@
   },
   "titleField": [["Rückruf von", "caller", "company"], "phoneNumber"],
   "descriptionField": "priority",
-  "icon": "perm_phone_msg",
+  "icon": "callback",
   "baseUrl": "/organizer/callbacks",
   "properties": {
     "caller": {

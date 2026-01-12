@@ -1,12 +1,10 @@
 {
   "$id": "https://codemeta.de/schemas/party",
   "title": "Party",
+  "name": "party",
   "collection": "parties",
   "description": "A person or organization",
   "type": "object",
-  "titleField": ["company", ["firstName", "lastName"]],
-  "descriptionField": ["customerNumber", "supplierNumber", "company", "email"],
-  "icon": "contacts",
   "i18n": {
     "de": {
       "singular": "Party",
@@ -22,11 +20,15 @@
     },
     "company": {
       "description": "The company name",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "company2": {
       "description": "Additional company information",
-      "type": "string"
+      "type": ["string", "null"]
+    },
+    "referenceNumber": {
+      "description": "The reference number of the party",
+      "type": ["string", "null"]
     },
     "customer": {
       "description": "Indicates if the party is a customer",
@@ -62,28 +64,28 @@
     },
     "phone": {
       "description": "The phone number",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "fax": {
       "description": "The fax number",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "website": {
       "description": "The website URL",
-      "type": "string",
+      "type": ["string", "null"],
       "anyOf": [{ "format": "uri" }, { "maxLength": 0 }]
     },
     "mobilePhone1": {
       "description": "The primary mobile phone number",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "mobilePhone2": {
       "description": "The secondary mobile phone number",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "phoneHome": {
       "description": "The home phone number",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "optInLetter": {
       "description": "Indicates if the party has opted in for letters",
@@ -107,7 +109,7 @@
     },
     "email": {
       "description": "The email of the party",
-      "type": "string",
+      "type": ["string", "null"],
       "format": "email"
     },
     "categories": {
@@ -126,7 +128,7 @@
       }
     },
     "weclapp": {
-      "type": "string",
+      "type": ["string", "null"],
       "description": "The weclapp ID of the party"
     },
     "salutation": {
@@ -136,19 +138,19 @@
     },
     "firstName": {
       "description": "The first name",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "lastName": {
       "description": "The last name",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "title": {
       "description": "The title",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "initials": {
       "description": "The initials of the party",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "birthDate": {
       "description": "The birth date of the party",
@@ -178,7 +180,7 @@
     },
     "slug": {
       "description": "The slug of the party",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "contacts": {
       "description": "The contacts of the party",
@@ -204,24 +206,33 @@
       }
     },
     "personCompany": {
-      "type": "string",
+      "type": ["string", "null"],
       "description": "The company name where the party is the contact person"
     },
     "externalId": {
       "description": "An external ID for the party",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "responsibleUserId": {
       "description": "The employee assigned to the party",
-      "type": "string",
+      "type": ["string", "null"],
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/user",
       "objectId": true,
       "database": "config"
+    },
+    "domains": {
+      "description": "The domains associated with the party",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": ["partyType"],
-  "name": "party",
   "searchable": true,
-  "searchFields": ["company", "company2", "firstName", "lastName", "email"]
+  "titleField": ["company", ["firstName", "lastName"]],
+  "descriptionField": ["customerNumber", "supplierNumber", "company", "email"],
+  "icon": "contacts",
+  "baseUrl": "/crm/parties"
 }
