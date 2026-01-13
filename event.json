@@ -176,6 +176,10 @@
           "tanssIllnessId": {
             "description": "The Id of the Illness in Tanss",
             "type": "string"
+          },
+          "tanssTypeId": {
+            "description": "The Id of the selected Tanss Type",
+            "type": "string"
           }
         }
       }
