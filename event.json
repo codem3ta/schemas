@@ -34,6 +34,16 @@
       "type": "string",
       "format": "date-time"
     },
+    "endPause": {
+      "description": "The date and Time when the Pause ends",
+      "type": "string",
+      "format": "date-time"
+    },
+    "startPause": {
+      "description": "The date and Time when the Pause stats",
+      "type": "string",
+      "format": "date-time"
+    },
     "color": {
       "description": "The color associated with the event",
       "type": "string"
@@ -179,6 +189,18 @@
           },
           "tanssTypeId": {
             "description": "The Id of the selected Tanss Type",
+            "type": "string"
+          },
+          "orderedViaId": {
+            "description": "The Id of the selected Tanss communication channel",
+            "type": "string"
+          },
+          "linkTypeId": {
+            "description": "The Id of the selected Tanss assignment",
+            "type": "string"
+          },
+          "linkId": {
+            "description": "The Id of the selected Tanss assignment content",
             "type": "string"
           }
         }
