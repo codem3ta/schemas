@@ -23,14 +23,14 @@
     },
     "linkedParty": {
       "description": "The party linked to the project",
-      "type": "string",
+      "type": ["string", "null"],
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/party",
       "objectId": true
     },
     "assignedUser": {
       "description": "The user assigned to the project",
-      "type": "string",
+      "type": ["string", "null"],
       "relation": "manyToOne",
       "target": "https://codemeta.de/schemas/user",
       "objectId": true
