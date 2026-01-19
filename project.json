@@ -28,11 +28,11 @@
       "target": "https://codemeta.de/schemas/party",
       "objectId": true
     },
-    "assignedUser": {
-      "description": "The user assigned to the project",
+    "assignedParty": {
+      "description": "The party assigned to the project",
       "type": ["string", "null"],
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/user",
+      "target": "https://codemeta.de/schemas/party",
       "objectId": true
     },
     "startDate": {
