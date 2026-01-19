@@ -17,6 +17,10 @@
       "description": "The description of the project",
       "type": "string"
     },
+    "projectKey": {
+      "description": "The unique key of the project",
+      "type": "string"
+    },
     "linkedParty": {
       "description": "The party linked to the project",
       "type": "string",
