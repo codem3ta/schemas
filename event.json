@@ -34,13 +34,13 @@
       "type": "string",
       "format": "date-time"
     },
-    "endPause": {
-      "description": "The date and Time when the Pause ends",
+    "endBreak": {
+      "description": "The date and Time when the break ends",
       "type": "string",
       "format": "date-time"
     },
-    "startPause": {
-      "description": "The date and Time when the Pause stats",
+    "startBreak": {
+      "description": "The date and Time when the break starts",
       "type": "string",
       "format": "date-time"
     },
@@ -99,6 +99,12 @@
     },
     "partyId": {
       "description": "The id of the linked party",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "employeePartyId": {
+      "description": "The employee ID of the party",
       "type": "string",
       "objectId": true,
       "target": "https://codemeta.de/schemas/party"
