@@ -37,12 +37,12 @@
     },
     "startDate": {
       "description": "The start date of the project",
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "dueDate": {
       "description": "The due date of the project",
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "status": {
