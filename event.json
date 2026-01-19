@@ -103,9 +103,11 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/party"
     },
-    "EmployeePartyId": {
+    "employeePartyId": {
       "description": "The employee ID of the party",
-      "type": "string"
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
     },
     "newTechnicianId": {
       "description": "The id of the new linked technician",
