@@ -1,0 +1,80 @@
+{
+  "$id": "https://codemeta.de/schemas/audit",
+  "title": "Audit",
+  "name": "audit",
+  "collection": "audits",
+  "description": "An audit",
+  "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Audit",
+      "plural": "Audits",
+      "description": "Audits sind systematische Überprüfungen und Bewertungen von Prozessen, Systemen oder Produkten, um deren Konformität mit festgelegten Standards und Vorschriften sicherzustellen."
+    }
+  },
+  "properties": {
+    "title": {
+      "description": "The title of the project",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of the project",
+      "type": "string"
+    },
+    "auditKey": {
+      "description": "The unique key of the audit",
+      "type": "string"
+    },
+    "linkedProject": {
+      "description": "The project linked to the audit",
+      "type": ["string", "null"],
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/project",
+      "objectId": true
+    },
+    "auditAgencyParty": {
+      "description": "The agency party responsible for the audit",
+      "type": ["string", "null"],
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party",
+      "objectId": true
+    },
+    "startDate": {
+      "description": "The start date of the audit",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "scheduledAuditDate": {
+      "description": "The scheduled date of the audit",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "auditDate": {
+      "description": "The actual date of the audit",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "auditCompletionDate": {
+      "description": "The actual date of the audit",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "auditStatus": {
+      "description": "The status of the audit",
+      "type": ["string", "null"],
+      "enum": ["FAILED", "PASSED", null],
+      "default": null
+    },
+    "status": {
+      "description": "The status of the audit",
+      "type": "string",
+      "enum": ["NEW", "SCHEDULED", "IN_PROGRESS", "COMPLETED", "CANCELLED"]
+    }
+  },
+  "required": [],
+  "searchable": true,
+  "titleField": ["title"],
+  "descriptionField": ["description"],
+  "icon": "audit",
+  "baseUrl": "/audit"
+}
