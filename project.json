@@ -1,6 +1,7 @@
 {
   "$id": "https://codemeta.de/schemas/project",
   "title": "Project",
+  "name": "project",
   "collection": "projects",
   "description": "A project",
   "type": "object",
@@ -12,7 +13,10 @@
     }
   },
   "properties": {
-    "title": { "description": "The title of the project", "type": "string" },
+    "title": {
+      "description": "The title of the project",
+      "type": "string"
+    },
     "description": {
       "description": "The description of the project",
       "type": "string"
@@ -54,5 +58,6 @@
   "searchable": true,
   "titleField": ["title"],
   "descriptionField": ["description"],
+  "icon": "projects",
   "baseUrl": "/project"
 }
