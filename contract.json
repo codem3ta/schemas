@@ -133,6 +133,11 @@
                     "items": { "type": "string" },
                     "description": "List of reducer article numbers"
                   },
+                  "restIdentifiers": {
+                    "type": "array",
+                    "items": { "type": "string" },
+                    "description": "List of rest article numbers"
+                  },
                   "min": {
                     "type": "number",
                     "minimum": 0,
@@ -275,6 +280,11 @@
                           "type": "array",
                           "items": { "type": "string" },
                           "description": "List of reducer article numbers"
+                        },
+                        "restIdentifiers": {
+                          "type": "array",
+                          "items": { "type": "string" },
+                          "description": "List of rest article numbers"
                         }
                       },
                       "required": ["identifiers"]
