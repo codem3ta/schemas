@@ -367,5 +367,9 @@
     "shipmentItems"
   ],
   "name": "shipment",
-  "additionalProperties": false
+  "additionalProperties": false,
+  "searchable": true,
+  "titleField": ["shipmentNumber"],
+  "descriptionField": ["customerPurchaseOrderNumber"],
+  "baseUrl": "/shipment"
 }

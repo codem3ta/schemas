@@ -1,12 +1,10 @@
 {
   "$id": "https://codemeta.de/schemas/party",
   "title": "Party",
+  "name": "party",
   "collection": "parties",
   "description": "A person or organization",
   "type": "object",
-  "titleField": ["company", ["firstName", "lastName"]],
-  "descriptionField": ["customerNumber", "supplierNumber", "company", "email"],
-  "icon": "contacts",
   "i18n": {
     "de": {
       "singular": "Party",
@@ -223,10 +221,19 @@
       "target": "https://codemeta.de/schemas/user",
       "objectId": true,
       "database": "config"
+    },
+    "domains": {
+      "description": "The domains associated with the party",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": ["partyType"],
-  "name": "party",
   "searchable": true,
-  "searchFields": ["company", "company2", "firstName", "lastName", "email"]
+  "titleField": ["company", ["firstName", "lastName"]],
+  "descriptionField": ["customerNumber", "supplierNumber", "company", "email"],
+  "icon": "contacts",
+  "baseUrl": "/crm/parties"
 }

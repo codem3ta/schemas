@@ -34,6 +34,16 @@
       "type": "string",
       "format": "date-time"
     },
+    "endBreak": {
+      "description": "The date and Time when the break ends",
+      "type": "string",
+      "format": "date-time"
+    },
+    "startBreak": {
+      "description": "The date and Time when the break starts",
+      "type": "string",
+      "format": "date-time"
+    },
     "color": {
       "description": "The color associated with the event",
       "type": "string"
@@ -92,6 +102,18 @@
       "type": "string",
       "objectId": true,
       "target": "https://codemeta.de/schemas/party"
+    },
+    "employeePartyId": {
+      "description": "The employee ID of the party",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "newTechnicianId": {
+      "description": "The id of the new linked technician",
+      "type": "string",
+      "objectId": true,
+      "target": "https://codemeta.de/schemas/user"
     },
     "attendees": {
       "description": "Recipient of event confirmation",
@@ -170,6 +192,22 @@
           "tanssIllnessId": {
             "description": "The Id of the Illness in Tanss",
             "type": "string"
+          },
+          "tanssTypeId": {
+            "description": "The Id of the selected Tanss Type",
+            "type": "string"
+          },
+          "orderedViaId": {
+            "description": "The Id of the selected Tanss communication channel",
+            "type": "string"
+          },
+          "linkTypeId": {
+            "description": "The Id of the selected Tanss assignment",
+            "type": "string"
+          },
+          "linkId": {
+            "description": "The Id of the selected Tanss assignment content",
+            "type": "string"
           }
         }
       }
@@ -181,7 +219,7 @@
         "type": "object"
       }
     },
-    "busyHours": {
+    "allOwnerBusyHours": {
       "description": "Array containing all busy time slots of the owner",
       "type": "array",
       "items": {
@@ -192,9 +230,9 @@
       "description": "Array containing businessHours",
       "type": "array"
     },
-    "bookedTimeslot": {
+    "bookedTimeslots": {
       "description": "Timeslot chosen by the customer; must be validated to appear as a valid event",
-      "type": "object"
+      "type": "array"
     },
     "sensitivity": {
       "description": "The sensitivity of the Event",
@@ -227,6 +265,16 @@
     "teamsCall": {
       "description": "Information displaying if the event is a teams Call",
       "type": "boolean"
+    },
+    "tools": {
+      "description": "assigned tools for event",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "relation": "manyToOne",
+        "target": "https://codemeta.de/schemas/tool",
+        "objectId": true
+      }
     }
   },
   "required": [],

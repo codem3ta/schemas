@@ -1,4 +1,5 @@
 module.exports = {
+  audit: require("./audit.json"),
   asset: require("./asset.json"),
   endpoint: require("./endpoint.json"),
   vm: require("./vm.json"),

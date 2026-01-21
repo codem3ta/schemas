@@ -1,35 +1,63 @@
 {
   "$id": "https://codemeta.de/schemas/project",
   "title": "Project",
+  "name": "project",
   "collection": "projects",
   "description": "A project",
   "type": "object",
+  "i18n": {
+    "de": {
+      "singular": "Projekt",
+      "plural": "Projekte",
+      "description": "Projekte sind zeitlich befristete Vorhaben, die darauf abzielen, ein einzigartiges Produkt, eine Dienstleistung oder ein Ergebnis zu schaffen."
+    }
+  },
   "properties": {
-    "title": { "description": "The title of the project", "type": "string" },
+    "title": {
+      "description": "The title of the project",
+      "type": "string"
+    },
+    "description": {
+      "description": "The description of the project",
+      "type": "string"
+    },
+    "projectKey": {
+      "description": "The unique key of the project",
+      "type": "string"
+    },
     "linkedParty": {
       "description": "The party linked to the project",
-      "type": "string",
+      "type": ["string", "null"],
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/party"
+      "target": "https://codemeta.de/schemas/party",
+      "objectId": true
     },
-    "description": { "description": "The description of the project", "type": "string" },
-    "deadline": { "description": "The deadline of the project", "type": "string", "format": "date-time" },
-    "team": {
-      "description": "The team of the project",
-      "type": "string",
+    "assignedParty": {
+      "description": "The party assigned to the project",
+      "type": ["string", "null"],
       "relation": "manyToOne",
-      "target": "https://codemeta.de/schemas/team"
+      "target": "https://codemeta.de/schemas/party",
+      "objectId": true
     },
-    "timeEstimation": { "description": "The time estimation of the project in milliseconds", "type": "number", "minimum": 0 },
+    "startDate": {
+      "description": "The start date of the project",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "dueDate": {
+      "description": "The due date of the project",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
     "status": {
       "description": "The status of the project",
       "type": "string"
     }
   },
   "required": ["title"],
-  "name": "project",
-  "unevaluatedProperties": false,
-  "inheritPermissionsFrom": "linkedParty",
   "searchable": true,
-  "searchFields": ["title", "description"]
+  "titleField": ["title"],
+  "descriptionField": ["description"],
+  "icon": "projects",
+  "baseUrl": "/project"
 }
