@@ -22,7 +22,8 @@
     },
     "company": {
       "description": "The company name",
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "index": "autocomplete"
     },
     "company2": {
       "description": "Additional company information",
