@@ -95,6 +95,40 @@
       "description": "A customerId of the connected timeRecordId",
       "type": "string"
     },
+    "isOvertime": {
+      "description": "Indicates if the work was performed as overtime",
+      "type": "boolean",
+      "default": false
+    },
+    "isWeekend": {
+      "description": "Indicates if the work was performed on a weekend",
+      "type": "boolean",
+      "default": false
+    },
+    "ticketReference": {
+      "description": "Optional ticket reference number",
+      "type": "string"
+    },
+    "partyId": {
+      "description": "The party for whom the work was performed",
+      "type": ["string", "null"],
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party"
+    },
+    "approvedBy": {
+      "description": "The supervisor who approved this record",
+      "type": ["string", "null"],
+      "objectId": true,
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/user"
+    },
+    "approvedAt": {
+      "description": "The date when the record was approved",
+      "type": ["string", "null"],
+      "format": "date-time",
+      "default": null
+    },
     "weclappUserId": {
       "description": "A weclappUserId of the user who interacted withn the timeRecord",
       "type": "string"

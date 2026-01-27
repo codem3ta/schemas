@@ -41,6 +41,12 @@
         "database": "config"
       }
     },
+    "type": {
+      "type": "string",
+      "description": "The team's type",
+      "enum": ["ORG_UNIT", "null"],
+      "default": null
+    },
     "tenant": {
       "type": "string",
       "description": "The team's tenant slug (NOT THE ID)"
