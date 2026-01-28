@@ -84,7 +84,22 @@
       "type": "string"
     },
     "primeAddress": {
+      "description": "technical debt!!!  Determines if the address is the primary address",
+      "type": "boolean",
+      "default": false
+    },
+    "primaryAddress": {
       "description": "Determines if the address is the primary address",
+      "type": "boolean",
+      "default": false
+    },
+    "deliveryAddress": {
+      "description": "Determines if the address is the delivery address",
+      "type": "boolean",
+      "default": false
+    },
+    "invoiceAddress": {
+      "description": "Determines if the address is the invoice address",
       "type": "boolean",
       "default": false
     }
