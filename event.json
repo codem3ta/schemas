@@ -167,11 +167,11 @@
         "properties": {
           "tanssTicketId": {
             "description": "The Id of the Tanss Ticket",
-            "type": "string"
+            "type": "number"
           },
           "tanssSupportId": {
             "description": "The Id of the Tanss Support",
-            "type": "string"
+            "type": "number"
           },
           "outlookEventId": {
             "description": "The Id of the Outlook Event",
@@ -179,35 +179,35 @@
           },
           "tanssCompanyId": {
             "description": "The Id of the Company in Tanss",
-            "type": "string"
+            "type": "number"
           },
           "tannsEmployeeId": {
             "description": "The Id of the Employee in Tanss",
-            "type": "string"
+            "type": "number"
           },
           "tannsVacationId": {
             "description": "The Id of the Vacation in Tanss",
-            "type": "string"
+            "type": "number"
           },
           "tanssIllnessId": {
             "description": "The Id of the Illness in Tanss",
-            "type": "string"
+            "type": "number"
           },
           "tanssTypeId": {
             "description": "The Id of the selected Tanss Type",
-            "type": "string"
+            "type": "number"
           },
           "orderedViaId": {
             "description": "The Id of the selected Tanss communication channel",
-            "type": "string"
+            "type": "number"
           },
           "linkTypeId": {
             "description": "The Id of the selected Tanss assignment",
-            "type": "string"
+            "type": "number"
           },
           "linkId": {
             "description": "The Id of the selected Tanss assignment content",
-            "type": "string"
+            "type": "number"
           }
         }
       }
