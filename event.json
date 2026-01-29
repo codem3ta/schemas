@@ -264,6 +264,11 @@
       "description": "Information displaying if the event is a teams Call",
       "type": "boolean"
     },
+    "internal": {
+      "description": "Information displaying if the event is internal",
+      "type": "boolean",
+      "default": false
+    },
     "tools": {
       "description": "assigned tools for event",
       "type": "array",
