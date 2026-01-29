@@ -36,12 +36,12 @@
     },
     "endBreak": {
       "description": "The date and Time when the break ends",
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "startBreak": {
       "description": "The date and Time when the break starts",
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     },
     "color": {
