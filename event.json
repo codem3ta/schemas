@@ -1,5 +1,5 @@
 {
-  "$id": "https://codemeta.de/schemas/events",
+  "$id": "https://codemeta.de/schemas/event",
   "title": "Events",
   "description": "Simple Version of a Tanss Support/Outlook Event",
   "type": "object",
