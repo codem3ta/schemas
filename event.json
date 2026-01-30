@@ -240,7 +240,7 @@
     "planningType": {
       "description": "The PlanningType of the event, is used to differentiate Supprt and Appointment in Tanss",
       "type": "string",
-      "emum": [
+      "enum": [
         "SUPPORT",
         "APPOINTMENT_FIX",
         "APPOINTMENT_PROPOSAL",
