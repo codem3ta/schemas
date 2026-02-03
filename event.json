@@ -256,6 +256,10 @@
       "description": "The Microsoft ChangeKey of a synced Event",
       "type": "string"
     },
+    "percent": {
+      "description": "The percent added to the event duration like tanss does it",
+      "type": "string"
+    },
     "recurrence": {
       "description": "The Recurrence Rule of the Event",
       "type": "object"
