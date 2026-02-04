@@ -273,6 +273,11 @@
       "type": "boolean",
       "default": false
     },
+    "isExternalApproved": {
+      "description": "Information displaying if the event is externally approved like the clearanceStatus in tanss",
+      "type": "boolean",
+      "default": false
+    },
     "tools": {
       "description": "assigned tools for event",
       "type": "array",
