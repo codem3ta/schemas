@@ -120,6 +120,47 @@
           }
         }
       }
+    },
+    "protocol": {
+      "type": ["object", "null"],
+      "description": "Detailed execution protocol of the audit",
+      "properties": {
+        "startedAt": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "The exact timestamp when the audit execution started"
+        },
+        "endedAt": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "The exact timestamp when the audit execution ended"
+        },
+        "remarkRecords": {
+          "type": "array",
+          "description": "A list of remarks, observations, or findings recorded during the audit",
+          "items": {
+            "type": "object",
+            "properties": {
+              "recordAt": {
+                "type": "string",
+                "format": "date-time",
+                "description": "The date and time when the remark was recorded"
+              },
+              "comment": {
+                "type": "string",
+                "description": "The content of the remark or finding"
+              },
+              "recordBy": {
+                "type": ["string", "null"],
+                "relation": "manyToOne",
+                "target": "https://codemeta.de/schemas/user",
+                "objectId": true,
+                "description": "The party or user who recorded this remark"
+              }
+            }
+          }
+        }
+      }
     }
   },
   "required": [],
