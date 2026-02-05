@@ -135,6 +135,10 @@
           "format": "date-time",
           "description": "The exact timestamp when the audit execution ended"
         },
+        "comment": {
+          "type": "string",
+          "description": "General comments or notes about the audit execution"
+        },
         "remarkRecords": {
           "type": "array",
           "description": "A list of remarks, observations, or findings recorded during the audit",
