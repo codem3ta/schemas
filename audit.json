@@ -163,17 +163,12 @@
               }
             }
           }
-        },
-        "specimens": {
-          "type": "array",
-          "description": "A list of specimens associated with the audit",
-          "items": {
-            "type": "object",
-            "properties": {},
-            "unevaluatedProperties": true
-          }
         }
       }
+    },
+    "specimens": {
+      "type": "array",
+      "description": "A list of specimens associated with the audit"
     }
   },
   "required": [],
