@@ -29,6 +29,10 @@
       "description": "The unique key of the audit",
       "type": "string"
     },
+    "auditReportKey": {
+      "description": "The unique key of the audit report given by the audit agency",
+      "type": "string"
+    },
     "linkedProject": {
       "description": "The project linked to the audit",
       "type": ["string", "null"],
