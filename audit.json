@@ -164,7 +164,7 @@
             }
           }
         },
-        "speciments": {
+        "specimens": {
           "type": "array",
           "description": "A list of specimens associated with the audit"
         }
