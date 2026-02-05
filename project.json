@@ -53,6 +53,13 @@
       "description": "The status of the project",
       "type": "string"
     },
+    "tags": {
+      "description": "The tags associated with the project",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "appointments": {
       "type": "array",
       "description": "The list of all appointments",
