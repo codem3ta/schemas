@@ -164,9 +164,9 @@
             }
           }
         },
-        "groups": {
+        "speciments": {
           "type": "array",
-          "description": "A list of specimen groups associated with the audit"
+          "description": "A list of specimens associated with the audit"
         }
       }
     }
