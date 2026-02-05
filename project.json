@@ -52,6 +52,42 @@
     "status": {
       "description": "The status of the project",
       "type": "string"
+    },
+    "appointments": {
+      "type": "array",
+      "description": "The list of all appointments",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "The title of the appointment"
+          },
+          "description": {
+            "type": "string",
+            "description": "The description of the appointment"
+          },
+          "startDate": {
+            "type": ["string", "null"],
+            "format": "date-time",
+            "description": "The start date of the appointment"
+          },
+          "status": {
+            "type": ["string", "null"],
+            "enum": [null, "CANCELLED", "PLANNED", "DONE"]
+          },
+          "assignedParties": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "relation": "manyToOne",
+              "target": "https://codemeta.de/schemas/party",
+              "objectId": true
+            },
+            "description": "Zugeordnete Monteure/Parteien"
+          }
+        }
+      }
     }
   },
   "required": ["title"],
