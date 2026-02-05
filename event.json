@@ -85,10 +85,28 @@
       "description": "Array of additional Event Owners",
       "type": "array",
       "items": {
-        "type": "string",
-        "relation": "manyToOne",
-        "target": "https://codemeta.de/schemas/user",
-        "objectId": true
+        "oneOf": [
+          {
+            "type": "string",
+            "relation": "manyToOne",
+            "target": "https://codemeta.de/schemas/user",
+            "objectId": true
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "The id if the User",
+                "type": "string",
+                "objectId": true,
+                "target": "https://codemeta.de/schemas/user"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        ]
       }
     },
     "companyFullName": {
