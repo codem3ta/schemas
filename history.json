@@ -30,6 +30,9 @@
     "updatedFields": {
       "type": "object"
     },
+    "updateDescription": {
+      "type": "object"
+    },
     "user": {
       "type": "string",
       "objectId": true,
