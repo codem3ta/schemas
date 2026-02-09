@@ -121,7 +121,7 @@
     },
     "employeePartyId": {
       "description": "The employee ID of the party",
-      "type": "string",
+      "type": ["string", "null"],
       "objectId": true,
       "target": "https://codemeta.de/schemas/party"
     },
