@@ -190,11 +190,6 @@
             "enum": ["STATIC", "DYNAMIC"],
             "description": "The type of the item"
           },
-          "expirationDate": {
-            "type": ["string", "null"],
-            "format": "date-time",
-            "description": "The expiration date of the item"
-          },
           "lastCancellationNotificationDate": {
             "type": ["string", "null"],
             "format": "date-time",
