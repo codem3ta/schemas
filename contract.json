@@ -190,6 +190,24 @@
             "enum": ["STATIC", "DYNAMIC"],
             "description": "The type of the item"
           },
+          "cancellationPeriodQuantity": {
+            "type": "number",
+            "description": "The quantity for the cancellation period"
+          },
+          "cancellationPeriodUnit": {
+            "type": ["string", "null"],
+            "description": "The unit of time for the cancellation period",
+            "enum": ["DAY", "WEEK", "MONTH", "YEAR", null]
+          },
+          "extensionQuantity": {
+            "type": "number",
+            "description": "The quantity for the extension period"
+          },
+          "extensionUnit": {
+            "type": ["string", "null"],
+            "description": "The unit of time for the extension period",
+            "enum": ["DAY", "WEEK", "MONTH", "YEAR", null]
+          },
           "lastCancellationNotificationDate": {
             "type": ["string", "null"],
             "format": "date-time",
