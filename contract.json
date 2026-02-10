@@ -213,11 +213,11 @@
             "format": "date-time",
             "description": "The date of the last cancellation notification"
           },
-          "cancellationQuantity": {
+          "cancellationNotificationQuantity": {
             "type": "number",
             "description": "The number of days before the event that cancellation notifications are sent"
           },
-          "cancellationUnit": {
+          "cancellationNotificationUnit": {
             "type": ["string", "null"],
             "description": "The unit of time for the cancellation period",
             "enum": ["DAY", "WEEK", "MONTH", "YEAR", null]
