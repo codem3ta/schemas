@@ -95,6 +95,11 @@
       "description": "A customerId of the connected timeRecordId",
       "type": "string"
     },
+    "isEmergencyService": {
+      "description": "Indicates if the work was performed as emergency service",
+      "type": "boolean",
+      "default": false
+    },
     "isOvertime": {
       "description": "Indicates if the work was performed as overtime",
       "type": "boolean",
