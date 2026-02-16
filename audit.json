@@ -166,6 +166,11 @@
         }
       }
     },
+    "auditData": {
+      "description": "Arbitrary audit-specific key/value pairs.",
+      "type": "object",
+      "additionalProperties": true
+    },
     "specimens": {
       "type": "array",
       "description": "A list of specimens associated with the audit"
