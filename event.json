@@ -75,6 +75,39 @@
       "description": "The duration in Minutes that is added to an Event for the drive back to the office. Only used if Location is CUSTOMER",
       "type": "number"
     },
+    "kmApproach": {
+      "description": "The kilometers for the approach (Anfahrt) to the customer. Only used if Location is CUSTOMER",
+      "type": "number"
+    },
+    "kmDeparture": {
+      "description": "The kilometers for the departure (Abfahrt) from the customer. Only used if Location is CUSTOMER",
+      "type": "number"
+    },
+    "durationApproachCharged": {
+      "description": "Whether the approach duration is charged.",
+      "type": "boolean",
+      "default": false
+    },
+    "durationDepartureCharged": {
+      "description": "Whether the departure duration is charged.",
+      "type": "boolean",
+      "default": false
+    },
+    "kmApproachCharged": {
+      "description": "Whether the approach kilometers are charged.",
+      "type": "boolean",
+      "default": false
+    },
+    "kmDepartureCharged": {
+      "description": "Whether the departure kilometers are charged.",
+      "type": "boolean",
+      "default": false
+    },
+    "driveCharged": {
+      "description": "Whether the drive (approach or departure) is charged in general.",
+      "type": "boolean",
+      "default": false
+    },
     "ownerFullName": {
       "description": "The full Name of the Event Owner",
       "type": "string"
@@ -135,6 +168,7 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/user"
     },
+
     "attendees": {
       "description": "Recipient of event confirmation",
       "type": "array",
