@@ -168,7 +168,6 @@
       "objectId": true,
       "target": "https://codemeta.de/schemas/user"
     },
-
     "attendees": {
       "description": "Recipient of event confirmation",
       "type": "array",

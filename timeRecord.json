@@ -151,7 +151,7 @@
     },
     "linkedEvent": {
       "description": "The Event from which this Timerecord was created",
-      "type": "string",
+      "type": ["string", "null"],
       "objectId": true,
       "relation": "oneToOne",
       "target": "https://codemeta.de/schemas/event"
