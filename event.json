@@ -71,6 +71,10 @@
       "description": "The duration in Minutes that is added to an Event for the drive to a Customer. Only used if Location is CUSTOMER",
       "type": "number"
     },
+    "durationDeparture": {
+      "description": "The duration in Minutes that is added to an Event for the drive back to the office. Only used if Location is CUSTOMER",
+      "type": "number"
+    },
     "ownerFullName": {
       "description": "The full Name of the Event Owner",
       "type": "string"
