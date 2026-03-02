@@ -40,6 +40,20 @@
       "target": "https://codemeta.de/schemas/project",
       "objectId": true
     },
+    "linkedParty": {
+      "description": "The party linked to the audit",
+      "type": ["string", "null"],
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party",
+      "objectId": true
+    },
+    "responsibleParty": {
+      "description": "The party responsible for the audit",
+      "type": ["string", "null"],
+      "relation": "manyToOne",
+      "target": "https://codemeta.de/schemas/party",
+      "objectId": true
+    },
     "auditAgencyParty": {
       "description": "The agency party responsible for the audit",
       "type": ["string", "null"],
