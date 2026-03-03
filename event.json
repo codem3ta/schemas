@@ -342,6 +342,14 @@
         "target": "https://codemeta.de/schemas/tool",
         "objectId": true
       }
+    },
+    "supportTechnician": {
+      "description": "indicates if a support Technician is assigned to the event",
+      "type": "boolean"
+    },
+    "paddingTime": {
+      "description": "The padding time in minutes added to the event duration for the technician to prepare for the event",
+      "type": "number"
     }
   },
   "required": [],
