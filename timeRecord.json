@@ -142,6 +142,10 @@
       "description": "A performanceRecordedStatus of the connected timeRecordId",
       "type": "string"
     },
+    "externalStatus": {
+      "description": "An external status of the connected timeRecordId",
+      "type": "string"
+    },
     "linkedCall": {
       "description": "The Call from which this Timerecord was created",
       "type": "string",
