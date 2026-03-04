@@ -144,7 +144,7 @@
     },
     "externalStatus": {
       "description": "An external status of the connected timeRecordId",
-      "type": "string"
+      "type": ["string", "null"]
     },
     "linkedCall": {
       "description": "The Call from which this Timerecord was created",
