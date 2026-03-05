@@ -350,6 +350,10 @@
     "paddingTime": {
       "description": "The padding time in minutes added to the event duration for the technician to prepare for the event",
       "type": "number"
+    },
+    "reminder": {
+      "description": "The reminder time in minutes before the event starts",
+      "type": "number"
     }
   },
   "required": [],
