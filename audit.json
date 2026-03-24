@@ -118,6 +118,11 @@
             "format": "date-time",
             "description": "The start date of the appointment"
           },
+          "endDate": {
+            "type": ["string", "null"],
+            "format": "date-time",
+            "description": "The end date of the appointment"
+          },
           "status": {
             "type": ["string", "null"],
             "enum": [null, "CANCELLED", "PLANNED", "DONE"]
