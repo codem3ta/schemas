@@ -138,6 +138,10 @@
         "lastName": {
           "description": "The last name",
           "type": "string"
+        },
+        "phoneNumber": {
+          "description": "The phone number",
+          "type": "string"
         }
       }
     },
